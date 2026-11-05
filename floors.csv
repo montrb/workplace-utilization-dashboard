@@ -1,0 +1,8 @@
+floor,assigned_headcount,desks,lockers,soft_seats,amenity,has_wellness_room
+1,180,130,150,60,Cafe,No
+2,320,240,270,36,,Yes
+3,320,240,270,36,,Yes
+4,300,225,250,32,Mail room,No
+5,320,240,270,36,,Yes
+6,320,240,270,36,,Yes
+7,290,215,240,44,Reception,No

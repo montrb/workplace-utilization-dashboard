@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Montrell Bennett">
+<meta name="description" content="Workplace utilization dashboard recreating a hybrid-workplace KPI program for a seven-floor financial services campus. Synthetic data.">
+<title>Workplace Utilization Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <p class="eyebrow" id="client-name"></p>
+    <h1 id="site-name"></h1>
+    <p class="site-meta" id="site-meta"></p>
+  </div>
+</header>
+
+<nav class="section-nav" id="section-nav" aria-label="Dashboard sections"></nav>
+
+<section class="filters" id="filters" aria-label="Filters">
+  <label>Floor
+    <select id="floor-filter"></select>
+  </label>
+  <label>From
+    <select id="from-filter"></select>
+  </label>
+  <label>To
+    <select id="to-filter"></select>
+  </label>
+  <button type="button" id="reset-filters" class="btn-secondary">Reset</button>
+</section>
+
+<main id="view" class="view"></main>
+
+<footer class="site-footer">
+  <p>Recreated by Montrell Bennett from a KPI program he designed and ran as Workplace Experience Manager (Lead), November 2022 to September 2025. All figures are synthetic and reproduce the methodology and observed patterns, not the client's data.</p>
+  <p>Built with HTML, JavaScript and Chart.js. Data generated with Python. <a href="https://github.com/montrb/workplace-utilization-dashboard">Source on GitHub</a></p>
+</footer>
+
+<script src="chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
