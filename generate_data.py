@@ -69,7 +69,7 @@ BOOKABLE_HOURS_PER_DAY = 10  # 08:00 to 18:00
 
 MANAGERS = ["M. Bennett", "R. Alvarez", "K. Owens"]
 WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"]
-WEEKDAY_BASE = [0.40, 0.66, 0.71, 0.64, 0.27]
+WEEKDAY_BASE = [0.45, 0.74, 0.79, 0.72, 0.31]
 
 HOLIDAYS = {date.fromisoformat(d) for d in [
     "2022-11-24", "2022-11-25", "2022-12-26",
@@ -164,32 +164,33 @@ MONTHS = months_list()
 EVENT_CATALOG = {
     # category: [(event name, venue floor, venue, capacity, start, minutes)]
     "Social": [
-        ("Coffee and Connect", 1, "Cafe", 180, "08:30", 60),
-        ("Harbor View Happy Hour", 7, "Reception lounge", 160, "16:30", 90),
-        ("Trivia Lunch", 1, "Cafe", 120, "12:00", 60),
-        ("Heritage Month Celebration", 1, "Cafe", 200, "12:00", 90),
-        ("Ice Cream Social", 7, "Reception lounge", 220, "14:00", 60),
-        ("Floor Breakfast", 0, "Floor pantry", 70, "08:30", 60),
+        ("Coffee and Connect", 1, "Cafe", 400, "08:30", 90),
+        ("Harbor View Happy Hour", 7, "Reception lounge", 450, "16:30", 120),
+        ("Trivia Lunch", 1, "Cafe", 260, "12:00", 60),
+        ("Heritage Month Celebration", 1, "Cafe", 450, "12:00", 90),
+        ("Ice Cream Social", 7, "Reception lounge", 550, "14:00", 90),
+        ("Floor Breakfast", 0, "Floor pantry", 200, "08:30", 60),
     ],
     "Wellness": [
-        ("Chair Massage", 0, "Wellness room", 32, "10:00", 240),
-        ("Lunchtime Yoga", 7, "Reception lounge", 40, "12:15", 45),
-        ("Mindfulness Session", 1, "Cafe", 60, "12:00", 45),
-        ("Flu Shot Clinic", 4, "Mail room annex", 260, "09:00", 360),
-        ("Nutrition Talk", 1, "Cafe", 80, "12:00", 60),
-        ("Blood Drive", 1, "Cafe", 90, "09:00", 360),
+        ("Chair Massage", 0, "Wellness room", 48, "10:00", 300),
+        ("Lunchtime Yoga", 7, "Reception lounge", 60, "12:15", 45),
+        ("Mindfulness Session", 1, "Cafe", 120, "12:00", 45),
+        ("Flu Shot Clinic", 4, "Mail room annex", 350, "09:00", 420),
+        ("Nutrition Talk", 1, "Cafe", 150, "12:00", 60),
+        ("Blood Drive", 1, "Cafe", 120, "09:00", 360),
     ],
     "Firm-sponsored": [
-        ("Site Town Hall", 7, "Reception lounge", 400, "11:00", 60),
-        ("Leadership Fireside Chat", 7, "Reception lounge", 220, "15:00", 60),
-        ("Learning Lunch", 1, "Cafe", 120, "12:00", 60),
-        ("Community Volunteer Day", 1, "Cafe", 150, "09:00", 240),
-        ("Charity Drive Kickoff", 1, "Cafe", 160, "12:00", 60),
+        ("Site Town Hall", 1, "Cafe and broadcast", 900, "11:00", 60),
+        ("Business Unit Quarterly Meeting", 1, "Cafe", 600, "10:00", 90),
+        ("Leadership Fireside Chat", 7, "Reception lounge", 450, "15:00", 60),
+        ("Learning Lunch", 1, "Cafe", 300, "12:00", 60),
+        ("Community Volunteer Day", 1, "Cafe", 350, "09:00", 240),
+        ("Charity Drive Kickoff", 1, "Cafe", 400, "12:00", 60),
     ],
 }
 # attendance lift applied site-wide on the day of an event, by category
-EVENT_LIFT = {"Social": 1.05, "Wellness": 1.03, "Firm-sponsored": 1.10}
-CATEGORY_CADENCE = {"Social": 3.2, "Wellness": 2.6, "Firm-sponsored": 1.5}
+EVENT_LIFT = {"Social": 1.05, "Wellness": 1.02, "Firm-sponsored": 1.10}
+CATEGORY_CADENCE = {"Social": 2.6, "Wellness": 2.2, "Firm-sponsored": 2.6}
 
 
 def build_events():
@@ -213,7 +214,7 @@ def build_events():
             midweek = [d for d in days if d.weekday() in (1, 2, 3)] or days
             d = rng.choice(midweek if rng.random() < 0.8 else days)
             if cat == "Holiday":
-                name, fl, venue, cap, start, mins = ("Holiday Celebration", 1, "Cafe", 600, "15:00", 180)
+                name, fl, venue, cap, start, mins = ("Holiday Celebration", 1, "Cafe and reception lounge", 1400, "15:00", 180)
                 cat = "Social"
             else:
                 name, fl, venue, cap, start, mins = rng.choice(EVENT_CATALOG[cat])
@@ -229,7 +230,7 @@ def build_events():
             attendees = min(cap, round(rsvps * show))
             score = round(clamp(rng.gauss({"Social": 4.4, "Wellness": 4.6, "Firm-sponsored": 4.2}[cat], 0.2), 3.2, 5.0), 1)
             responses = round(attendees * rng.uniform(0.18, 0.32))
-            cost = round(attendees * {"Social": 14, "Wellness": 18, "Firm-sponsored": 11}[cat] * rng.uniform(0.85, 1.15), -1)
+            cost = round(attendees * {"Social": 34, "Wellness": 16, "Firm-sponsored": 9}[cat] * rng.uniform(0.85, 1.15), -1)
             eid += 1
             events.append([f"EV{eid:04d}", d.isoformat(), WEEKDAYS[d.weekday()], start, mins, fl,
                            venue, cat, name, cap, rsvps, attendees, round(attendees / rsvps, 4),
@@ -293,7 +294,7 @@ def main():
             base_badge = min(assigned, round(assigned * rate))
             base_badge_total += base_badge
             badge = min(assigned, round(assigned * rate * day_lift.get(d.isoformat(), 1.0)))
-            observed = round(badge * random.uniform(0.84, 0.93))
+            observed = min(desks, round(badge * random.uniform(0.84, 0.93)))
             minutes = random.randint(600, 705)  # 10:00 to 11:45
             obs_time = f"{minutes // 60:02d}:{minutes % 60:02d}"
             cm = MANAGERS[0] if random.random() < 0.85 else random.choice(MANAGERS[1:])

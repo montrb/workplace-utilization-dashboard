@@ -1,6 +1,6 @@
 # Workplace Utilization Dashboard
 
-An interactive recreation of the hybrid-workplace KPI dashboard I designed and ran for a seven-floor, 242,000 sq ft financial services campus in Baltimore, serving more than 2,000 employees from November 2022 to September 2025.
+An interactive recreation of the hybrid-workplace KPI dashboard I designed and ran for a seven-floor, 242,000 sq ft financial services campus in Baltimore, serving more than 2,000 assigned employees, with an average of about 1,200 on site each day, from November 2022 to September 2025.
 
 **Live dashboard:** https://montrb.github.io/workplace-utilization-dashboard/
 **Tableau Public version:** see [TABLEAU_BUILD_GUIDE.md](TABLEAU_BUILD_GUIDE.md)
@@ -43,7 +43,8 @@ Every view responds to a **floor filter (Floors 1 to 7)** and a **month range**.
 - **Tuesday to Thursday peaks.** Midweek attendance runs roughly double Monday and Friday, so peak-day demand, not average demand, sets desk, locker and room requirements.
 - **Lunch-hour camping in focus rooms.** Between 11:00 and 13:59, focus rooms are occupied far more often than they are booked, and average dwell time roughly doubles. Employees were using focus rooms through lunch without reservations.
 - **Technology adoption.** Support tickets and manual booking requests to the corporate services mailbox fell sharply as employees moved to self-service booking.
-- **Events bring people in.** Tuesday to Thursday attendance runs about three points higher on days with an event than on days without one. Firm-sponsored events convert RSVPs to attendance best, social events least, which sets how far to over-invite for each type.
+- **Events bring people in.** Tuesday to Thursday attendance runs about 3.6 points higher on days with an event than on days without one. Firm-sponsored events draw the largest audiences (about 410 per event), followed by social (about 240) and wellness (about 95).
+- **Social events carry the budget.** Catering and beverage service put 63% of event spend into social programming, while firm-sponsored events reach the most people at the lowest cost per attendee.
 - **Clean desk compliance.** Tagging noncompliant desks and collecting personal items weekly drove the noncompliance rate down steadily after launch.
 
 ## Metric definitions
@@ -51,43 +52,43 @@ Every view responds to a **floor filter (Floors 1 to 7)** and a **month range**.
 Each metric below shows its formula and a worked example from the dataset (Floor 4, March 2024).
 
 **Attendance rate** = unique badge swipes / assigned headcount
-Example, Wednesday 13 March 2024: 218 swipes / 300 assigned = **72.7%**
+Example, Wednesday 27 March 2024: 236 swipes / 300 assigned = **78.7%**
 
 **Desk occupancy** = visual headcount / desks on the floor
-Example, same day: community manager counted 200 people at 10:20 / 225 desks = **88.9%**
+Example, same day: community manager counted 217 people at 11:18 / 225 desks = **96.4%**
 
 The visual headcount runs below badge swipes because some badged employees are in meetings, at lunch or off the floor at the time of the walk. The gap between the two figures is itself a useful indicator of how much of the floor is actually used at a point in time.
 
 **Room utilization** = booked hours / available hours
 Available hours = business days in the month x 10 bookable hours (08:00 to 18:00)
-Example, Floor 4 focus room, March 2024: 21 business days x 10 = 210 available hours; 126.0 booked hours / 210 = **60.0%**
+Example, Floor 4 focus room, March 2024: 21 business days x 10 = 210 available hours; 126.1 booked hours / 210 = **60.0%**
 
 **Unbooked occupancy (focus rooms)** = observed occupancy rate - booked rate, by hour
 Example, Floor 4, 12:00, March 2024: occupied 84.6% - booked 38.7% = **46.0 points** of occupancy with no reservation behind it; average dwell 93 minutes
 
 **Locker utilization** = lockers in use / total lockers
-Example, week of 11 March 2024: 154 / 250 = **61.6%**
+Example, week of 11 March 2024: 173 / 250 = **69.2%**
 
 **Soft seating utilization** = peak soft seats occupied / total soft seats
-Example, same week: 21 / 32 = **65.6%**
+Example, same week: 22 / 32 = **68.8%**
 
 **Clean desk noncompliance rate** = desks tagged noncompliant / total desks
 Example, same week: 7 / 225 = **3.1%**, with 4 bags of personal items collected
 
 **Self-service booking share** = self-service bookings / (self-service bookings + mailbox requests)
-Example, site level, March 2024: 4,583 / (4,583 + 60) = **98.7%**
+Example, site level, March 2024: 4,587 / (4,587 + 60) = **98.7%**
 
 **Event show rate** = attendees checked in / RSVPs
-Example, Site Town Hall, 17 September 2025 (Floor 7, Firm-sponsored): 320 / 379 = **84.4%**
+Example, Site Town Hall, 24 June 2025 (Floor 1, Firm-sponsored): 831 / 900 = **92.3%**
 
 **Average satisfaction** = sum of (event score x survey responses) / total survey responses, so larger events carry more weight than small ones
 Example, two events scored 4.0 with 100 responses and 5.0 with 20 responses: (4.0 x 100 + 5.0 x 20) / 120 = **4.17**, not the simple average of 4.5
 
 **Cost per attendee** = total event cost / total attendees
-Example, all events: $368,190 / 26,244 = **$14.03**
+Example, all events: $1,153,060 / 63,123 = **$18.27**. Social events carry the highest cost per attendee because they include catering and beverage service, so they account for 63% of total event spend.
 
 **Event-day attendance lift** = attendance rate on Tuesday to Thursday event days - attendance rate on Tuesday to Thursday days with no event
-Example, all floors, full period: 67.6% - 64.7% = **2.9 points**. Limiting both sides to Tuesday to Thursday keeps the comparison fair, because most events are scheduled midweek.
+Example, all floors, full period: 76.0% - 72.4% = **3.6 points**. Limiting both sides to Tuesday to Thursday keeps the comparison fair, because most events are scheduled midweek.
 
 **Mailbox request reduction** = (average of first 3 months - average of latest 3 months) / average of first 3 months
 Example, full period: (337 - 35) / 337 = **89.6%**

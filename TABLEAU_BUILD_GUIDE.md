@@ -49,13 +49,13 @@ Create these in each data source where the named fields exist (**Analysis > Crea
 ```
 SUM([Badge Swipes]) / SUM([Assigned Headcount])
 ```
-Worked example: Floor 4 on 13 March 2024 had 218 swipes and 300 assigned employees. 218 / 300 = 72.7%.
+Worked example: Floor 4 on 27 March 2024 had 236 swipes and 300 assigned employees. 236 / 300 = 78.7%.
 
 **Desk Occupancy** (attendance_daily)
 ```
 SUM([Observed Headcount]) / SUM([Desks])
 ```
-Worked example: 200 counted at 10:20 / 225 desks = 88.9%.
+Worked example: 217 counted at 11:18 / 225 desks = 96.4%.
 
 **Weekday Group** (attendance_daily)
 ```
@@ -66,7 +66,7 @@ IF [Weekday] = "Tue" OR [Weekday] = "Wed" OR [Weekday] = "Thu" THEN "Midweek pea
 ```
 SUM([Booked Hours]) / SUM([Available Hours])
 ```
-Worked example: Floor 4 focus room, March 2024: 126.0 booked hours / 210 available hours = 60.0%.
+Worked example: Floor 4 focus room, March 2024: 126.1 booked hours / 210 available hours = 60.0%.
 
 **Unbooked Occupancy** (focus_room_hourly)
 ```
@@ -83,7 +83,7 @@ IF [Hour] >= 11 AND [Hour] <= 13 THEN "Lunch, 11:00 to 13:59" ELSE "Other hours"
 ```
 SUM([Lockers In Use]) / SUM([Lockers Total])
 ```
-Worked example: Floor 4, week of 11 March 2024: 154 / 250 = 61.6%.
+Worked example: Floor 4, week of 11 March 2024: 173 / 250 = 69.2%.
 
 **Soft Seating Utilization** (space_observations_weekly)
 ```
@@ -100,13 +100,13 @@ Worked example: Floor 4, week of 11 March 2024: 7 / 225 = 3.1%.
 ```
 SUM([Self Service Bookings]) / (SUM([Self Service Bookings]) + SUM([Mailbox Requests]))
 ```
-Worked example: March 2024: 4,583 / (4,583 + 60) = 98.7%.
+Worked example: March 2024: 4,587 / (4,587 + 60) = 98.7%.
 
 **Show Rate** (events)
 ```
 SUM([Attendees]) / SUM([Rsvps])
 ```
-Worked example: Site Town Hall on 17 September 2025 had 379 RSVPs and 320 attendees. 320 / 379 = 84.4%.
+Worked example: Site Town Hall on 24 June 2025 had 900 RSVPs and 831 attendees. 831 / 900 = 92.3%.
 
 **Weighted Satisfaction** (events)
 ```
@@ -118,14 +118,14 @@ Worked example: an event scored 4.0 from 100 responses and another scored 5.0 fr
 ```
 SUM([Cost Usd]) / SUM([Attendees])
 ```
-Worked example: all events, full period: $368,190 / 26,244 = $14.03.
+Worked example: all events, full period: $1,153,060 / 63,123 = $18.27.
 
 **Event Day Rate** and **Non-Event Day Rate** (attendance_daily)
 ```
 SUM(IF [Event Day] = "Yes" AND [Weekday Group] = "Midweek peak" THEN [Badge Swipes] END)
 / SUM(IF [Event Day] = "Yes" AND [Weekday Group] = "Midweek peak" THEN [Assigned Headcount] END)
 ```
-Duplicate the field and change "Yes" to "No" for the non-event version. Worked example: all floors, full period: 67.6% on event days against 64.7% on other days, a lift of 2.9 points.
+Duplicate the field and change "Yes" to "No" for the non-event version. Worked example: all floors, full period: 76.0% on event days against 72.4% on other days, a lift of 3.6 points.
 
 Format every rate as Percentage with one decimal place (right-click > **Default Properties > Number Format**).
 
@@ -154,6 +154,8 @@ On every worksheet, drag **Floor Filter** and **In Date Range** to **Filters** a
 | Events by Month | MONTH(Date) | CNT(Event Id) | Stacked bar; Color: Category |
 | Attendees by Category | Category | SUM(Attendees) | Bar; Color: Category |
 | Show Rate by Category | Category | Show Rate | Bar; Color: Category |
+| Avg Attendees by Category | Category | SUM(Attendees) / COUNTD(Event Id) | Bar; Color: Category |
+| Spend by Category | Category | SUM(Cost Usd) | Bar; Color: Category; currency format |
 | Satisfaction by Category | Category | Weighted Satisfaction | Bar; axis fixed 0 to 5 |
 | Event Day Lift | Measure Names (Event Day Rate, Non-Event Day Rate) | Measure Values | Bar |
 | Latest Events | Date, Start Time, Event Name, Category, Floor, Venue | | Text table, sorted by Date descending |
@@ -193,6 +195,6 @@ Focus Booked vs Occupied | Focus Dwell by Hour
 ## 8. Quality checks
 
 - Select Floor 4 and confirm the Wellness Rooms dashboard shows no data (wellness rooms are on floors 2, 3, 5 and 6 only).
-- With all floors selected and the full date range, Executive Summary attendance should be about 52.5% and midweek attendance about 65.8%, matching the web version.
-- On the Events dashboard with all categories, confirm 243 events, 26,244 attendees and a 79.7% show rate.
+- With all floors selected and the full date range, Executive Summary attendance should be about 59.1% (about 1,212 badge-ins per day) and midweek attendance about 74.0%, matching the web version.
+- On the Events dashboard with all categories, confirm 250 events, 63,123 attendees and an 81.8% show rate, with firm-sponsored highest in attendees and social highest in spend.
 - Confirm Tuesday, Wednesday and Thursday are the three tallest bars on Attendance by Weekday.

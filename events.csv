@@ -1,244 +1,251 @@
 event_id,date,weekday,start_time,duration_minutes,floor,venue,category,event_name,capacity,rsvps,attendees,show_rate,survey_responses,satisfaction_score,cost_usd
-EV0001,2022-11-02,Wed,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,44,34,0.7727,6,4.5,600
-EV0002,2022-11-09,Wed,08:30,60,1,Cafe,Social,Coffee and Connect,180,122,89,0.7295,28,4.4,1290
-EV0003,2022-11-14,Mon,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,321,252,0.785,78,4.1,2980
-EV0004,2022-11-15,Tue,08:30,60,7,Floor pantry,Social,Floor Breakfast,70,48,40,0.8333,8,4.4,600
-EV0005,2022-12-01,Thu,15:00,180,1,Cafe,Social,Holiday Celebration,600,423,270,0.6383,54,4.7,3290
-EV0006,2022-12-07,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,219,160,0.7306,45,4.8,2980
-EV0007,2022-12-07,Wed,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,374,343,0.9171,87,4.1,3930
-EV0008,2022-12-20,Tue,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,174,145,0.8333,41,4.8,1750
-EV0009,2022-12-21,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,175,113,0.6457,22,4.2,1700
-EV0010,2022-12-22,Thu,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,201,170,0.8458,51,4.7,2860
-EV0011,2022-12-28,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,150,94,0.6267,23,4.4,1340
-EV0012,2023-01-10,Tue,08:30,60,3,Floor pantry,Social,Floor Breakfast,70,48,36,0.75,8,4.6,490
-EV0013,2023-01-18,Wed,10:00,240,5,Wellness room,Wellness,Chair Massage,32,27,21,0.7778,5,4.7,420
-EV0014,2023-01-30,Mon,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,114,82,0.7193,20,4.4,1170
-EV0015,2023-01-31,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,120,103,0.8583,29,4.0,1170
-EV0016,2023-02-07,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,120,82,54,0.6585,14,4.3,810
-EV0017,2023-02-08,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,143,133,0.9301,25,4.3,1400
-EV0018,2023-02-16,Thu,10:00,240,3,Wellness room,Wellness,Chair Massage,32,25,22,0.88,5,4.8,370
-EV0019,2023-02-21,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,124,94,0.7581,22,4.6,1450
-EV0020,2023-02-23,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,29,22,0.7586,4,4.2,360
-EV0021,2023-02-28,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,103,96,0.932,30,4.2,1010
-EV0022,2023-03-08,Wed,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,116,77,0.6638,18,4.5,920
-EV0023,2023-03-14,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,150,126,0.84,38,4.5,1380
-EV0024,2023-03-14,Tue,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,168,122,0.7262,37,4.6,1660
-EV0025,2023-03-23,Thu,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,51,43,0.8431,11,4.6,830
-EV0026,2023-03-28,Tue,08:30,60,3,Floor pantry,Social,Floor Breakfast,70,56,40,0.7143,12,4.1,550
-EV0027,2023-03-30,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,71,52,0.7324,12,4.8,1070
-EV0028,2023-03-30,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,36,29,0.8056,8,4.4,580
-EV0029,2023-04-05,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,156,116,0.7436,25,4.5,1560
-EV0030,2023-04-10,Mon,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,50,36,0.72,9,4.5,700
-EV0031,2023-04-12,Wed,08:30,60,3,Floor pantry,Social,Floor Breakfast,70,53,37,0.6981,9,4.4,520
-EV0032,2023-04-18,Tue,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,37,27,0.7297,6,4.3,460
-EV0033,2023-04-25,Tue,08:30,60,1,Cafe,Social,Coffee and Connect,180,137,103,0.7518,24,4.1,1640
-EV0034,2023-04-25,Tue,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,220,195,172,0.8821,52,4.2,2080
-EV0035,2023-04-26,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,120,103,0.8583,30,4.0,1290
-EV0036,2023-05-02,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,120,95,84,0.8842,24,4.3,1100
-EV0037,2023-05-04,Thu,08:30,60,1,Cafe,Social,Coffee and Connect,180,126,99,0.7857,26,4.5,1290
-EV0038,2023-05-04,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,160,133,0.8313,34,4.1,1530
-EV0039,2023-05-04,Thu,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,220,176,147,0.8352,45,4.2,1810
-EV0040,2023-05-11,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,90,67,54,0.806,10,4.5,1110
-EV0041,2023-05-18,Thu,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,151,108,0.7152,23,4.5,1440
-EV0042,2023-05-24,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,239,198,0.8285,47,4.8,3150
-EV0043,2023-06-01,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,80,61,0.7625,15,4.8,1190
-EV0044,2023-06-06,Tue,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,52,42,0.8077,11,4.8,780
-EV0045,2023-06-06,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,106,99,0.934,31,4.2,1190
-EV0046,2023-06-07,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,244,208,0.8525,56,4.8,3690
-EV0047,2023-06-14,Wed,08:30,60,7,Floor pantry,Social,Floor Breakfast,70,53,40,0.7547,12,4.6,600
-EV0048,2023-06-22,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,120,107,0.8917,25,4.2,1060
-EV0049,2023-06-28,Wed,08:30,60,1,Cafe,Social,Coffee and Connect,180,137,107,0.781,34,4.7,1640
-EV0050,2023-07-05,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,164,129,0.7866,29,4.4,1980
-EV0051,2023-07-12,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,90,78,61,0.7821,19,4.3,1130
-EV0052,2023-07-13,Thu,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,157,110,0.7006,21,4.4,1680
-EV0053,2023-07-13,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,71,61,0.8592,12,4.7,1150
-EV0054,2023-07-18,Tue,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,214,184,0.8598,58,4.6,3330
-EV0055,2023-07-18,Tue,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,208,180,0.8654,48,4.8,3460
-EV0056,2023-07-18,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,114,106,0.9298,28,4.3,1010
-EV0057,2023-07-24,Mon,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,220,220,164,0.7455,49,4.1,2040
-EV0058,2023-07-27,Thu,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,136,104,0.7647,21,4.7,1620
-EV0059,2023-07-28,Fri,08:30,60,4,Floor pantry,Social,Floor Breakfast,70,61,41,0.6721,7,4.3,580
-EV0060,2023-08-01,Tue,08:30,60,1,Cafe,Social,Coffee and Connect,180,158,128,0.8101,37,4.5,2020
-EV0061,2023-08-03,Thu,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,139,119,0.8561,27,4.2,1490
-EV0062,2023-08-08,Tue,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,379,349,0.9208,67,4.3,4030
-EV0063,2023-08-09,Wed,12:00,60,1,Cafe,Social,Trivia Lunch,120,95,72,0.7579,19,4.2,1020
-EV0064,2023-08-09,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,70,55,0.7857,16,4.6,1050
-EV0065,2023-08-23,Wed,12:00,60,1,Cafe,Social,Trivia Lunch,120,93,63,0.6774,12,4.3,890
-EV0066,2023-08-29,Tue,10:00,240,2,Wellness room,Wellness,Chair Massage,32,30,27,0.9,8,4.3,440
-EV0067,2023-09-08,Fri,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,53,38,0.717,10,4.9,690
-EV0068,2023-09-12,Tue,10:00,240,5,Wellness room,Wellness,Chair Massage,32,31,26,0.8387,6,4.5,480
-EV0069,2023-09-14,Thu,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,343,285,0.8309,58,4.6,2940
-EV0070,2023-09-14,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,39,34,0.8718,10,4.4,560
-EV0071,2023-09-19,Tue,08:30,60,6,Floor pantry,Social,Floor Breakfast,70,61,44,0.7213,10,4.3,560
-EV0072,2023-09-19,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,120,72,50,0.6944,15,4.5,710
-EV0073,2023-09-28,Thu,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,176,122,0.6932,31,4.1,1720
-EV0074,2023-10-03,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,134,119,0.8881,27,4.0,1280
-EV0075,2023-10-10,Tue,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,34,28,0.8235,7,4.4,480
-EV0076,2023-10-16,Mon,12:00,60,1,Cafe,Social,Trivia Lunch,120,102,66,0.6471,20,4.3,880
-EV0077,2023-10-19,Thu,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,50,36,0.72,11,4.6,690
-EV0078,2023-10-25,Wed,08:30,60,7,Floor pantry,Social,Floor Breakfast,70,45,38,0.8444,8,4.4,570
-EV0079,2023-10-30,Mon,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,155,113,0.729,33,4.3,1620
-EV0080,2023-11-01,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,113,89,0.7876,24,4.0,990
-EV0081,2023-11-03,Fri,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,143,98,0.6853,28,4.7,1500
-EV0082,2023-11-09,Thu,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,160,112,0.7,28,4.2,1740
-EV0083,2023-11-09,Thu,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,175,141,0.8057,35,4.7,1890
-EV0084,2023-11-14,Tue,10:00,240,6,Wellness room,Wellness,Chair Massage,32,28,26,0.9286,7,4.8,490
-EV0085,2023-11-17,Fri,08:30,60,2,Floor pantry,Social,Floor Breakfast,70,50,34,0.68,9,4.7,530
-EV0086,2023-11-21,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,90,81,67,0.8272,13,4.7,1290
-EV0087,2023-11-28,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,90,81,60,0.7407,11,4.4,1230
-EV0088,2023-11-29,Wed,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,150,135,0.9,38,4.2,1470
-EV0089,2023-11-29,Wed,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,220,204,188,0.9216,55,4.2,1790
-EV0090,2023-12-12,Tue,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,203,164,0.8079,46,4.5,2920
-EV0091,2023-12-14,Thu,12:00,60,1,Cafe,Social,Trivia Lunch,120,97,78,0.8041,14,4.2,1160
-EV0092,2023-12-14,Thu,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,169,128,0.7574,40,4.7,2050
-EV0093,2023-12-18,Mon,10:00,240,2,Wellness room,Wellness,Chair Massage,32,30,19,0.6333,5,4.7,390
-EV0094,2023-12-20,Wed,15:00,180,1,Cafe,Social,Holiday Celebration,600,600,422,0.7033,133,4.9,5800
-EV0095,2023-12-26,Tue,08:30,60,7,Floor pantry,Social,Floor Breakfast,70,54,42,0.7778,10,4.4,510
-EV0096,2023-12-28,Thu,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,383,315,0.8225,88,4.6,3790
-EV0097,2024-01-02,Tue,08:30,60,3,Floor pantry,Social,Floor Breakfast,70,61,43,0.7049,13,4.7,660
-EV0098,2024-01-04,Thu,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,385,346,0.8987,98,3.8,4340
-EV0099,2024-01-10,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,90,90,67,0.7444,16,5.0,1080
-EV0100,2024-01-11,Thu,08:30,60,1,Cafe,Social,Coffee and Connect,180,144,110,0.7639,24,4.3,1610
-EV0101,2024-01-11,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,90,90,87,0.9667,17,4.4,1370
-EV0102,2024-01-18,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,90,85,64,0.7529,18,4.3,990
-EV0103,2024-01-23,Tue,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,220,220,193,0.8773,37,4.3,2370
-EV0104,2024-02-08,Thu,10:00,240,5,Wellness room,Wellness,Chair Massage,32,28,25,0.8929,7,4.9,510
-EV0105,2024-02-13,Tue,08:30,60,6,Floor pantry,Social,Floor Breakfast,70,67,40,0.597,11,4.4,580
-EV0106,2024-02-16,Fri,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,220,220,191,0.8682,43,4.0,2180
-EV0107,2024-02-20,Tue,08:30,60,4,Floor pantry,Social,Floor Breakfast,70,51,40,0.7843,12,4.2,510
-EV0108,2024-02-21,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,246,196,0.7967,45,4.6,3150
-EV0109,2024-02-28,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,229,174,0.7598,36,4.6,3580
-EV0110,2024-03-05,Tue,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,232,214,0.9224,51,4.6,3930
-EV0111,2024-03-21,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,90,82,66,0.8049,14,4.8,1140
-EV0112,2024-03-21,Thu,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,120,113,0.9417,30,4.6,1420
-EV0113,2024-03-27,Wed,08:30,60,2,Floor pantry,Social,Floor Breakfast,70,56,44,0.7857,8,4.5,610
-EV0114,2024-04-02,Tue,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,178,136,0.764,37,4.5,1730
-EV0115,2024-04-17,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,90,70,63,0.9,19,4.6,1150
-EV0116,2024-04-23,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,120,106,70,0.6604,14,4.1,950
-EV0117,2024-04-24,Wed,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,56,45,0.8036,9,4.4,740
-EV0118,2024-04-29,Mon,08:30,60,1,Cafe,Social,Coffee and Connect,180,130,90,0.6923,26,4.7,1360
-EV0119,2024-04-30,Tue,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,395,361,0.9139,107,4.0,3430
-EV0120,2024-05-21,Tue,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,49,41,0.8367,10,4.6,670
-EV0121,2024-05-23,Thu,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,150,115,0.7667,23,4.5,1430
-EV0122,2024-05-23,Thu,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,173,139,0.8035,36,4.3,2180
-EV0123,2024-05-29,Wed,08:30,60,1,Cafe,Social,Coffee and Connect,180,172,116,0.6744,27,4.4,1810
-EV0124,2024-05-29,Wed,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,400,362,0.905,109,4.1,4470
-EV0125,2024-06-05,Wed,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,161,133,0.8261,30,4.4,1780
-EV0126,2024-06-11,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,140,137,0.9786,30,4.2,1330
-EV0127,2024-06-12,Wed,10:00,240,2,Wellness room,Wellness,Chair Massage,32,30,24,0.8,7,4.2,430
-EV0128,2024-06-12,Wed,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,32,28,0.875,8,4.4,530
-EV0129,2024-06-12,Wed,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,119,93,0.7815,21,4.4,1130
-EV0130,2024-06-18,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,90,90,68,0.7556,19,4.5,1090
-EV0131,2024-06-27,Thu,08:30,60,4,Floor pantry,Social,Floor Breakfast,70,59,46,0.7797,12,4.3,730
-EV0132,2024-07-02,Tue,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,400,369,0.9225,118,4.5,3540
-EV0133,2024-07-03,Wed,08:30,60,2,Floor pantry,Social,Floor Breakfast,70,51,36,0.7059,10,4.5,480
-EV0134,2024-07-03,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,90,73,55,0.7534,16,5.0,850
-EV0135,2024-07-03,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,141,126,0.8936,39,4.5,1250
-EV0136,2024-07-18,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,73,65,0.8904,15,4.7,1300
-EV0137,2024-07-18,Thu,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,125,98,0.784,26,4.1,1320
-EV0138,2024-07-23,Tue,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,143,105,0.7343,28,4.7,1290
-EV0139,2024-07-24,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,250,208,0.832,51,4.6,3680
-EV0140,2024-08-14,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,234,215,0.9188,64,4.6,4230
-EV0141,2024-08-15,Thu,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,168,123,0.7321,27,4.1,1540
-EV0142,2024-08-20,Tue,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,60,47,0.7833,14,4.5,780
-EV0143,2024-08-22,Thu,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,138,110,0.7971,34,3.7,1060
-EV0144,2024-08-28,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,181,137,0.7569,35,4.3,1720
-EV0145,2024-08-28,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,113,105,0.9292,27,4.0,1050
-EV0146,2024-08-29,Thu,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,163,116,0.7117,23,4.1,1840
-EV0147,2024-09-11,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,260,195,0.75,38,4.8,3580
-EV0148,2024-09-11,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,236,203,0.8602,56,4.7,4040
-EV0149,2024-09-17,Tue,08:30,60,5,Floor pantry,Social,Floor Breakfast,70,54,39,0.7222,10,4.4,490
-EV0150,2024-09-17,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,156,110,0.7051,30,4.3,1410
-EV0151,2024-09-20,Fri,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,400,304,0.76,96,4.2,3690
-EV0152,2024-09-24,Tue,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,147,96,0.6531,19,4.2,1410
-EV0153,2024-09-25,Wed,10:00,240,5,Wellness room,Wellness,Chair Massage,32,26,24,0.9231,7,4.8,450
-EV0154,2024-09-25,Wed,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,185,130,0.7027,34,4.3,2050
-EV0155,2024-10-01,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,160,135,0.8438,31,3.9,1400
-EV0156,2024-10-02,Wed,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,344,320,0.9302,74,4.1,3710
-EV0157,2024-10-02,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,73,55,0.7534,15,4.5,1040
-EV0158,2024-10-08,Tue,08:30,60,7,Floor pantry,Social,Floor Breakfast,70,62,44,0.7097,9,4.3,660
-EV0159,2024-10-15,Tue,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,72,63,0.875,19,4.6,1180
-EV0160,2024-10-24,Thu,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,144,120,0.8333,22,4.2,1470
-EV0161,2024-10-24,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,38,30,0.7895,9,4.8,560
-EV0162,2024-10-29,Tue,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,161,113,0.7019,22,4.5,1800
-EV0163,2024-10-29,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,120,95,80,0.8421,25,4.4,1050
-EV0164,2024-10-30,Wed,08:30,60,1,Cafe,Social,Coffee and Connect,180,146,99,0.6781,24,4.3,1260
-EV0165,2024-11-05,Tue,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,169,111,0.6568,33,4.8,1450
-EV0166,2024-11-05,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,154,114,0.7403,28,4.5,1590
-EV0167,2024-11-06,Wed,08:30,60,1,Cafe,Social,Coffee and Connect,180,160,117,0.7312,22,4.5,1870
-EV0168,2024-11-07,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,90,88,70,0.7955,19,4.8,1270
-EV0169,2024-11-13,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,90,85,69,0.8118,16,4.8,1290
-EV0170,2024-11-27,Wed,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,383,351,0.9164,83,4.4,4270
-EV0171,2024-12-03,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,132,91,0.6894,25,4.4,1210
-EV0172,2024-12-05,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,90,86,66,0.7674,21,4.4,1010
-EV0173,2024-12-11,Wed,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,32,27,0.8438,7,4.6,550
-EV0174,2024-12-17,Tue,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,31,26,0.8387,6,4.4,440
-EV0175,2024-12-18,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,90,90,74,0.8222,18,4.1,1250
-EV0176,2024-12-24,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,138,107,0.7754,23,4.5,1310
-EV0177,2024-12-26,Thu,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,50,43,0.86,13,4.3,840
-EV0178,2024-12-26,Thu,15:00,180,1,Cafe,Social,Holiday Celebration,600,478,357,0.7469,110,4.5,4590
-EV0179,2024-12-31,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,112,96,0.8571,26,4.3,1030
-EV0180,2024-12-31,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,119,98,0.8235,21,4.6,1290
-EV0181,2025-01-02,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,159,148,0.9308,29,4.3,1600
-EV0182,2025-01-07,Tue,08:30,60,1,Cafe,Social,Coffee and Connect,180,130,104,0.8,21,4.4,1460
-EV0183,2025-01-07,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,143,106,0.7413,21,4.3,1660
-EV0184,2025-01-08,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,71,60,0.8451,12,4.3,930
-EV0185,2025-01-13,Mon,10:00,240,2,Wellness room,Wellness,Chair Massage,32,28,20,0.7143,5,4.6,350
-EV0186,2025-01-14,Tue,08:30,60,5,Floor pantry,Social,Floor Breakfast,70,50,40,0.8,10,4.2,600
-EV0187,2025-01-21,Tue,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,256,216,0.8438,67,4.4,4200
-EV0188,2025-01-23,Thu,08:30,60,2,Floor pantry,Social,Floor Breakfast,70,61,48,0.7869,9,4.4,590
-EV0189,2025-02-05,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,119,97,0.8151,25,4.1,1500
-EV0190,2025-02-06,Thu,10:00,240,6,Wellness room,Wellness,Chair Massage,32,30,26,0.8667,6,4.7,430
-EV0191,2025-02-12,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,160,146,0.9125,31,4.1,1420
-EV0192,2025-02-19,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,147,129,0.8776,33,4.0,1240
-EV0193,2025-02-24,Mon,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,170,93,0.5471,18,4.3,1300
-EV0194,2025-02-26,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,152,122,0.8026,29,4.4,1770
-EV0195,2025-03-04,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,136,96,0.7059,20,4.6,1210
-EV0196,2025-03-13,Thu,08:30,60,2,Floor pantry,Social,Floor Breakfast,70,65,47,0.7231,12,4.1,570
-EV0197,2025-03-13,Thu,08:30,60,1,Cafe,Social,Coffee and Connect,180,154,134,0.8701,35,4.2,2030
-EV0198,2025-03-19,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,211,173,0.8199,41,4.7,2930
-EV0199,2025-03-20,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,67,58,0.8657,14,4.5,990
-EV0200,2025-03-20,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,160,145,0.9062,44,4.0,1470
-EV0201,2025-04-02,Wed,10:00,240,5,Wellness room,Wellness,Chair Massage,32,30,24,0.8,4,4.9,450
-EV0202,2025-04-07,Mon,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,220,208,179,0.8606,35,4.4,2130
-EV0203,2025-04-10,Thu,08:30,60,1,Cafe,Social,Coffee and Connect,180,172,127,0.7384,24,4.1,1930
-EV0204,2025-04-10,Thu,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,50,40,0.8,12,4.3,750
-EV0205,2025-04-10,Thu,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,164,146,0.8902,30,4.8,2220
-EV0206,2025-04-11,Fri,12:00,60,1,Cafe,Social,Trivia Lunch,120,98,65,0.6633,18,4.5,1030
-EV0207,2025-04-22,Tue,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,225,176,0.7822,44,4.6,3360
-EV0208,2025-04-23,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,161,123,0.764,35,4.7,1630
-EV0209,2025-04-24,Thu,08:30,60,1,Cafe,Social,Coffee and Connect,180,144,111,0.7708,22,4.5,1550
-EV0210,2025-05-08,Thu,08:30,60,6,Floor pantry,Social,Floor Breakfast,70,60,43,0.7167,12,4.6,530
-EV0211,2025-05-13,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,90,66,47,0.7121,12,4.6,760
-EV0212,2025-05-14,Wed,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,143,126,0.8811,36,4.0,1420
-EV0213,2025-05-14,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,200,138,0.69,42,4.0,1990
-EV0214,2025-05-21,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,141,141,1.0,42,4.0,1620
-EV0215,2025-05-22,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,90,88,71,0.8068,13,4.5,1310
-EV0216,2025-05-27,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,146,106,0.726,27,4.2,1590
-EV0217,2025-05-27,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,140,107,0.7643,21,4.4,1660
-EV0218,2025-05-28,Wed,09:00,360,4,Mail room annex,Wellness,Flu Shot Clinic,260,260,204,0.7846,59,4.9,3240
-EV0219,2025-06-03,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,160,147,125,0.8503,28,4.2,1290
-EV0220,2025-06-03,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,127,84,0.6614,17,4.3,1010
-EV0221,2025-06-04,Wed,08:30,60,1,Cafe,Social,Coffee and Connect,180,122,87,0.7131,23,4.2,1170
-EV0222,2025-06-16,Mon,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,36,29,0.8056,7,4.6,470
-EV0223,2025-06-17,Tue,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,60,56,0.9333,10,4.6,1070
-EV0224,2025-06-17,Tue,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,171,123,0.7193,25,4.5,1920
-EV0225,2025-07-02,Wed,08:30,60,4,Floor pantry,Social,Floor Breakfast,70,60,42,0.7,12,4.5,630
-EV0226,2025-07-10,Thu,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,132,97,0.7348,27,4.7,1190
-EV0227,2025-07-16,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,120,119,93,0.7815,24,4.3,880
-EV0228,2025-07-23,Wed,12:00,60,1,Cafe,Social,Trivia Lunch,120,116,83,0.7155,21,4.7,990
-EV0229,2025-07-24,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,40,34,27,0.7941,5,4.7,430
-EV0230,2025-07-31,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,78,65,0.8333,18,4.5,1320
-EV0231,2025-08-05,Tue,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,153,111,0.7255,35,4.5,1540
-EV0232,2025-08-06,Wed,12:00,45,1,Cafe,Wellness,Mindfulness Session,60,50,40,0.8,11,4.6,680
-EV0233,2025-08-14,Thu,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,150,136,127,0.9338,39,4.4,1520
-EV0234,2025-08-19,Tue,08:30,60,1,Cafe,Social,Coffee and Connect,180,152,116,0.7632,32,4.3,1460
-EV0235,2025-08-19,Tue,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,70,50,0.7143,10,4.5,990
-EV0236,2025-08-19,Tue,14:00,60,7,Reception lounge,Social,Ice Cream Social,220,181,148,0.8177,37,4.2,2060
-EV0237,2025-09-04,Thu,16:30,90,7,Reception lounge,Social,Harbor View Happy Hour,160,156,93,0.5962,25,4.3,1160
-EV0238,2025-09-09,Tue,08:30,60,7,Floor pantry,Social,Floor Breakfast,70,49,38,0.7755,10,4.7,610
-EV0239,2025-09-10,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,90,84,69,0.8214,15,4.7,1320
-EV0240,2025-09-17,Wed,11:00,60,7,Reception lounge,Firm-sponsored,Site Town Hall,400,379,320,0.8443,71,4.1,3240
-EV0241,2025-09-18,Thu,12:00,90,1,Cafe,Social,Heritage Month Celebration,200,180,129,0.7167,29,4.3,1860
-EV0242,2025-09-25,Thu,12:00,60,1,Cafe,Social,Trivia Lunch,120,120,73,0.6083,23,4.5,1100
-EV0243,2025-09-25,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,80,75,52,0.6933,16,4.6,1020
+EV0001,2022-11-02,Wed,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,744,557,0.7487,123,4.7,5290
+EV0002,2022-11-09,Wed,08:30,90,1,Cafe,Social,Coffee and Connect,400,271,197,0.7269,61,4.4,6960
+EV0003,2022-11-15,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,120,98,68,0.6939,21,4.7,1230
+EV0004,2022-11-22,Tue,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,450,436,376,0.8624,81,4.3,3300
+EV0005,2022-12-07,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,270,213,0.7889,59,4.4,1980
+EV0006,2022-12-07,Wed,15:00,180,1,Cafe and reception lounge,Social,Holiday Celebration,1400,1122,775,0.6907,198,4.0,26500
+EV0007,2022-12-20,Tue,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,130,118,0.9077,33,5.0,1630
+EV0008,2022-12-21,Wed,14:00,90,7,Reception lounge,Social,Ice Cream Social,550,396,286,0.7222,66,4.5,9370
+EV0009,2022-12-22,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,249,225,0.9036,67,4.3,1890
+EV0010,2022-12-28,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,347,219,0.6311,52,4.4,7560
+EV0011,2023-01-10,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,120,105,87,0.8286,26,4.7,1320
+EV0012,2023-01-12,Thu,08:30,60,7,Floor pantry,Social,Floor Breakfast,200,154,113,0.7338,29,4.5,3660
+EV0013,2023-01-17,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,298,269,0.9027,71,4.6,2260
+EV0014,2023-01-18,Wed,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,749,597,0.7971,183,4.3,5280
+EV0015,2023-02-01,Wed,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,275,229,0.8327,41,4.3,2250
+EV0016,2023-02-07,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,120,91,71,0.7802,21,4.4,1190
+EV0017,2023-02-08,Wed,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,376,257,0.6835,62,4.2,7740
+EV0018,2023-02-09,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,115,87,0.7565,17,4.6,1370
+EV0019,2023-02-13,Mon,08:30,60,7,Floor pantry,Social,Floor Breakfast,200,173,101,0.5838,27,4.4,3700
+EV0020,2023-03-15,Wed,12:00,60,1,Cafe,Social,Trivia Lunch,260,213,143,0.6714,29,4.7,4690
+EV0021,2023-03-15,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,300,269,0.8967,74,4.2,2090
+EV0022,2023-03-16,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,557,421,0.7558,85,4.2,3700
+EV0023,2023-03-23,Thu,10:00,300,6,Wellness room,Wellness,Chair Massage,48,44,33,0.75,7,4.6,490
+EV0024,2023-03-23,Thu,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,305,196,0.6426,37,4.6,6380
+EV0025,2023-03-28,Tue,08:30,60,4,Floor pantry,Social,Floor Breakfast,200,162,112,0.6914,29,4.6,3240
+EV0026,2023-03-30,Thu,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,94,79,0.8404,21,4.7,1450
+EV0027,2023-04-04,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,371,251,0.6765,80,4.4,7520
+EV0028,2023-04-05,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,145,115,0.7931,29,4.5,1980
+EV0029,2023-04-06,Thu,08:30,60,2,Floor pantry,Social,Floor Breakfast,200,140,93,0.6643,23,4.1,2870
+EV0030,2023-04-11,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,120,108,87,0.8056,16,4.7,1510
+EV0031,2023-04-19,Wed,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,571,473,0.8284,121,4.5,3970
+EV0032,2023-04-20,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,278,252,0.9065,50,4.6,2460
+EV0033,2023-04-27,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,293,262,0.8942,54,4.6,2190
+EV0034,2023-05-02,Tue,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,105,101,0.9619,28,4.5,1510
+EV0035,2023-05-11,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,322,278,0.8634,54,4.1,2850
+EV0036,2023-05-18,Thu,08:30,60,6,Floor pantry,Social,Floor Breakfast,200,166,113,0.6807,23,4.0,4140
+EV0037,2023-05-18,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,269,229,0.8513,49,4.3,1960
+EV0038,2023-05-24,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,294,261,0.8878,62,4.4,2080
+EV0039,2023-05-30,Tue,08:30,90,1,Cafe,Social,Coffee and Connect,400,314,225,0.7166,61,4.8,8750
+EV0040,2023-05-30,Tue,10:00,300,2,Wellness room,Wellness,Chair Massage,48,37,32,0.8649,8,4.7,480
+EV0041,2023-06-07,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,362,277,0.7652,57,4.5,8910
+EV0042,2023-06-14,Wed,08:30,60,7,Floor pantry,Social,Floor Breakfast,200,153,117,0.7647,36,4.6,4280
+EV0043,2023-06-15,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,518,480,0.9266,146,4.2,3770
+EV0044,2023-06-20,Tue,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,572,572,1.0,140,4.5,5840
+EV0045,2023-06-22,Thu,08:30,60,6,Floor pantry,Social,Floor Breakfast,200,145,122,0.8414,23,4.2,3760
+EV0046,2023-06-22,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,55,44,0.8,13,4.4,720
+EV0047,2023-06-28,Wed,10:00,300,3,Wellness room,Wellness,Chair Massage,48,40,35,0.875,7,4.8,580
+EV0048,2023-06-28,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,400,372,0.93,97,4.7,3380
+EV0049,2023-07-05,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,368,291,0.7908,64,4.4,10860
+EV0050,2023-07-12,Wed,08:30,60,7,Floor pantry,Social,Floor Breakfast,200,157,111,0.707,21,4.5,4240
+EV0051,2023-07-13,Thu,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,334,309,0.9251,59,4.3,2910
+EV0052,2023-07-13,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,278,234,0.8417,45,4.2,2300
+EV0053,2023-07-18,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,265,243,0.917,76,4.2,2200
+EV0054,2023-07-27,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,56,47,0.8393,10,4.9,840
+EV0055,2023-07-28,Fri,08:30,60,4,Floor pantry,Social,Floor Breakfast,200,174,117,0.6724,21,4.3,4030
+EV0056,2023-08-08,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,347,330,0.951,89,4.3,3320
+EV0057,2023-08-15,Tue,10:00,300,6,Wellness room,Wellness,Chair Massage,48,44,43,0.9773,9,4.8,720
+EV0058,2023-08-21,Mon,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,51,37,0.7255,8,4.5,640
+EV0059,2023-08-22,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,316,212,0.6709,57,4.6,8210
+EV0060,2023-08-24,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,305,245,0.8033,70,4.3,7890
+EV0061,2023-08-24,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,538,459,0.8532,105,4.4,4050
+EV0062,2023-09-06,Wed,08:30,60,2,Floor pantry,Social,Floor Breakfast,200,164,99,0.6037,28,4.4,2950
+EV0063,2023-09-06,Wed,10:00,300,2,Wellness room,Wellness,Chair Massage,48,42,34,0.8095,9,4.5,470
+EV0064,2023-09-07,Thu,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,333,262,0.7868,69,4.1,9630
+EV0065,2023-09-12,Tue,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,54,42,0.7778,9,4.5,620
+EV0066,2023-09-26,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,296,272,0.9189,63,4.4,2660
+EV0067,2023-09-26,Tue,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,450,437,398,0.9108,113,4.2,3990
+EV0068,2023-09-27,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,384,308,0.8021,60,4.2,2690
+EV0069,2023-10-04,Wed,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,450,404,335,0.8292,78,4.1,3220
+EV0070,2023-10-04,Wed,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,328,227,0.6921,41,4.2,6640
+EV0071,2023-10-10,Tue,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,124,94,0.7581,21,4.5,1320
+EV0072,2023-10-19,Thu,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,304,235,0.773,62,4.5,8830
+EV0073,2023-10-25,Wed,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,308,226,0.7338,48,4.4,4120
+EV0074,2023-11-02,Thu,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,450,441,376,0.8526,119,4.1,3580
+EV0075,2023-11-09,Thu,08:30,60,2,Floor pantry,Social,Floor Breakfast,200,169,132,0.7811,36,4.4,4720
+EV0076,2023-11-14,Tue,08:30,90,1,Cafe,Social,Coffee and Connect,400,263,202,0.7681,58,4.5,6400
+EV0077,2023-11-15,Wed,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,313,220,0.7029,46,4.5,3410
+EV0078,2023-11-16,Thu,10:00,300,6,Wellness room,Wellness,Chair Massage,48,42,30,0.7143,6,4.8,450
+EV0079,2023-11-22,Wed,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,103,77,0.7476,18,4.6,1110
+EV0080,2023-11-28,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,771,704,0.9131,193,4.5,7010
+EV0081,2023-12-05,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,883,818,0.9264,158,4.0,6840
+EV0082,2023-12-13,Wed,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,98,73,0.7449,19,4.4,1180
+EV0083,2023-12-20,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,308,262,0.8506,67,4.5,10220
+EV0084,2023-12-20,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,376,323,0.859,89,4.0,2960
+EV0085,2023-12-21,Thu,10:00,300,2,Wellness room,Wellness,Chair Massage,48,45,33,0.7333,10,4.9,460
+EV0086,2023-12-27,Wed,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,600,501,0.835,93,4.5,3950
+EV0087,2023-12-27,Wed,15:00,180,1,Cafe and reception lounge,Social,Holiday Celebration,1400,968,842,0.8698,200,4.3,31350
+EV0088,2023-12-28,Thu,14:00,90,7,Reception lounge,Social,Ice Cream Social,550,456,339,0.7434,107,4.3,11160
+EV0089,2024-01-02,Tue,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,323,285,0.8824,66,5.0,4040
+EV0090,2024-01-04,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,400,388,0.97,114,4.2,3000
+EV0091,2024-01-11,Thu,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,900,774,0.86,150,4.0,7040
+EV0092,2024-01-24,Wed,08:30,60,7,Floor pantry,Social,Floor Breakfast,200,188,142,0.7553,33,4.3,4350
+EV0093,2024-01-24,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,120,112,87,0.7768,22,4.7,1360
+EV0094,2024-01-25,Thu,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,54,44,0.8148,12,4.8,760
+EV0095,2024-01-29,Mon,08:30,90,1,Cafe,Social,Coffee and Connect,400,308,239,0.776,45,4.2,8310
+EV0096,2024-01-31,Wed,08:30,90,1,Cafe,Social,Coffee and Connect,400,353,283,0.8017,74,4.8,10710
+EV0097,2024-02-01,Thu,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,332,260,0.7831,83,4.9,3990
+EV0098,2024-02-06,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,258,253,0.9806,67,4.4,2050
+EV0099,2024-02-06,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,370,329,0.8892,73,4.2,2970
+EV0100,2024-02-08,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,275,220,0.8,52,4.6,6700
+EV0101,2024-02-14,Wed,08:30,60,5,Floor pantry,Social,Floor Breakfast,200,142,105,0.7394,28,4.7,4060
+EV0102,2024-02-15,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,120,94,89,0.9468,19,4.6,1510
+EV0103,2024-02-21,Wed,08:30,90,1,Cafe,Social,Coffee and Connect,400,356,223,0.6264,41,4.7,6820
+EV0104,2024-02-28,Wed,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,294,217,0.7381,60,4.2,2020
+EV0105,2024-03-05,Tue,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,150,122,0.8133,24,4.6,1700
+EV0106,2024-03-13,Wed,08:30,90,1,Cafe,Social,Coffee and Connect,400,321,241,0.7508,66,4.2,9350
+EV0107,2024-03-18,Mon,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,300,231,0.77,54,4.0,1820
+EV0108,2024-03-19,Tue,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,328,226,0.689,67,4.7,8080
+EV0109,2024-03-20,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,120,116,103,0.8879,28,4.4,1770
+EV0110,2024-03-21,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,353,268,0.7592,75,4.6,9070
+EV0111,2024-03-26,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,120,108,94,0.8704,21,4.6,1350
+EV0112,2024-03-26,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,403,312,0.7742,99,4.4,10130
+EV0113,2024-03-28,Thu,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,349,317,0.9083,78,3.7,3180
+EV0114,2024-04-02,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,900,676,0.7511,146,4.2,6320
+EV0115,2024-04-04,Thu,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,450,450,414,0.92,102,4.0,4170
+EV0116,2024-04-09,Tue,10:00,300,6,Wellness room,Wellness,Chair Massage,48,48,37,0.7708,9,4.7,560
+EV0117,2024-04-09,Tue,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,138,89,0.6449,17,4.4,1430
+EV0118,2024-04-11,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,595,542,0.9109,165,4.4,4260
+EV0119,2024-04-11,Thu,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,346,244,0.7052,60,4.4,7340
+EV0120,2024-04-18,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,321,223,0.6947,41,4.5,6800
+EV0121,2024-04-22,Mon,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,148,96,0.6486,22,4.7,1380
+EV0122,2024-04-24,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,386,317,0.8212,98,4.3,11290
+EV0123,2024-05-01,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,120,106,89,0.8396,24,4.8,1600
+EV0124,2024-05-01,Wed,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,450,428,370,0.8645,113,4.5,2940
+EV0125,2024-05-02,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,361,276,0.7645,83,4.3,10520
+EV0126,2024-05-22,Wed,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,350,310,0.8857,97,4.5,5060
+EV0127,2024-05-23,Thu,08:30,60,6,Floor pantry,Social,Floor Breakfast,200,147,90,0.6122,17,4.3,2970
+EV0128,2024-05-23,Thu,10:00,300,2,Wellness room,Wellness,Chair Massage,48,45,36,0.8,8,4.1,560
+EV0129,2024-05-30,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,314,292,0.9299,78,4.0,2580
+EV0130,2024-06-05,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,348,249,0.7155,74,4.3,8690
+EV0131,2024-06-05,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,149,129,0.8658,27,4.3,2320
+EV0132,2024-06-05,Wed,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,60,52,0.8667,12,4.6,910
+EV0133,2024-06-11,Tue,15:00,60,7,Reception lounge,Firm-sponsored,Leadership Fireside Chat,450,450,375,0.8333,74,4.1,3780
+EV0134,2024-06-25,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,302,283,0.9371,57,4.4,2250
+EV0135,2024-06-27,Thu,14:00,90,7,Reception lounge,Social,Ice Cream Social,550,445,348,0.782,105,4.3,10190
+EV0136,2024-07-02,Tue,09:00,360,1,Cafe,Wellness,Blood Drive,120,120,95,0.7917,29,4.5,1420
+EV0137,2024-07-02,Tue,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,323,263,0.8142,74,4.4,9860
+EV0138,2024-07-09,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,388,339,0.8737,99,4.4,2940
+EV0139,2024-07-23,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,900,861,0.9567,214,4.2,8280
+EV0140,2024-07-23,Tue,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,356,236,0.6629,47,4.3,8500
+EV0141,2024-07-30,Tue,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,566,517,0.9134,96,3.8,4540
+EV0142,2024-08-06,Tue,08:30,90,1,Cafe,Social,Coffee and Connect,400,346,275,0.7948,82,4.7,8520
+EV0143,2024-08-06,Tue,08:30,60,5,Floor pantry,Social,Floor Breakfast,200,179,120,0.6704,31,4.4,3770
+EV0144,2024-08-07,Wed,14:00,90,7,Reception lounge,Social,Ice Cream Social,550,357,253,0.7087,52,4.2,8430
+EV0145,2024-08-12,Mon,10:00,300,6,Wellness room,Wellness,Chair Massage,48,39,27,0.6923,7,4.5,460
+EV0146,2024-08-21,Wed,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,598,570,0.9532,110,4.1,5270
+EV0147,2024-08-22,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,600,469,0.7817,136,4.2,4680
+EV0148,2024-09-19,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,125,90,0.72,17,4.3,1350
+EV0149,2024-09-24,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,826,695,0.8414,221,4.1,6660
+EV0150,2024-09-24,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,260,237,189,0.7975,56,4.6,5830
+EV0151,2024-09-25,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,379,310,0.8179,84,4.5,10710
+EV0152,2024-09-26,Thu,08:30,60,5,Floor pantry,Social,Floor Breakfast,200,134,127,0.9478,24,4.5,4280
+EV0153,2024-09-26,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,300,279,0.93,80,4.4,2360
+EV0154,2024-09-27,Fri,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,829,690,0.8323,190,4.0,5300
+EV0155,2024-10-03,Thu,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,346,267,0.7717,84,4.8,9850
+EV0156,2024-10-16,Wed,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,120,104,0.8667,23,4.6,1520
+EV0157,2024-10-16,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,281,272,0.968,68,4.4,2580
+EV0158,2024-10-23,Wed,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,562,487,0.8665,151,4.2,4590
+EV0159,2024-10-23,Wed,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,342,279,0.8158,89,4.4,9120
+EV0160,2024-10-24,Thu,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,324,224,0.6914,67,4.6,3530
+EV0161,2024-10-24,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,554,511,0.9224,123,3.9,4990
+EV0162,2024-10-24,Thu,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,792,620,0.7828,192,4.2,5350
+EV0163,2024-10-24,Thu,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,324,229,0.7068,71,4.3,8010
+EV0164,2024-10-29,Tue,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,60,47,0.7833,9,4.8,690
+EV0165,2024-10-31,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,120,114,88,0.7719,21,4.4,1560
+EV0166,2024-11-05,Tue,08:30,60,7,Floor pantry,Social,Floor Breakfast,200,171,122,0.7135,26,4.6,4160
+EV0167,2024-11-07,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,120,118,100,0.8475,22,4.4,1690
+EV0168,2024-11-12,Tue,10:00,300,5,Wellness room,Wellness,Chair Massage,48,44,35,0.7955,9,4.3,590
+EV0169,2024-11-12,Tue,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,600,501,0.835,144,4.1,4270
+EV0170,2024-11-12,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,354,289,0.8164,85,4.6,8520
+EV0171,2024-11-14,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,290,246,0.8483,70,4.1,2360
+EV0172,2024-11-20,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,340,326,0.9588,96,4.2,2900
+EV0173,2024-11-21,Thu,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,113,107,0.9469,21,4.7,1710
+EV0174,2024-12-03,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,388,347,0.8943,66,4.3,3010
+EV0175,2024-12-04,Wed,08:30,90,1,Cafe,Social,Coffee and Connect,400,277,238,0.8592,71,4.3,8580
+EV0176,2024-12-10,Tue,15:00,180,1,Cafe and reception lounge,Social,Holiday Celebration,1400,1192,850,0.7131,156,4.6,32860
+EV0177,2024-12-11,Wed,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,47,42,0.8936,10,4.6,640
+EV0178,2024-12-17,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,325,308,0.9477,70,4.3,3180
+EV0179,2024-12-17,Tue,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,42,31,0.7381,9,4.6,570
+EV0180,2024-12-18,Wed,09:00,360,1,Cafe,Wellness,Blood Drive,120,112,100,0.8929,20,4.5,1790
+EV0181,2024-12-19,Thu,08:30,60,4,Floor pantry,Social,Floor Breakfast,200,145,100,0.6897,24,4.5,3770
+EV0182,2024-12-24,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,399,308,0.7719,63,4.5,9710
+EV0183,2024-12-26,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,273,247,0.9048,51,4.1,1890
+EV0184,2024-12-31,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,260,185,149,0.8054,36,4.4,4770
+EV0185,2025-01-07,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,815,678,0.8319,172,4.3,6680
+EV0186,2025-01-08,Wed,08:30,90,1,Cafe,Social,Coffee and Connect,400,320,274,0.8562,78,4.5,9770
+EV0187,2025-01-16,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,299,286,0.9565,77,4.2,2600
+EV0188,2025-01-21,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,894,803,0.8982,241,4.0,6430
+EV0189,2025-01-21,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,365,242,0.663,72,4.4,7970
+EV0190,2025-01-28,Tue,10:00,300,6,Wellness room,Wellness,Chair Massage,48,40,34,0.85,10,4.5,550
+EV0191,2025-01-29,Wed,08:30,60,6,Floor pantry,Social,Floor Breakfast,200,165,115,0.697,33,4.3,4000
+EV0192,2025-01-30,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,133,114,0.8571,35,4.6,1990
+EV0193,2025-02-04,Tue,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,600,600,1.0,161,4.1,4770
+EV0194,2025-02-12,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,139,118,0.8489,25,4.5,1670
+EV0195,2025-02-18,Tue,08:30,90,1,Cafe,Social,Coffee and Connect,400,316,242,0.7658,69,4.2,8850
+EV0196,2025-02-19,Wed,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,294,237,0.8061,55,4.4,2400
+EV0197,2025-02-19,Wed,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,52,44,0.8462,9,4.7,670
+EV0198,2025-02-26,Wed,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,288,258,0.8958,58,4.7,4340
+EV0199,2025-02-27,Thu,12:00,60,1,Cafe,Social,Trivia Lunch,260,213,164,0.77,50,4.4,4780
+EV0200,2025-03-04,Tue,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,331,257,0.7764,61,4.8,4660
+EV0201,2025-03-05,Wed,10:00,300,3,Wellness room,Wellness,Chair Massage,48,45,30,0.6667,6,4.6,500
+EV0202,2025-03-05,Wed,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,365,350,0.9589,103,4.4,3400
+EV0203,2025-03-07,Fri,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,60,43,0.7167,9,4.7,680
+EV0204,2025-03-18,Tue,14:00,90,7,Reception lounge,Social,Ice Cream Social,550,480,367,0.7646,111,4.2,11520
+EV0205,2025-03-20,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,339,229,0.6755,60,4.6,7370
+EV0206,2025-03-25,Tue,14:00,90,7,Reception lounge,Social,Ice Cream Social,550,482,323,0.6701,74,4.4,10640
+EV0207,2025-03-26,Wed,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,465,437,0.9398,124,4.4,4350
+EV0208,2025-04-08,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,351,268,0.7635,82,5.0,8910
+EV0209,2025-04-11,Fri,09:00,360,1,Cafe,Wellness,Blood Drive,120,112,76,0.6786,19,4.7,1270
+EV0210,2025-04-17,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,296,205,0.6926,44,4.3,6090
+EV0211,2025-04-22,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,260,246,189,0.7683,59,4.1,5760
+EV0212,2025-04-22,Tue,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,55,50,0.9091,14,4.5,710
+EV0213,2025-04-24,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,600,568,0.9467,133,4.2,4960
+EV0214,2025-04-24,Thu,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,900,790,0.8778,153,3.8,6360
+EV0215,2025-04-25,Fri,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,120,82,0.6833,25,4.6,1290
+EV0216,2025-05-06,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,373,310,0.8311,64,4.4,2760
+EV0217,2025-05-13,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,367,265,0.7221,52,4.1,7910
+EV0218,2025-05-14,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,150,118,0.7867,32,4.2,2020
+EV0219,2025-05-22,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,150,121,0.8067,24,4.9,2090
+EV0220,2025-05-27,Tue,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,400,359,0.8975,102,4.2,3090
+EV0221,2025-05-27,Tue,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,350,273,0.78,71,4.5,9880
+EV0222,2025-05-29,Thu,09:00,420,4,Mail room annex,Wellness,Flu Shot Clinic,350,321,253,0.7882,67,4.9,4350
+EV0223,2025-06-05,Thu,08:30,60,6,Floor pantry,Social,Floor Breakfast,200,148,104,0.7027,19,4.4,3900
+EV0224,2025-06-10,Tue,08:30,90,1,Cafe,Social,Coffee and Connect,400,346,280,0.8092,52,4.2,9150
+EV0225,2025-06-12,Thu,16:30,120,7,Reception lounge,Social,Harbor View Happy Hour,450,382,275,0.7199,58,4.6,8960
+EV0226,2025-06-24,Tue,11:00,60,1,Cafe and broadcast,Firm-sponsored,Site Town Hall,900,900,831,0.9233,160,4.2,8360
+EV0227,2025-06-25,Wed,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,129,95,0.7364,19,4.8,1520
+EV0228,2025-06-27,Fri,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,290,205,0.7069,60,4.2,2100
+EV0229,2025-07-08,Tue,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,108,83,0.7685,19,4.7,1230
+EV0230,2025-07-09,Wed,12:00,60,1,Cafe,Social,Trivia Lunch,260,177,116,0.6554,27,4.6,3720
+EV0231,2025-07-17,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,267,231,0.8652,49,4.5,2120
+EV0232,2025-07-17,Thu,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,288,281,0.9757,52,4.2,2190
+EV0233,2025-07-22,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,334,316,0.9461,100,3.8,3060
+EV0234,2025-07-25,Fri,08:30,90,1,Cafe,Social,Coffee and Connect,400,381,231,0.6063,56,4.3,7170
+EV0235,2025-07-31,Thu,12:00,45,1,Cafe,Wellness,Mindfulness Session,120,111,80,0.7207,21,4.7,1100
+EV0236,2025-08-06,Wed,12:00,60,1,Cafe,Social,Trivia Lunch,260,196,142,0.7245,40,4.4,4540
+EV0237,2025-08-07,Thu,10:00,90,1,Cafe,Firm-sponsored,Business Unit Quarterly Meeting,600,600,534,0.89,111,4.2,4430
+EV0238,2025-08-11,Mon,12:15,45,7,Reception lounge,Wellness,Lunchtime Yoga,60,48,42,0.875,10,4.3,760
+EV0239,2025-08-12,Tue,10:00,300,3,Wellness room,Wellness,Chair Massage,48,44,37,0.8409,10,4.7,540
+EV0240,2025-08-14,Thu,12:00,90,1,Cafe,Social,Heritage Month Celebration,450,343,273,0.7959,83,4.6,10090
+EV0241,2025-08-19,Tue,12:00,60,1,Cafe,Firm-sponsored,Learning Lunch,300,283,236,0.8339,54,4.3,1910
+EV0242,2025-08-19,Tue,14:00,90,7,Reception lounge,Social,Ice Cream Social,550,449,285,0.6347,56,4.3,10610
+EV0243,2025-08-28,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,384,320,0.8333,72,4.2,3060
+EV0244,2025-09-11,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,330,256,0.7758,55,4.5,9830
+EV0245,2025-09-16,Tue,09:00,240,1,Cafe,Firm-sponsored,Community Volunteer Day,350,350,304,0.8686,64,4.3,2430
+EV0246,2025-09-18,Thu,08:30,90,1,Cafe,Social,Coffee and Connect,400,355,276,0.7775,84,4.6,8080
+EV0247,2025-09-18,Thu,12:00,60,1,Cafe,Firm-sponsored,Charity Drive Kickoff,400,391,363,0.9284,105,4.0,3220
+EV0248,2025-09-25,Thu,09:00,360,1,Cafe,Wellness,Blood Drive,120,116,107,0.9224,23,4.1,1920
+EV0249,2025-09-25,Thu,12:00,60,1,Cafe,Wellness,Nutrition Talk,150,128,109,0.8516,27,4.8,1530
+EV0250,2025-09-30,Tue,12:00,60,1,Cafe,Social,Trivia Lunch,260,201,140,0.6965,27,4.6,5330

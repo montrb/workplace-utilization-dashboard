@@ -45,7 +45,7 @@
     { id: 'log', label: 'Log Observation' },
   ];
 
-  const EVENT_CATS = ['Social', 'Wellness', 'Firm-sponsored'];
+  const EVENT_CATS = ['Firm-sponsored', 'Social', 'Wellness'];
   const EVENT_COLORS = { 'Social': '#4E79A7', 'Wellness': '#76B7B2', 'Firm-sponsored': '#F28E2B' };
   let eventCat = 'all';
 
@@ -484,13 +484,21 @@
       const rank = EVENT_CATS.map((c, i) => [c, shows[i]]).sort((x, y) => y[1] - x[1]);
       lines.push(rank[0][0] + ' events convert RSVPs best (' + pct(rank[0][1], 0) + ' show rate), ' + rank[1][0].toLowerCase() + ' events follow (' + pct(rank[1][1], 0) + '), and ' + rank[2][0].toLowerCase() + ' events run lowest (' + pct(rank[2][1], 0) + '), which sets how far to over-invite for each type.');
     }
+    const spendAll = sum(all.map((e) => e.cost_usd));
+    const spendCat = EVENT_CATS.map((c) => sum(all.filter((e) => e.category === c).map((e) => e.cost_usd)));
+    if (spendAll > 0) {
+      const top = spendCat.indexOf(Math.max(...spendCat));
+      lines.push(EVENT_CATS[top] + ' events account for ' + pct(spendCat[top] / spendAll, 0) + ' of event spend' + (EVENT_CATS[top] === 'Social' ? ', driven by catering and beverage service.' : '.'));
+    }
     if (lines.length) html += insight(lines);
     html += '<div class="grid">' +
       sheet('ch-ev-month', 'Events by month and category', true) +
       sheet('ch-ev-att', 'Total attendees by category') +
-      sheet('ch-ev-lift', 'Attendance rate, event days vs other days (Tue to Thu)') +
+      sheet('ch-ev-avg', 'Average attendees per event by category') +
+      sheet('ch-ev-spend', 'Event spend by category') +
       sheet('ch-ev-show', 'RSVP show rate by category') +
       sheet('ch-ev-sat', 'Average satisfaction by category (1 to 5)') +
+      sheet('ch-ev-lift', 'Attendance rate, event days vs other days (Tue to Thu)') +
       '</div>';
     const recent = ev.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)).slice(0, 15);
     html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest events</h3><div class="table-wrap"><table><thead><tr><th>Date</th><th>Start</th><th>Event</th><th>Category</th><th>Floor</th><th>Venue</th><th class="num">RSVPs</th><th class="num">Attendees</th><th class="num">Show rate</th><th class="num">Satisfaction</th></tr></thead><tbody>' +
@@ -503,6 +511,12 @@
     const cats = eventCat === 'all' ? EVENT_CATS : [eventCat];
     barChart('ch-ev-month', months.map(shortMonth), cats.map((c) => ({ label: c, backgroundColor: EVENT_COLORS[c], data: months.map((m) => ev.filter((e) => e.category === c && e.date.slice(0, 7) === m).length) })), { stacked: true });
     barChart('ch-ev-att', cats, [{ label: 'Attendees', data: cats.map((c) => sum(ev.filter((e) => e.category === c).map((e) => e.attendees))), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }]);
+    barChart('ch-ev-avg', cats, [{ label: 'Avg attendees', data: cats.map((c) => { const r = ev.filter((e) => e.category === c); return r.length ? sum(r.map((e) => e.attendees)) / r.length : 0; }), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }]);
+    makeChart('ch-ev-spend', {
+      type: 'bar',
+      data: { labels: cats, datasets: [{ label: 'Spend', maxBarThickness: 42, backgroundColor: cats.map((c) => EVENT_COLORS[c]), data: cats.map((c) => sum(ev.filter((e) => e.category === c).map((e) => e.cost_usd))) }] },
+      options: { scales: { x: { grid: { display: false } }, y: { beginAtZero: true, ticks: { callback: (v) => '$' + Math.round(v / 1000) + 'K' } } }, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => '$' + Math.round(ctx.parsed.y).toLocaleString('en-US') } } } },
+    });
     barChart('ch-ev-lift', ['Event days', 'Other days'], [{ label: 'Attendance rate', data: [onRate, offRate], backgroundColor: [C.blue, C.lightBlue] }], { pct: true, max: 1 });
     barChart('ch-ev-show', cats, [{ label: 'Show rate', data: cats.map((c) => { const r = ev.filter((e) => e.category === c); return r.length ? sum(r.map((e) => e.attendees)) / sum(r.map((e) => e.rsvps)) : 0; }), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }], { pct: true, max: 1 });
     makeChart('ch-ev-sat', {
