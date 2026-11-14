@@ -161,6 +161,85 @@ def months_list():
 MONTHS = months_list()
 
 
+EVENT_CATALOG = {
+    # category: [(event name, venue floor, venue, capacity, start, minutes)]
+    "Social": [
+        ("Coffee and Connect", 1, "Cafe", 180, "08:30", 60),
+        ("Harbor View Happy Hour", 7, "Reception lounge", 160, "16:30", 90),
+        ("Trivia Lunch", 1, "Cafe", 120, "12:00", 60),
+        ("Heritage Month Celebration", 1, "Cafe", 200, "12:00", 90),
+        ("Ice Cream Social", 7, "Reception lounge", 220, "14:00", 60),
+        ("Floor Breakfast", 0, "Floor pantry", 70, "08:30", 60),
+    ],
+    "Wellness": [
+        ("Chair Massage", 0, "Wellness room", 32, "10:00", 240),
+        ("Lunchtime Yoga", 7, "Reception lounge", 40, "12:15", 45),
+        ("Mindfulness Session", 1, "Cafe", 60, "12:00", 45),
+        ("Flu Shot Clinic", 4, "Mail room annex", 260, "09:00", 360),
+        ("Nutrition Talk", 1, "Cafe", 80, "12:00", 60),
+        ("Blood Drive", 1, "Cafe", 90, "09:00", 360),
+    ],
+    "Firm-sponsored": [
+        ("Site Town Hall", 7, "Reception lounge", 400, "11:00", 60),
+        ("Leadership Fireside Chat", 7, "Reception lounge", 220, "15:00", 60),
+        ("Learning Lunch", 1, "Cafe", 120, "12:00", 60),
+        ("Community Volunteer Day", 1, "Cafe", 150, "09:00", 240),
+        ("Charity Drive Kickoff", 1, "Cafe", 160, "12:00", 60),
+    ],
+}
+# attendance lift applied site-wide on the day of an event, by category
+EVENT_LIFT = {"Social": 1.05, "Wellness": 1.03, "Firm-sponsored": 1.10}
+CATEGORY_CADENCE = {"Social": 3.2, "Wellness": 2.6, "Firm-sponsored": 1.5}
+
+
+def build_events():
+    """Event calendar on its own random stream so other tables are unaffected."""
+    rng = random.Random(SEED + 101)
+    days_by_month = defaultdict(list)
+    for d in business_days():
+        days_by_month[month_key(d)].append(d)
+    events, eid = [], 0
+    for mk in MONTHS:
+        days = days_by_month[mk]
+        m = months_since_start(days[0])
+        maturity = 0.65 + 0.35 * (1 - math.exp(-m / 6))
+        plan = []
+        for cat, cadence in CATEGORY_CADENCE.items():
+            n = max(1, round(rng.gauss(cadence * maturity, 0.7)))
+            plan += [cat] * n
+        if mk.endswith("-12"):
+            plan.append("Holiday")
+        for cat in plan:
+            midweek = [d for d in days if d.weekday() in (1, 2, 3)] or days
+            d = rng.choice(midweek if rng.random() < 0.8 else days)
+            if cat == "Holiday":
+                name, fl, venue, cap, start, mins = ("Holiday Celebration", 1, "Cafe", 600, "15:00", 180)
+                cat = "Social"
+            else:
+                name, fl, venue, cap, start, mins = rng.choice(EVENT_CATALOG[cat])
+            if fl == 0:
+                fl = rng.choice([f for f in FLOOR if FLOOR[f][6]]) if venue == "Wellness room" else rng.randint(2, 7)
+            appeal = {"Social": 0.78, "Wellness": 0.86, "Firm-sponsored": 0.92}[cat]
+            fill = clamp(rng.gauss(appeal, 0.08) * (0.75 + 0.3 * maturity), 0.3, 1.0)
+            rsvps = round(cap * fill)
+            show = clamp(rng.gauss({"Social": 0.74, "Wellness": 0.82, "Firm-sponsored": 0.88}[cat]
+                                   * (0.9 + 0.1 * maturity), 0.06), 0.45, 1.0)
+            if d.weekday() in (0, 4):
+                show *= 0.88
+            attendees = min(cap, round(rsvps * show))
+            score = round(clamp(rng.gauss({"Social": 4.4, "Wellness": 4.6, "Firm-sponsored": 4.2}[cat], 0.2), 3.2, 5.0), 1)
+            responses = round(attendees * rng.uniform(0.18, 0.32))
+            cost = round(attendees * {"Social": 14, "Wellness": 18, "Firm-sponsored": 11}[cat] * rng.uniform(0.85, 1.15), -1)
+            eid += 1
+            events.append([f"EV{eid:04d}", d.isoformat(), WEEKDAYS[d.weekday()], start, mins, fl,
+                           venue, cat, name, cap, rsvps, attendees, round(attendees / rsvps, 4),
+                           responses, score, int(cost)])
+    events.sort(key=lambda r: (r[1], r[3]))
+    for i, e in enumerate(events, 1):
+        e[0] = f"EV{i:04d}"
+    return events
+
+
 def write_csv(name, cols, rows):
     with open(DATA_DIR / name, "w", newline="") as fh:
         w = csv.writer(fh)
@@ -188,11 +267,22 @@ def main():
             rooms.append((f"{f:02d}-{ROOM_CODE['Wellness']}-01", f, "Wellness"))
     tables["rooms"] = (["room_id", "floor", "room_type"], [list(r) for r in rooms])
 
+    # Events ---------------------------------------------------------------
+    events = build_events()
+    event_cols = ["event_id", "date", "weekday", "start_time", "duration_minutes", "floor",
+                  "venue", "category", "event_name", "capacity", "rsvps", "attendees",
+                  "show_rate", "survey_responses", "satisfaction_score", "cost_usd"]
+    tables["events"] = (event_cols, events)
+    day_lift = {}
+    for e in events:
+        day_lift[e[1]] = max(day_lift.get(e[1], 1.0), EVENT_LIFT[e[7]])
+
     # Daily attendance ------------------------------------------------------
     att_cols = ["date", "weekday", "floor", "assigned_headcount", "badge_swipes",
                 "observed_headcount", "desks", "attendance_rate", "desk_occupancy",
-                "observation_time", "community_manager"]
+                "observation_time", "community_manager", "event_day"]
     att_rows = []
+    base_badge_total = 0
     month_rates = defaultdict(list)
     week_rates = defaultdict(list)
     for d in business_days():
@@ -200,20 +290,22 @@ def main():
         for f, assigned, desks, *_r in FLOORS:
             rate = WEEKDAY_BASE[wd] * ramp(d) * season(d) * FLOOR_AFFINITY[f] * noise(0.06)
             rate = clamp(rate, 0.05, 0.97)
-            badge = min(assigned, round(assigned * rate))
+            base_badge = min(assigned, round(assigned * rate))
+            base_badge_total += base_badge
+            badge = min(assigned, round(assigned * rate * day_lift.get(d.isoformat(), 1.0)))
             observed = round(badge * random.uniform(0.84, 0.93))
             minutes = random.randint(600, 705)  # 10:00 to 11:45
             obs_time = f"{minutes // 60:02d}:{minutes % 60:02d}"
             cm = MANAGERS[0] if random.random() < 0.85 else random.choice(MANAGERS[1:])
             att_rows.append([d.isoformat(), WEEKDAYS[wd], f, assigned, badge, observed,
                              desks, round(badge / assigned, 4), round(observed / desks, 4),
-                             obs_time, cm])
-            month_rates[(month_key(d), f)].append(badge / assigned)
+                             obs_time, cm, "Yes" if d.isoformat() in day_lift else "No"])
+            month_rates[(month_key(d), f)].append(base_badge / assigned)
             monday = d - timedelta(days=wd)
-            week_rates[(monday.isoformat(), f)].append(badge / assigned)
+            week_rates[(monday.isoformat(), f)].append(base_badge / assigned)
     tables["attendance_daily"] = (att_cols, att_rows)
 
-    overall_rate = sum(r[4] for r in att_rows) / sum(r[3] for r in att_rows)
+    overall_rate = base_badge_total / sum(r[3] for r in att_rows)
     site_month_rate = {}
     for mk in MONTHS:
         vals = [v for f in FLOOR for v in month_rates[(mk, f)]]

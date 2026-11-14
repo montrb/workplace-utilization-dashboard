@@ -16,6 +16,7 @@
   const CLEAN = toObjs(D.clean_desk_weekly);
   const TICKETS = toObjs(D.tech_tickets_monthly);
   const CHANNEL = toObjs(D.booking_channel_monthly);
+  const EVENTS = toObjs(D.events);
   const FLOORS = D.floors;
   const MONTHS = D.months;
 
@@ -40,8 +41,13 @@
     { id: 'pantries', label: 'Pantries' },
     { id: 'clean-desk', label: 'Clean Desk' },
     { id: 'technology', label: 'Technology Adoption' },
+    { id: 'events', label: 'Events' },
     { id: 'log', label: 'Log Observation' },
   ];
+
+  const EVENT_CATS = ['Social', 'Wellness', 'Firm-sponsored'];
+  const EVENT_COLORS = { 'Social': '#4E79A7', 'Wellness': '#76B7B2', 'Firm-sponsored': '#F28E2B' };
+  let eventCat = 'all';
 
   const state = { section: 'summary', floor: 'all', from: MONTHS[0], to: MONTHS[MONTHS.length - 1] };
   let charts = [];
@@ -434,6 +440,78 @@
     lineChart('ch-tech-share', ch.map((r) => shortMonth(r.month)), [{ label: 'Self-service share', data: ch.map((r) => r.self_service_share), color: C.green }], { pct: true });
   }
 
+  function renderEvents() {
+    const all = filt(EVENTS, 'date');
+    const ev = eventCat === 'all' ? all : all.filter((e) => e.category === eventCat);
+    const catLabel = eventCat === 'all' ? 'All categories' : eventCat;
+    let html = header('Events', 'Workplace experience programming by category: social, wellness and firm-sponsored. Events are counted on the floor where they were hosted.');
+    html += '<div class="filters" style="padding:0 0 12px"><label>Event category<select id="event-cat"><option value="all">All categories</option>' +
+      EVENT_CATS.map((c) => '<option value="' + c + '"' + (c === eventCat ? ' selected' : '') + '>' + c + '</option>').join('') + '</select></label></div>';
+    if (!ev.length) {
+      $('view').innerHTML = html + empty('No ' + (eventCat === 'all' ? '' : eventCat.toLowerCase() + ' ') + 'events were hosted on ' + scopeLabel() + ' in the selected range.');
+      $('event-cat').addEventListener('change', (e) => { eventCat = e.target.value; render(); });
+      return;
+    }
+    const attendees = sum(ev.map((e) => e.attendees));
+    const rsvps = sum(ev.map((e) => e.rsvps));
+    const responses = sum(ev.map((e) => e.survey_responses));
+    const sat = sum(ev.map((e) => e.satisfaction_score * e.survey_responses)) / responses;
+    const cost = sum(ev.map((e) => e.cost_usd));
+
+    // attendance on event days vs other days, Tue to Thu only so the comparison is like for like
+    const att = filt(ATT, 'date').filter((r) => ['Tue', 'Wed', 'Thu'].includes(r.weekday));
+    const evDates = new Set(ev.map((e) => e.date));
+    const allEvDates = new Set(all.map((e) => e.date));
+    const on = att.filter((r) => evDates.has(r.date));
+    const off = att.filter((r) => !allEvDates.has(r.date) && r.event_day === 'No');
+    const rateOf = (rows) => sum(rows.map((r) => r.badge_swipes)) / sum(rows.map((r) => r.assigned_headcount));
+    const onRate = on.length ? rateOf(on) : NaN;
+    const offRate = off.length ? rateOf(off) : NaN;
+
+    html += '<div class="kpis">' +
+      kpi('Events held', num(ev.length), catLabel + ', ' + scopeLabel().toLowerCase()) +
+      kpi('Total attendees', num(attendees), 'Checked in at the event') +
+      kpi('Avg attendees per event', num(attendees / ev.length), '') +
+      kpi('RSVP show rate', pct(attendees / rsvps), 'Attendees / RSVPs') +
+      kpi('Avg satisfaction', sat.toFixed(2) + ' / 5', num(responses) + ' survey responses') +
+      kpi('Cost per attendee', '$' + (cost / attendees).toFixed(2), '$' + num(cost) + ' total') +
+      '</div>';
+    const byCat = EVENT_CATS.map((c) => all.filter((e) => e.category === c));
+    const lines = [];
+    if (isFinite(onRate) && isFinite(offRate)) lines.push('On Tuesday to Thursday event days, attendance averaged ' + pct(onRate) + ' against ' + pct(offRate) + ' on days with no event, a lift of ' + ((onRate - offRate) * 100).toFixed(1) + ' points.');
+    const shows = byCat.map((r) => (r.length ? sum(r.map((e) => e.attendees)) / sum(r.map((e) => e.rsvps)) : NaN));
+    if (shows.every(isFinite)) {
+      const rank = EVENT_CATS.map((c, i) => [c, shows[i]]).sort((x, y) => y[1] - x[1]);
+      lines.push(rank[0][0] + ' events convert RSVPs best (' + pct(rank[0][1], 0) + ' show rate), ' + rank[1][0].toLowerCase() + ' events follow (' + pct(rank[1][1], 0) + '), and ' + rank[2][0].toLowerCase() + ' events run lowest (' + pct(rank[2][1], 0) + '), which sets how far to over-invite for each type.');
+    }
+    if (lines.length) html += insight(lines);
+    html += '<div class="grid">' +
+      sheet('ch-ev-month', 'Events by month and category', true) +
+      sheet('ch-ev-att', 'Total attendees by category') +
+      sheet('ch-ev-lift', 'Attendance rate, event days vs other days (Tue to Thu)') +
+      sheet('ch-ev-show', 'RSVP show rate by category') +
+      sheet('ch-ev-sat', 'Average satisfaction by category (1 to 5)') +
+      '</div>';
+    const recent = ev.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)).slice(0, 15);
+    html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest events</h3><div class="table-wrap"><table><thead><tr><th>Date</th><th>Start</th><th>Event</th><th>Category</th><th>Floor</th><th>Venue</th><th class="num">RSVPs</th><th class="num">Attendees</th><th class="num">Show rate</th><th class="num">Satisfaction</th></tr></thead><tbody>' +
+      recent.map((e) => '<tr><td>' + e.date + '</td><td>' + e.start_time + '</td><td>' + esc(e.event_name) + '</td><td>' + esc(e.category) + '</td><td>' + e.floor + '</td><td>' + esc(e.venue) + '</td><td class="num">' + e.rsvps + '</td><td class="num">' + e.attendees + '</td><td class="num">' + pct(e.show_rate, 0) + '</td><td class="num">' + e.satisfaction_score.toFixed(1) + '</td></tr>').join('') +
+      '</tbody></table></div></div>';
+    $('view').innerHTML = html;
+    $('event-cat').addEventListener('change', (e) => { eventCat = e.target.value; render(); });
+
+    const months = MONTHS.filter((m) => m >= state.from && m <= state.to);
+    const cats = eventCat === 'all' ? EVENT_CATS : [eventCat];
+    barChart('ch-ev-month', months.map(shortMonth), cats.map((c) => ({ label: c, backgroundColor: EVENT_COLORS[c], data: months.map((m) => ev.filter((e) => e.category === c && e.date.slice(0, 7) === m).length) })), { stacked: true });
+    barChart('ch-ev-att', cats, [{ label: 'Attendees', data: cats.map((c) => sum(ev.filter((e) => e.category === c).map((e) => e.attendees))), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }]);
+    barChart('ch-ev-lift', ['Event days', 'Other days'], [{ label: 'Attendance rate', data: [onRate, offRate], backgroundColor: [C.blue, C.lightBlue] }], { pct: true, max: 1 });
+    barChart('ch-ev-show', cats, [{ label: 'Show rate', data: cats.map((c) => { const r = ev.filter((e) => e.category === c); return r.length ? sum(r.map((e) => e.attendees)) / sum(r.map((e) => e.rsvps)) : 0; }), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }], { pct: true, max: 1 });
+    makeChart('ch-ev-sat', {
+      type: 'bar',
+      data: { labels: cats, datasets: [{ label: 'Satisfaction', maxBarThickness: 42, backgroundColor: cats.map((c) => EVENT_COLORS[c]), data: cats.map((c) => { const r = ev.filter((e) => e.category === c); const n = sum(r.map((e) => e.survey_responses)); return n ? sum(r.map((e) => e.satisfaction_score * e.survey_responses)) / n : 0; }) }] },
+      options: { scales: { x: { grid: { display: false } }, y: { min: 0, max: 5 } }, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.parsed.y.toFixed(2) + ' / 5' } } } },
+    });
+  }
+
   /* ---------- log observation (data entry) ---------- */
   const LOG_FIELDS = {
     attendance: [['observed_headcount', 'Visual headcount']],
@@ -448,6 +526,7 @@
     pantries: [['pantry_occupancy', 'People in pantry']],
     'clean-desk': [['desks_tagged_noncompliant', 'Desks tagged noncompliant'], ['bags_collected', 'Bags of personal items collected']],
     technology: [['support_tickets', 'Support tickets logged'], ['mailbox_requests', 'Mailbox booking requests']],
+    events: [['event_name', 'Event name', 'text'], ['category', 'Event category', EVENT_CATS], ['rsvps', 'RSVPs'], ['attendees', 'Attendees checked in']],
   };
   const sessionLog = [];
   let stamp = null;
@@ -473,7 +552,11 @@
 
     const drawFields = () => {
       const sec = $('log-section').value;
-      $('log-fields').innerHTML = LOG_FIELDS[sec].map(([k, l]) => '<label>' + esc(l) + '<input type="number" min="0" step="1" inputmode="numeric" data-key="' + k + '"></label>').join('');
+      $('log-fields').innerHTML = LOG_FIELDS[sec].map(([k, l, t]) => {
+        if (Array.isArray(t)) return '<label>' + esc(l) + '<select data-key="' + k + '">' + t.map((o) => '<option>' + esc(o) + '</option>').join('') + '</select></label>';
+        if (t === 'text') return '<label>' + esc(l) + '<input type="text" data-key="' + k + '" data-type="text"></label>';
+        return '<label>' + esc(l) + '<input type="number" min="0" step="1" inputmode="numeric" data-key="' + k + '"></label>';
+      }).join('');
     };
     const drawTable = () => {
       if (!sessionLog.length) { $('log-table').innerHTML = '<p class="lede" style="margin:0">No entries yet.</p>'; return; }
@@ -496,14 +579,20 @@
       if (!stamp) return msg('Generate a timestamp before submitting.', 'error');
       if (!$('log-date').value) return msg('Select a date.', 'error');
       const values = {};
-      const inputs = Array.from($('log-fields').querySelectorAll('input'));
+      const inputs = Array.from($('log-fields').querySelectorAll('input, select'));
       for (const inp of inputs) {
-        if (inp.value === '' || Number(inp.value) < 0) return msg('Enter a whole number of zero or more for every field.', 'error');
+        if (inp.tagName === 'SELECT') { values[inp.dataset.key] = inp.value; continue; }
+        if (inp.dataset.type === 'text') {
+          if (!inp.value.trim()) return msg('Enter the event name.', 'error');
+          values[inp.dataset.key] = inp.value.trim();
+          continue;
+        }
+        if (inp.value === '' || Number(inp.value) < 0) return msg('Enter a whole number of zero or more for every count.', 'error');
         values[inp.dataset.key] = Number(inp.value);
       }
       const sec = SECTIONS.find((s) => s.id === $('log-section').value);
       sessionLog.unshift({ section: sec.label, floor: Number($('log-floor').value), date: $('log-date').value, time: stamp, cm: $('log-cm').value, values });
-      inputs.forEach((i) => { i.value = ''; });
+      inputs.forEach((i) => { if (i.tagName !== 'SELECT') i.value = ''; });
       stamp = null;
       $('log-stamp-out').textContent = '--:--';
       msg('Entry saved for ' + sec.label + ', Floor ' + $('log-floor').value + '.', 'ok');
@@ -543,6 +632,7 @@
     else if (sec.id === 'pantries') out = renderPantries();
     else if (sec.id === 'clean-desk') out = renderCleanDesk();
     else if (sec.id === 'technology') out = renderTechnology();
+    else if (sec.id === 'events') out = renderEvents();
     else out = renderLog();
     if (typeof out === 'string') $('view').innerHTML = '<h2>' + esc(sec.label) + '</h2>' + out;
   }
