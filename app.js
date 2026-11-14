@@ -17,6 +17,14 @@
   const TICKETS = toObjs(D.tech_tickets_monthly);
   const CHANNEL = toObjs(D.booking_channel_monthly);
   const EVENTS = toObjs(D.events);
+  const SITES = toObjs(D.sites);
+  const SITE_SPEND = toObjs(D.site_event_spend_monthly);
+  const CATERING = toObjs(D.catering_orders);
+  const COMPLAINTS = toObjs(D.complaints);
+  const CSAT = toObjs(D.csat_monthly);
+  const RCS = toObjs(D.rcs_log);
+  const CSAT_TARGET = D.csat_target;
+  const EVENT_BUDGET = D.event_budget;
   const FLOORS = D.floors;
   const MONTHS = D.months;
 
@@ -42,12 +50,39 @@
     { id: 'clean-desk', label: 'Clean Desk' },
     { id: 'technology', label: 'Technology Adoption' },
     { id: 'events', label: 'Events' },
+    { id: 'catering', label: 'Catering' },
+    { id: 'csat', label: 'CSAT', noFloor: true },
+    { id: 'complaints', label: 'Complaints' },
+    { id: 'rcs', label: 'RCS Log' },
+    { id: 'sites', label: 'Sites', noFloor: true },
     { id: 'log', label: 'Log Observation' },
   ];
 
   const EVENT_CATS = ['Firm-sponsored', 'Social', 'Wellness'];
   const EVENT_COLORS = { 'Social': '#4E79A7', 'Wellness': '#76B7B2', 'Firm-sponsored': '#F28E2B' };
   let eventCat = 'all';
+  const sel = { buCat: 'all', complaintCat: 'all', rcsBy: 'all' };
+  const PALETTE = ['#4E79A7', '#F28E2B', '#76B7B2', '#E15759', '#59A14F', '#EDC948', '#B07AA1', '#FF9DA7', '#9C755F', '#BAB0AC'];
+  const money = (v) => '$' + Math.round(v).toLocaleString('en-US');
+  const moneyK = (v) => (Math.abs(v) >= 1e6 ? '$' + (v / 1e6).toFixed(2) + 'M' : '$' + Math.round(v / 1000).toLocaleString('en-US') + 'K');
+  const selectBox = (id, label, allLabel, opts, cur) => '<div class="filters" style="padding:0 0 12px"><label>' + esc(label) + '<select id="' + id + '"><option value="all">' + esc(allLabel) + '</option>' + opts.map((o) => '<option value="' + esc(o) + '"' + (o === cur ? ' selected' : '') + '>' + esc(o) + '</option>').join('') + '</select></label></div>';
+  const bindSelect = (id, key) => { const el = $(id); if (el) el.addEventListener('change', (e) => { sel[key] = e.target.value; render(); }); };
+  const uniq = (rows, k) => Array.from(new Set(rows.map((r) => r[k]))).sort();
+  const countBy = (rows, k) => { const m = groupBy(rows, (r) => r[k]); return sortedKeys(m).map((x) => [x, m.get(x).length]); };
+  const moneyAxis = { beginAtZero: true, ticks: { callback: (v) => moneyK(v) } };
+  const moneyTip = { callbacks: { label: (ctx) => (ctx.dataset.label ? ctx.dataset.label + ': ' : '') + money(ctx.parsed.y !== undefined && ctx.chart.config.options.indexAxis !== 'y' ? ctx.parsed.y : ctx.parsed.x) } };
+  function moneyBar(id, labels, datasets, opts = {}) {
+    makeChart(id, {
+      type: 'bar',
+      data: { labels, datasets: datasets.map((d) => Object.assign({ backgroundColor: C.blue, maxBarThickness: 42 }, d)) },
+      options: {
+        indexAxis: opts.horizontal ? 'y' : 'x',
+        scales: opts.horizontal ? { x: moneyAxis, y: { grid: { display: false }, stacked: !!opts.stacked } } : { x: { grid: { display: false }, stacked: !!opts.stacked, ticks: { maxRotation: 0, autoSkipPadding: 10 } }, y: Object.assign({ stacked: !!opts.stacked }, moneyAxis) },
+        plugins: { legend: { display: datasets.length > 1 }, tooltip: moneyTip },
+      },
+    });
+  }
+  function monthsInRange() { return MONTHS.filter((m) => m >= state.from && m <= state.to); }
 
   const state = { section: 'summary', floor: 'all', from: MONTHS[0], to: MONTHS[MONTHS.length - 1] };
   let charts = [];
@@ -140,7 +175,7 @@
   const kpi = (label, value, sub) => '<div class="kpi"><div class="label">' + esc(label) + '</div><div class="value">' + value + '</div>' + (sub ? '<div class="sub">' + esc(sub) + '</div>' : '') + '</div>';
   const sheet = (id, title, wide) => '<div class="sheet' + (wide ? ' wide' : '') + '"><h3>' + esc(title) + '</h3><div class="chart"><canvas id="' + id + '" role="img" aria-label="' + esc(title) + '"></canvas></div></div>';
   const insight = (lines) => '<div class="insight">' + lines.map((l) => '<p>' + l + '</p>').join('') + '</div>';
-  const header = (title, lede) => '<h2>' + esc(title) + '</h2><p class="lede">' + esc(lede) + ' ' + esc(scopeLabel()) + ', ' + esc(rangeLabel()) + '.</p>';
+  const header = (title, lede) => { const sec = SECTIONS.find((x) => x.id === state.section); return '<h2>' + esc(title) + '</h2><p class="lede">' + esc(lede) + ' ' + (sec && sec.noFloor ? '' : esc(scopeLabel()) + ', ') + esc(rangeLabel()) + '.</p>'; };
   const empty = (msg) => '<div class="notice">' + esc(msg) + '</div>';
 
   /* ---------- shared aggregations ---------- */
@@ -457,6 +492,7 @@
     const responses = sum(ev.map((e) => e.survey_responses));
     const sat = sum(ev.map((e) => e.satisfaction_score * e.survey_responses)) / responses;
     const cost = sum(ev.map((e) => e.cost_usd));
+    const socialAtt = sum(ev.filter((e) => e.category === 'Social').map((e) => e.attendees));
 
     // attendance on event days vs other days, Tue to Thu only so the comparison is like for like
     const att = filt(ATT, 'date').filter((r) => ['Tue', 'Wed', 'Thu'].includes(r.weekday));
@@ -474,7 +510,8 @@
       kpi('Avg attendees per event', num(attendees / ev.length), '') +
       kpi('RSVP show rate', pct(attendees / rsvps), 'Attendees / RSVPs') +
       kpi('Avg satisfaction', sat.toFixed(2) + ' / 5', num(responses) + ' survey responses') +
-      kpi('Cost per attendee', '$' + (cost / attendees).toFixed(2), '$' + num(cost) + ' total') +
+      kpi('Contract event spend', money(cost), eventCat === 'Wellness' ? 'Covered by wellness provider partnership' : eventCat === 'Firm-sponsored' ? 'Funded by the firm' : 'Social events only') +
+      (socialAtt ? kpi('Cost per social attendee', '$' + (cost / socialAtt).toFixed(2), 'Contract spend / social attendees') : '') +
       '</div>';
     const byCat = EVENT_CATS.map((c) => all.filter((e) => e.category === c));
     const lines = [];
@@ -484,25 +521,20 @@
       const rank = EVENT_CATS.map((c, i) => [c, shows[i]]).sort((x, y) => y[1] - x[1]);
       lines.push(rank[0][0] + ' events convert RSVPs best (' + pct(rank[0][1], 0) + ' show rate), ' + rank[1][0].toLowerCase() + ' events follow (' + pct(rank[1][1], 0) + '), and ' + rank[2][0].toLowerCase() + ' events run lowest (' + pct(rank[2][1], 0) + '), which sets how far to over-invite for each type.');
     }
-    const spendAll = sum(all.map((e) => e.cost_usd));
-    const spendCat = EVENT_CATS.map((c) => sum(all.filter((e) => e.category === c).map((e) => e.cost_usd)));
-    if (spendAll > 0) {
-      const top = spendCat.indexOf(Math.max(...spendCat));
-      lines.push(EVENT_CATS[top] + ' events account for ' + pct(spendCat[top] / spendAll, 0) + ' of event spend' + (EVENT_CATS[top] === 'Social' ? ', driven by catering and beverage service.' : '.'));
-    }
+    lines.push('Only social events draw on the contract event budget, driven by catering and beverage service. Wellness programming is delivered through the wellness provider partnership and firm-sponsored events are funded by the firm, so both carry no contract cost.');
     if (lines.length) html += insight(lines);
     html += '<div class="grid">' +
       sheet('ch-ev-month', 'Events by month and category', true) +
       sheet('ch-ev-att', 'Total attendees by category') +
       sheet('ch-ev-avg', 'Average attendees per event by category') +
-      sheet('ch-ev-spend', 'Event spend by category') +
+      sheet('ch-ev-spend', 'Contract event spend by month (social events)') +
       sheet('ch-ev-show', 'RSVP show rate by category') +
       sheet('ch-ev-sat', 'Average satisfaction by category (1 to 5)') +
       sheet('ch-ev-lift', 'Attendance rate, event days vs other days (Tue to Thu)') +
       '</div>';
     const recent = ev.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)).slice(0, 15);
-    html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest events</h3><div class="table-wrap"><table><thead><tr><th>Date</th><th>Start</th><th>Event</th><th>Category</th><th>Floor</th><th>Venue</th><th class="num">RSVPs</th><th class="num">Attendees</th><th class="num">Show rate</th><th class="num">Satisfaction</th></tr></thead><tbody>' +
-      recent.map((e) => '<tr><td>' + e.date + '</td><td>' + e.start_time + '</td><td>' + esc(e.event_name) + '</td><td>' + esc(e.category) + '</td><td>' + e.floor + '</td><td>' + esc(e.venue) + '</td><td class="num">' + e.rsvps + '</td><td class="num">' + e.attendees + '</td><td class="num">' + pct(e.show_rate, 0) + '</td><td class="num">' + e.satisfaction_score.toFixed(1) + '</td></tr>').join('') +
+    html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest events</h3><div class="table-wrap"><table><thead><tr><th>Date</th><th>Start</th><th>Event</th><th>Category</th><th>Floor</th><th>Venue</th><th class="num">RSVPs</th><th class="num">Attendees</th><th class="num">Show rate</th><th class="num">Satisfaction</th><th>Funded by</th></tr></thead><tbody>' +
+      recent.map((e) => '<tr><td>' + e.date + '</td><td>' + e.start_time + '</td><td>' + esc(e.event_name) + '</td><td>' + esc(e.category) + '</td><td>' + e.floor + '</td><td>' + esc(e.venue) + '</td><td class="num">' + e.rsvps + '</td><td class="num">' + e.attendees + '</td><td class="num">' + pct(e.show_rate, 0) + '</td><td class="num">' + e.satisfaction_score.toFixed(1) + '</td><td>' + esc(e.funding_source) + '</td></tr>').join('') +
       '</tbody></table></div></div>';
     $('view').innerHTML = html;
     $('event-cat').addEventListener('change', (e) => { eventCat = e.target.value; render(); });
@@ -512,11 +544,7 @@
     barChart('ch-ev-month', months.map(shortMonth), cats.map((c) => ({ label: c, backgroundColor: EVENT_COLORS[c], data: months.map((m) => ev.filter((e) => e.category === c && e.date.slice(0, 7) === m).length) })), { stacked: true });
     barChart('ch-ev-att', cats, [{ label: 'Attendees', data: cats.map((c) => sum(ev.filter((e) => e.category === c).map((e) => e.attendees))), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }]);
     barChart('ch-ev-avg', cats, [{ label: 'Avg attendees', data: cats.map((c) => { const r = ev.filter((e) => e.category === c); return r.length ? sum(r.map((e) => e.attendees)) / r.length : 0; }), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }]);
-    makeChart('ch-ev-spend', {
-      type: 'bar',
-      data: { labels: cats, datasets: [{ label: 'Spend', maxBarThickness: 42, backgroundColor: cats.map((c) => EVENT_COLORS[c]), data: cats.map((c) => sum(ev.filter((e) => e.category === c).map((e) => e.cost_usd))) }] },
-      options: { scales: { x: { grid: { display: false } }, y: { beginAtZero: true, ticks: { callback: (v) => '$' + Math.round(v / 1000) + 'K' } } }, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => '$' + Math.round(ctx.parsed.y).toLocaleString('en-US') } } } },
-    });
+    moneyBar('ch-ev-spend', months.map(shortMonth), [{ label: 'Contract spend', backgroundColor: EVENT_COLORS.Social, data: months.map((m) => sum(ev.filter((e) => e.date.slice(0, 7) === m).map((e) => e.cost_usd))) }]);
     barChart('ch-ev-lift', ['Event days', 'Other days'], [{ label: 'Attendance rate', data: [onRate, offRate], backgroundColor: [C.blue, C.lightBlue] }], { pct: true, max: 1 });
     barChart('ch-ev-show', cats, [{ label: 'Show rate', data: cats.map((c) => { const r = ev.filter((e) => e.category === c); return r.length ? sum(r.map((e) => e.attendees)) / sum(r.map((e) => e.rsvps)) : 0; }), backgroundColor: cats.map((c) => EVENT_COLORS[c]) }], { pct: true, max: 1 });
     makeChart('ch-ev-sat', {
@@ -524,6 +552,221 @@
       data: { labels: cats, datasets: [{ label: 'Satisfaction', maxBarThickness: 42, backgroundColor: cats.map((c) => EVENT_COLORS[c]), data: cats.map((c) => { const r = ev.filter((e) => e.category === c); const n = sum(r.map((e) => e.survey_responses)); return n ? sum(r.map((e) => e.satisfaction_score * e.survey_responses)) / n : 0; }) }] },
       options: { scales: { x: { grid: { display: false } }, y: { min: 0, max: 5 } }, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.parsed.y.toFixed(2) + ' / 5' } } } },
     });
+  }
+
+  /* ---------- catering ---------- */
+  function renderCatering() {
+    const allRows = filt(CATERING, 'date');
+    const rows = sel.buCat === 'all' ? allRows : allRows.filter((r) => r.business_unit === sel.buCat);
+    let html = header('Catering', 'Catering ordered by business units for their meetings and charged back to each business unit. This spend sits outside the workplace experience event budget; the workplace team handles ordering, confirmation, dietary requests and charge-back administration.');
+    html += selectBox('bu-cat', 'Business unit', 'All business units', uniq(CATERING, 'business_unit'), sel.buCat);
+    if (!rows.length) { $('view').innerHTML = html + empty('No catering orders for this selection.'); bindSelect('bu-cat', 'buCat'); return; }
+    const total = sum(rows.map((r) => r.order_total));
+    const acc = rows.filter((r) => r.order_accurate === 'Yes').length / rows.length;
+    const coded = rows.filter((r) => r.chargeback_coded_correctly === 'Yes').length / rows.length;
+    const rush = rows.filter((r) => r.rush_order === 'Yes').length / rows.length;
+    const byMonth = groupBy(rows, (r) => r.date.slice(0, 7));
+    const months = sortedKeys(byMonth);
+    const firstM = months.slice(0, 3).flatMap((m) => byMonth.get(m));
+    const lastM = months.slice(-3).flatMap((m) => byMonth.get(m));
+    html += '<div class="kpis">' +
+      kpi('Orders processed', num(rows.length), scopeLabel()) +
+      kpi('Charged back to business units', moneyK(total), rangeLabel()) +
+      kpi('Average order', money(total / rows.length), num(mean(rows.map((r) => r.headcount))) + ' guests on average') +
+      kpi('Order accuracy', pct(acc), 'Delivered as ordered') +
+      kpi('Avg days to charge back', mean(rows.map((r) => r.days_to_chargeback)).toFixed(1), 'Order date to business unit charge') +
+      kpi('Rush orders', pct(rush, 0), 'Less than 2 days lead time') +
+      kpi('Admin hours', num(sum(rows.map((r) => r.admin_minutes)) / 60), 'Ordering, confirmation and charge-back') +
+      kpi('Dietary requests', num(sum(rows.map((r) => r.dietary_requests))), 'Vegan, allergy and other needs') +
+      '</div>';
+    html += insight([
+      'Days to charge back fell from ' + mean(firstM.map((r) => r.days_to_chargeback)).toFixed(1) + ' to ' + mean(lastM.map((r) => r.days_to_chargeback)).toFixed(1) + ' between the first and latest three months, and cost center coding accuracy reached ' + pct(lastM.filter((r) => r.chargeback_coded_correctly === 'Yes').length / lastM.length, 0) + '.',
+      'Incorrect cost center coding is the main driver of admin time: each miscoded order adds a correction cycle and about six days to the charge-back.',
+    ]);
+    html += '<div class="grid">' + sheet('ch-ct-month', 'Catering charged back by month', true) + sheet('ch-ct-bu', 'Charged back by business unit') + sheet('ch-ct-type', 'Orders by type') + sheet('ch-ct-days', 'Average days to charge back by month') + sheet('ch-ct-acc', 'Order and coding accuracy by month') + '</div>';
+    const recent = rows.slice().sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 12);
+    html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest orders</h3><div class="table-wrap"><table><thead><tr><th>Order</th><th>Date</th><th>Business unit</th><th>Floor</th><th>Type</th><th class="num">Guests</th><th class="num">Total</th><th class="num">Lead days</th><th>Accurate</th><th>Coded correctly</th><th class="num">Days to charge back</th></tr></thead><tbody>' +
+      recent.map((r) => '<tr><td>' + r.order_id + '</td><td>' + r.date + '</td><td>' + esc(r.business_unit) + '</td><td>' + r.floor + '</td><td>' + esc(r.order_type) + '</td><td class="num">' + r.headcount + '</td><td class="num">' + money(r.order_total) + '</td><td class="num">' + r.lead_time_days + '</td><td>' + r.order_accurate + '</td><td>' + r.chargeback_coded_correctly + '</td><td class="num">' + r.days_to_chargeback + '</td></tr>').join('') +
+      '</tbody></table></div></div>';
+    $('view').innerHTML = html;
+    bindSelect('bu-cat', 'buCat');
+    moneyBar('ch-ct-month', months.map(shortMonth), [{ label: 'Charged back', data: months.map((m) => sum(byMonth.get(m).map((r) => r.order_total))) }]);
+    const bus = groupBy(rows, (r) => r.business_unit);
+    const buKeys = sortedKeys(bus).sort((a, b) => sum(bus.get(b).map((r) => r.order_total)) - sum(bus.get(a).map((r) => r.order_total)));
+    moneyBar('ch-ct-bu', buKeys, [{ label: 'Charged back', data: buKeys.map((k) => sum(bus.get(k).map((r) => r.order_total))) }], { horizontal: true });
+    const types = countBy(rows, 'order_type').sort((a, b) => b[1] - a[1]);
+    barChart('ch-ct-type', types.map((t) => t[0]), [{ label: 'Orders', data: types.map((t) => t[1]), backgroundColor: C.teal }], { horizontal: true });
+    lineChart('ch-ct-days', months.map(shortMonth), [{ label: 'Days to charge back', data: months.map((m) => mean(byMonth.get(m).map((r) => r.days_to_chargeback))), color: C.orange }]);
+    lineChart('ch-ct-acc', months.map(shortMonth), [
+      { label: 'Order accuracy', data: months.map((m) => byMonth.get(m).filter((r) => r.order_accurate === 'Yes').length / byMonth.get(m).length) },
+      { label: 'Coding accuracy', data: months.map((m) => byMonth.get(m).filter((r) => r.chargeback_coded_correctly === 'Yes').length / byMonth.get(m).length), color: C.green },
+    ], { pct: true, max: 1 });
+  }
+
+  /* ---------- CSAT ---------- */
+  function renderCsat() {
+    const rows = filt(CSAT, 'month');
+    if (!rows.length) return empty('No data in the selected range.');
+    const rate = (r) => sum(r.map((x) => x.satisfied_responses)) / sum(r.map((x) => x.responses));
+    const byMonth = groupBy(rows, (r) => r.month);
+    const months = sortedKeys(byMonth);
+    const monthly = months.map((m) => rate(byMonth.get(m)));
+    const hit = monthly.filter((v) => v >= CSAT_TARGET).length;
+    const firstHit = months[monthly.findIndex((v) => v >= CSAT_TARGET)];
+    const last3 = rate(months.slice(-3).flatMap((m) => byMonth.get(m)));
+    let html = header('CSAT', 'Customer satisfaction against the ' + pct(CSAT_TARGET, 0) + ' target, collected through QR codes on table tent cards, the weekly newsletter survey and feedback on the Jive intranet. Site level.');
+    html += '<div class="kpis">' +
+      kpi('CSAT, selected period', pct(rate(rows)), 'Responses rating 4 or 5 of 5') +
+      kpi('CSAT, latest 3 months', pct(last3), (last3 >= CSAT_TARGET ? 'Above' : 'Below') + ' the ' + pct(CSAT_TARGET, 0) + ' target') +
+      kpi('Months at or above target', hit + ' of ' + months.length, firstHit ? 'First reached ' + monthLabel(firstHit) : 'Target not yet reached') +
+      kpi('Survey responses', num(sum(rows.map((r) => r.responses))), '3 feedback channels') +
+      '</div>';
+    const cafe = CSAT.filter((r) => r.service_area === 'Cafe and catering');
+    const pre = rate(cafe.filter((r) => r.month >= '2023-03' && r.month <= '2023-08'));
+    const post = rate(cafe.filter((r) => r.month >= '2023-10' && r.month <= '2024-03'));
+    html += insight([
+      'CSAT ' + (firstHit ? 'first reached the ' + pct(CSAT_TARGET, 0) + ' target in ' + monthLabel(firstHit) + ' and has held at or above it in ' + hit + ' of ' + months.length + ' months.' : 'has not reached the target in this range.'),
+      'Cafe and catering satisfaction rose from ' + pct(pre) + ' in the six months before the rotating vegan selection launched to ' + pct(post) + ' in the six months after (site level, March 2023 to March 2024).',
+    ]);
+    html += '<div class="grid">' + sheet('ch-cs-month', 'CSAT by month against the ' + pct(CSAT_TARGET, 0) + ' target', true) + sheet('ch-cs-src', 'CSAT by feedback channel') + sheet('ch-cs-area', 'CSAT by service area') + sheet('ch-cs-resp', 'Responses by channel and month', true) + '</div>';
+    $('view').innerHTML = html;
+    lineChart('ch-cs-month', months.map(shortMonth), [
+      { label: 'CSAT', data: monthly, pointRadius: 2 },
+      { label: pct(CSAT_TARGET, 0) + ' target', data: months.map(() => CSAT_TARGET), color: C.red, borderDash: [6, 4], borderWidth: 1.5 },
+    ], { pct: true, max: 1 });
+    charts[charts.length - 1].options.scales.y.min = 0.7; charts[charts.length - 1].update();
+    const srcs = ['QR table cards', 'Newsletter survey', 'Jive'];
+    barChart('ch-cs-src', srcs, [{ label: 'CSAT', data: srcs.map((s) => rate(rows.filter((r) => r.source === s))), backgroundColor: srcs.map((s) => (rate(rows.filter((r) => r.source === s)) >= CSAT_TARGET ? C.blue : C.lightBlue)) }], { pct: true, max: 1 });
+    const areas = uniq(rows, 'service_area');
+    barChart('ch-cs-area', areas, [{ label: 'CSAT', data: areas.map((a) => rate(rows.filter((r) => r.service_area === a))), backgroundColor: areas.map((a) => (rate(rows.filter((r) => r.service_area === a)) >= CSAT_TARGET ? C.blue : C.lightBlue)) }], { pct: true, max: 1, horizontal: true });
+    barChart('ch-cs-resp', months.map(shortMonth), srcs.map((s, i) => ({ label: s, backgroundColor: [C.blue, C.orange, C.teal][i], data: months.map((m) => sum(byMonth.get(m).filter((r) => r.source === s).map((r) => r.responses))) })), { stacked: true });
+  }
+
+  /* ---------- complaints ---------- */
+  function renderComplaints() {
+    const allRows = filt(COMPLAINTS, 'date_logged');
+    const rows = sel.complaintCat === 'all' ? allRows : allRows.filter((r) => r.category === sel.complaintCat);
+    let html = header('Complaints', 'Complaints captured from QR table cards, the newsletter survey, Jive, email and in person, tracked from logging through resolution.');
+    html += selectBox('cp-cat', 'Category', 'All categories', Object.keys(COMPLAINTS.reduce((o, r) => { o[r.category] = 1; return o; }, {})).sort(), sel.complaintCat);
+    if (!rows.length) { $('view').innerHTML = html + empty('No complaints for this selection.'); bindSelect('cp-cat', 'complaintCat'); return; }
+    const resolved = rows.filter((r) => r.status === 'Resolved');
+    const vegan = COMPLAINTS.filter((r) => r.category === 'Not enough vegan options');
+    const fix = D.vegan_fix;
+    const preV = vegan.filter((r) => r.date_logged < fix && r.date_logged >= '2023-03-11').length / 6;
+    const postV = vegan.filter((r) => r.date_logged >= fix && r.date_logged < '2024-03-11').length / 6;
+    html += '<div class="kpis">' +
+      kpi('Complaints logged', num(rows.length), scopeLabel()) +
+      kpi('Resolved', pct(resolved.length / rows.length, 0), num(rows.length - resolved.length) + ' open') +
+      kpi('Median days to resolve', (function () { const v = resolved.map((r) => r.days_to_resolve).sort((x, y) => x - y); return v.length ? String(v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : 'n/a'; })(), 'Logged to resolved') +
+      kpi('Vegan option complaints', preV.toFixed(1) + ' to ' + postV.toFixed(1) + '/mo', 'Six months before vs after the fix, site level') +
+      '</div>';
+    html += insight([
+      '"Not enough vegan options" was the leading complaint in 2023. Introducing a rotating selection of vegan options on ' + fix + ' cut those complaints from about ' + Math.round(preV) + ' a month to about ' + Math.round(postV) + '.',
+      'Temperature complaints cluster in January, February, July and August and resolve fastest through IFM partner work orders.',
+    ]);
+    html += '<div class="grid">' + sheet('ch-cp-month', 'Complaints by month and category', true) + sheet('ch-cp-vegan', 'Vegan option complaints by month (site level)', true) + sheet('ch-cp-cat', 'Complaints by category') + sheet('ch-cp-days', 'Median days to resolve by category') + sheet('ch-cp-src', 'Complaints by source') + '</div>';
+    const recent = rows.slice().sort((a, b) => (a.date_logged < b.date_logged ? 1 : -1)).slice(0, 12);
+    html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest complaints</h3><div class="table-wrap"><table><thead><tr><th>ID</th><th>Logged</th><th>Source</th><th>Category</th><th>Floor</th><th>Status</th><th class="num">Days to resolve</th><th>Resolution</th></tr></thead><tbody>' +
+      recent.map((r) => '<tr><td>' + r.complaint_id + '</td><td>' + r.date_logged + '</td><td>' + esc(r.source) + '</td><td>' + esc(r.category) + '</td><td>' + r.floor + '</td><td>' + r.status + '</td><td class="num">' + (r.days_to_resolve === '' ? '' : r.days_to_resolve) + '</td><td>' + esc(r.resolution) + '</td></tr>').join('') +
+      '</tbody></table></div></div>';
+    $('view').innerHTML = html;
+    bindSelect('cp-cat', 'complaintCat');
+    const months = monthsInRange();
+    const cats = uniq(rows, 'category');
+    barChart('ch-cp-month', months.map(shortMonth), cats.map((c, i) => ({ label: c, backgroundColor: PALETTE[i % PALETTE.length], data: months.map((m) => rows.filter((r) => r.category === c && r.date_logged.slice(0, 7) === m).length) })), { stacked: true });
+    const vm = groupBy(vegan, (r) => r.date_logged.slice(0, 7));
+    barChart('ch-cp-vegan', months.map(shortMonth), [{ label: 'Vegan option complaints', data: months.map((m) => (vm.get(m) || []).length), backgroundColor: months.map((m) => (m === fix.slice(0, 7) ? C.orange : m < fix.slice(0, 7) ? C.red : C.lightBlue)) }]);
+    const cc = countBy(rows, 'category').sort((a, b) => b[1] - a[1]);
+    barChart('ch-cp-cat', cc.map((c) => c[0]), [{ label: 'Complaints', data: cc.map((c) => c[1]) }], { horizontal: true });
+    const rc = groupBy(resolved, (r) => r.category);
+    const rk = sortedKeys(rc);
+    const med = (arr) => { const v = arr.slice().sort((x, y) => x - y); return v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2; };
+    barChart('ch-cp-days', rk, [{ label: 'Days', data: rk.map((k) => med(rc.get(k).map((r) => r.days_to_resolve))), backgroundColor: C.teal }], { horizontal: true });
+    const sc = countBy(rows, 'source').sort((a, b) => b[1] - a[1]);
+    barChart('ch-cp-src', sc.map((c) => c[0]), [{ label: 'Complaints', data: sc.map((c) => c[1]), backgroundColor: C.orange }]);
+  }
+
+  /* ---------- RCS log ---------- */
+  function renderRcs() {
+    const inScope = RCS.filter((r) => inRange(r.meeting_date) && (state.floor === 'all' || r.floor === 0 || floorOk(r.floor)));
+    const rows = sel.rcsBy === 'all' ? inScope : inScope.filter((r) => r.raised_by === sel.rcsBy);
+    let html = header('RCS Log', 'Items raised at the weekly regional client services (RCS) meeting by the IFM partner, service vendors, the VP of Regional Client Services and the workplace experience team. Site-wide items appear under every floor.');
+    html += selectBox('rcs-by', 'Raised by', 'All sources', uniq(RCS, 'raised_by'), sel.rcsBy);
+    if (!rows.length) { $('view').innerHTML = html + empty('No RCS items for this selection.'); bindSelect('rcs-by', 'rcsBy'); return; }
+    const closed = rows.filter((r) => r.status === 'Closed');
+    const meetings = new Set(rows.map((r) => r.meeting_date)).size;
+    html += '<div class="kpis">' +
+      kpi('Items logged', num(rows.length), num(meetings) + ' weekly meetings') +
+      kpi('Closed', pct(closed.length / rows.length, 0), num(rows.length - closed.length) + ' open or monitoring') +
+      kpi('Avg days to close', mean(closed.map((r) => r.days_open)).toFixed(1), 'Meeting date to closure') +
+      kpi('High priority items', num(rows.filter((r) => r.priority === 'High').length), 'Avg ' + mean(closed.filter((r) => r.priority === 'High').map((r) => r.days_open)).toFixed(1) + ' days to close') +
+      '</div>';
+    const cat = groupBy(closed, (r) => r.category);
+    const slow = sortedKeys(cat).sort((a, b) => mean(cat.get(b).map((r) => r.days_open)) - mean(cat.get(a).map((r) => r.days_open)))[0];
+    html += insight(['The RCS meeting averaged ' + (rows.length / Math.max(1, meetings)).toFixed(1) + ' items a week. ' + (slow ? slow + ' items take longest to close (' + mean(cat.get(slow).map((r) => r.days_open)).toFixed(0) + ' days on average) because they run across multiple phases and vendors.' : '')]);
+    html += '<div class="grid">' + sheet('ch-rc-month', 'Items by month and source', true) + sheet('ch-rc-cat', 'Items by category') + sheet('ch-rc-days', 'Average days to close by category') + '</div>';
+    const recent = rows.slice().sort((a, b) => (a.meeting_date < b.meeting_date ? 1 : -1)).slice(0, 15);
+    html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest items</h3><div class="table-wrap"><table><thead><tr><th>ID</th><th>Meeting</th><th>Raised by</th><th>Category</th><th>Item</th><th>Floor</th><th>Priority</th><th>Owner</th><th>Status</th><th class="num">Days open</th></tr></thead><tbody>' +
+      recent.map((r) => '<tr><td>' + r.item_id + '</td><td>' + r.meeting_date + '</td><td>' + esc(r.raised_by) + '</td><td>' + esc(r.category) + '</td><td>' + esc(r.item) + '</td><td>' + (r.floor === 0 ? 'Site-wide' : r.floor) + '</td><td>' + r.priority + '</td><td>' + esc(r.owner) + '</td><td>' + r.status + '</td><td class="num">' + (r.days_open === '' ? '' : r.days_open) + '</td></tr>').join('') +
+      '</tbody></table></div></div>';
+    $('view').innerHTML = html;
+    bindSelect('rcs-by', 'rcsBy');
+    const months = monthsInRange();
+    const by = uniq(rows, 'raised_by');
+    barChart('ch-rc-month', months.map(shortMonth), by.map((b, i) => ({ label: b, backgroundColor: PALETTE[i], data: months.map((m) => rows.filter((r) => r.raised_by === b && r.meeting_date.slice(0, 7) === m).length) })), { stacked: true });
+    const cc = countBy(rows, 'category').sort((a, b) => b[1] - a[1]);
+    barChart('ch-rc-cat', cc.map((c) => c[0]), [{ label: 'Items', data: cc.map((c) => c[1]) }], { horizontal: true });
+    const ck = sortedKeys(cat);
+    barChart('ch-rc-days', ck, [{ label: 'Days', data: ck.map((k) => mean(cat.get(k).map((r) => r.days_open))), backgroundColor: C.teal }], { horizontal: true });
+  }
+
+  /* ---------- sites ---------- */
+  function renderSites() {
+    const rows = filt(SITE_SPEND, 'month');
+    if (!rows.length) return empty('No data in the selected range.');
+    const months = monthsInRange();
+    const spend = sum(rows.map((r) => r.spend_usd));
+    const home = sum(rows.filter((r) => r.site_id === 'BAL').map((r) => r.spend_usd));
+    const staffBy = groupBy(rows, (r) => r.month);
+    const staffMonths = sortedKeys(staffBy);
+    const staffSeries = staffMonths.map((m) => sum(staffBy.get(m).map((r) => r.workplace_staff)));
+    const peak = Math.max(...staffSeries);
+    const peakMonth = staffMonths[staffSeries.indexOf(peak)];
+    const active = new Set(rows.map((r) => r.site_id)).size;
+    let html = header('Sites', 'Contract event budget and workplace experience staffing across the home site and six satellite sites. Satellite sites opened after the home site; some later moved to reduced scope or ended. Event spend covers contract-funded social events.');
+    html += '<div class="kpis">' +
+      kpi('Contract event budget', moneyK(EVENT_BUDGET), 'Life of contract, all sites') +
+      kpi('Spent in selected range', moneyK(spend), pct(spend / EVENT_BUDGET, 0) + ' of total budget') +
+      kpi('Home site share', pct(home / spend, 0), 'Baltimore Waterfront Campus') +
+      kpi('Sites supported', num(active), 'In selected range') +
+      kpi('Peak workplace team', num(peak), monthLabel(peakMonth) + ': 1 manager and ' + (peak - 1) + ' dotted-line reports') +
+      '</div>';
+    html += insight([
+      'The home site used ' + pct(home / spend, 0) + ' of contract event spend; the remaining ' + moneyK(spend - home) + ' supported events at the satellite sites as each opened.',
+      'The workplace team peaked at ' + peak + ' people in ' + monthLabel(peakMonth) + ', with day-to-day operations at every site managed from the home site through dotted-line reports.',
+    ]);
+    html += '<div class="grid">' + sheet('ch-st-month', 'Event spend by month and site', true) + sheet('ch-st-site', 'Event spend by site') + sheet('ch-st-cum', 'Cumulative spend against the contract budget') + sheet('ch-st-staff', 'Workplace experience team by month and site', true) + '</div>';
+    html += '<div class="sheet wide" style="margin-top:16px"><h3>Site roster</h3><div class="table-wrap"><table><thead><tr><th>Site</th><th>Region</th><th>Contract start</th><th>Full staffing</th><th>Scope reduced</th><th>Contract ended</th><th>Status</th><th class="num">Peak staff</th><th class="num">Event spend</th><th class="num">Share</th></tr></thead><tbody>' +
+      SITES.map((s) => { const sp = sum(rows.filter((r) => r.site_id === s.site_id).map((r) => r.spend_usd)); return '<tr><td>' + esc(s.site_label) + '</td><td>' + esc(s.region) + '</td><td>' + monthLabel(s.contract_start) + '</td><td>' + monthLabel(s.full_staffing_from) + '</td><td>' + (s.scope_reduced ? monthLabel(s.scope_reduced) : '') + '</td><td>' + (s.contract_ended ? monthLabel(s.contract_ended) : '') + '</td><td>' + esc(s.status_at_close) + '</td><td class="num">' + s.peak_staff + '</td><td class="num">' + money(sp) + '</td><td class="num">' + pct(sp / spend) + '</td></tr>'; }).join('') +
+      '</tbody></table></div></div>';
+    $('view').innerHTML = html;
+    const ids = SITES.map((s) => s.site_id);
+    const label = (id) => SITES.find((s) => s.site_id === id).site_label;
+    const cell = (id, m, k) => sum(rows.filter((r) => r.site_id === id && r.month === m).map((r) => r[k]));
+    moneyBar('ch-st-month', months.map(shortMonth), ids.map((id, i) => ({ label: label(id), backgroundColor: PALETTE[i], data: months.map((m) => cell(id, m, 'spend_usd')) })), { stacked: true });
+    const siteTotals = ids.map((id) => sum(rows.filter((r) => r.site_id === id).map((r) => r.spend_usd)));
+    moneyBar('ch-st-site', ids.map(label), [{ label: 'Spend', data: siteTotals, backgroundColor: ids.map((_, i) => PALETTE[i]) }], { horizontal: true });
+    let run = 0;
+    const cum = months.map((m) => (run += sum(rows.filter((r) => r.month === m).map((r) => r.spend_usd))));
+    makeChart('ch-st-cum', {
+      type: 'line',
+      data: { labels: months.map(shortMonth), datasets: [
+        { label: 'Cumulative spend', data: cum, borderColor: C.blue, backgroundColor: C.blue, borderWidth: 2, pointRadius: 0, tension: 0.2 },
+        { label: 'Contract budget', data: months.map(() => EVENT_BUDGET), borderColor: C.red, borderDash: [6, 4], borderWidth: 1.5, pointRadius: 0 },
+      ] },
+      options: { interaction: { mode: 'index', intersect: false }, scales: { x: { grid: { display: false }, ticks: { maxRotation: 0, autoSkipPadding: 14 } }, y: moneyAxis }, plugins: { tooltip: moneyTip } },
+    });
+    barChart('ch-st-staff', months.map(shortMonth), ids.map((id, i) => ({ label: label(id), backgroundColor: PALETTE[i], data: months.map((m) => cell(id, m, 'workplace_staff')) })), { stacked: true });
   }
 
   /* ---------- log observation (data entry) ---------- */
@@ -637,6 +880,7 @@
       if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
     $('filters').hidden = sec.id === 'log';
+    $('floor-filter').parentElement.hidden = !!sec.noFloor;
     let out;
     if (sec.id === 'summary') out = renderSummary();
     else if (sec.id === 'attendance') out = renderAttendance();
@@ -647,6 +891,11 @@
     else if (sec.id === 'clean-desk') out = renderCleanDesk();
     else if (sec.id === 'technology') out = renderTechnology();
     else if (sec.id === 'events') out = renderEvents();
+    else if (sec.id === 'catering') out = renderCatering();
+    else if (sec.id === 'csat') out = renderCsat();
+    else if (sec.id === 'complaints') out = renderComplaints();
+    else if (sec.id === 'rcs') out = renderRcs();
+    else if (sec.id === 'sites') out = renderSites();
     else out = renderLog();
     if (typeof out === 'string') $('view').innerHTML = '<h2>' + esc(sec.label) + '</h2>' + out;
   }

@@ -1,0 +1,590 @@
+complaint_id,date_logged,source,category,floor,status,date_resolved,days_to_resolve,resolution
+CP0001,2022-11-02,Email,Cleanliness,2,Resolved,2022-11-04,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0002,2022-11-03,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,312,Introduced a rotating selection of vegan options with the cafe vendor
+CP0003,2022-11-07,QR table cards,Room booking,6,Resolved,2022-11-20,13,No-show release rule applied; user guidance shared
+CP0004,2022-11-07,QR table cards,Lockers,3,Resolved,2022-11-12,5,Locker reset and app guidance provided
+CP0005,2022-11-09,Jive,Not enough vegan options,1,Resolved,2023-09-11,306,Introduced a rotating selection of vegan options with the cafe vendor
+CP0006,2022-11-09,QR table cards,Cafe pricing,1,Resolved,2022-12-08,29,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0007,2022-11-10,QR table cards,Pantry stock,6,Resolved,2022-11-13,3,Restocking frequency increased on peak days
+CP0008,2022-11-14,QR table cards,Lockers,5,Resolved,2022-11-19,5,Locker reset and app guidance provided
+CP0009,2022-11-15,Newsletter survey,Lockers,6,Resolved,2022-11-22,7,Locker reset and app guidance provided
+CP0010,2022-11-16,Newsletter survey,Cafe pricing,1,Resolved,2022-11-25,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0011,2022-11-16,Jive,Cleanliness,2,Resolved,2022-11-17,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0012,2022-11-18,Newsletter survey,Room booking,3,Resolved,2022-11-21,3,No-show release rule applied; user guidance shared
+CP0013,2022-11-21,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,294,Introduced a rotating selection of vegan options with the cafe vendor
+CP0014,2022-11-21,Jive,Not enough vegan options,1,Resolved,2023-09-11,294,Introduced a rotating selection of vegan options with the cafe vendor
+CP0015,2022-11-21,QR table cards,Room booking,6,Resolved,2022-11-23,2,No-show release rule applied; user guidance shared
+CP0016,2022-11-21,Newsletter survey,Room booking,6,Resolved,2022-11-26,5,No-show release rule applied; user guidance shared
+CP0017,2022-11-22,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,293,Introduced a rotating selection of vegan options with the cafe vendor
+CP0018,2022-11-22,Jive,Cafe pricing,1,Resolved,2022-12-09,17,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0019,2022-11-23,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,292,Introduced a rotating selection of vegan options with the cafe vendor
+CP0020,2022-11-23,QR table cards,Temperature,5,Resolved,2022-11-25,2,Work order raised with IFM partner; zone rebalanced
+CP0021,2022-11-28,Email,Not enough vegan options,1,Resolved,2023-09-11,287,Introduced a rotating selection of vegan options with the cafe vendor
+CP0022,2022-11-29,QR table cards,Noise,5,Resolved,2022-12-06,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0023,2022-11-29,Newsletter survey,Room booking,4,Resolved,2022-12-02,3,No-show release rule applied; user guidance shared
+CP0024,2022-11-30,Jive,Room booking,6,Resolved,2022-12-02,2,No-show release rule applied; user guidance shared
+CP0025,2022-12-01,Email,Lockers,2,Resolved,2022-12-04,3,Locker reset and app guidance provided
+CP0026,2022-12-07,Email,Pantry stock,4,Resolved,2022-12-10,3,Restocking frequency increased on peak days
+CP0027,2022-12-08,In person,Not enough vegan options,1,Resolved,2023-09-11,277,Introduced a rotating selection of vegan options with the cafe vendor
+CP0028,2022-12-14,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,271,Introduced a rotating selection of vegan options with the cafe vendor
+CP0029,2022-12-14,QR table cards,Pantry stock,5,Resolved,2022-12-17,3,Restocking frequency increased on peak days
+CP0030,2022-12-15,In person,Not enough vegan options,1,Resolved,2023-09-11,270,Introduced a rotating selection of vegan options with the cafe vendor
+CP0031,2022-12-16,Newsletter survey,Cleanliness,1,Resolved,2022-12-18,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0032,2022-12-16,Newsletter survey,Room booking,7,Resolved,2022-12-18,2,No-show release rule applied; user guidance shared
+CP0033,2022-12-21,QR table cards,Temperature,2,Resolved,2022-12-24,3,Work order raised with IFM partner; zone rebalanced
+CP0034,2022-12-27,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,258,Introduced a rotating selection of vegan options with the cafe vendor
+CP0035,2022-12-27,QR table cards,Room booking,6,Resolved,2022-12-29,2,No-show release rule applied; user guidance shared
+CP0036,2022-12-30,In person,Cleanliness,6,Resolved,2023-01-02,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0037,2022-12-30,Email,Room booking,4,Resolved,2023-01-04,5,No-show release rule applied; user guidance shared
+CP0038,2023-01-03,Jive,Temperature,6,Resolved,2023-01-06,3,Work order raised with IFM partner; zone rebalanced
+CP0039,2023-01-03,Jive,Pantry stock,3,Resolved,2023-01-05,2,Restocking frequency increased on peak days
+CP0040,2023-01-04,Newsletter survey,Cafe pricing,1,Resolved,2023-01-25,21,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0041,2023-01-05,Jive,Pantry stock,3,Resolved,2023-01-06,1,Restocking frequency increased on peak days
+CP0042,2023-01-06,Newsletter survey,Room booking,1,Resolved,2023-01-10,4,No-show release rule applied; user guidance shared
+CP0043,2023-01-09,Jive,Not enough vegan options,1,Resolved,2023-09-11,245,Introduced a rotating selection of vegan options with the cafe vendor
+CP0044,2023-01-10,Jive,Cafe pricing,1,Resolved,2023-02-05,26,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0045,2023-01-11,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,243,Introduced a rotating selection of vegan options with the cafe vendor
+CP0046,2023-01-12,QR table cards,Room booking,3,Resolved,2023-01-18,6,No-show release rule applied; user guidance shared
+CP0047,2023-01-13,Email,Not enough vegan options,1,Resolved,2023-09-11,241,Introduced a rotating selection of vegan options with the cafe vendor
+CP0048,2023-01-17,In person,Not enough vegan options,1,Resolved,2023-09-11,237,Introduced a rotating selection of vegan options with the cafe vendor
+CP0049,2023-01-17,QR table cards,Temperature,3,Resolved,2023-01-21,4,Work order raised with IFM partner; zone rebalanced
+CP0050,2023-01-17,Newsletter survey,Temperature,5,Resolved,2023-01-20,3,Work order raised with IFM partner; zone rebalanced
+CP0051,2023-01-19,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,235,Introduced a rotating selection of vegan options with the cafe vendor
+CP0052,2023-01-23,Newsletter survey,Temperature,6,Resolved,2023-01-25,2,Work order raised with IFM partner; zone rebalanced
+CP0053,2023-01-24,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,230,Introduced a rotating selection of vegan options with the cafe vendor
+CP0054,2023-01-25,In person,Temperature,4,Resolved,2023-01-29,4,Work order raised with IFM partner; zone rebalanced
+CP0055,2023-01-25,QR table cards,Temperature,2,Resolved,2023-01-27,2,Work order raised with IFM partner; zone rebalanced
+CP0056,2023-01-25,QR table cards,Lockers,6,Resolved,2023-01-29,4,Locker reset and app guidance provided
+CP0057,2023-01-26,Newsletter survey,Temperature,5,Resolved,2023-01-27,1,Work order raised with IFM partner; zone rebalanced
+CP0058,2023-01-30,Jive,Room booking,2,Resolved,2023-02-06,7,No-show release rule applied; user guidance shared
+CP0059,2023-02-02,QR table cards,Temperature,1,Resolved,2023-02-04,2,Work order raised with IFM partner; zone rebalanced
+CP0060,2023-02-03,Email,Cafe pricing,1,Resolved,2023-02-24,21,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0061,2023-02-03,QR table cards,Cleanliness,2,Resolved,2023-02-05,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0062,2023-02-06,QR table cards,Cafe pricing,1,Resolved,2023-02-14,8,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0063,2023-02-06,Jive,Temperature,2,Resolved,2023-02-14,8,Work order raised with IFM partner; zone rebalanced
+CP0064,2023-02-06,Email,Lockers,6,Resolved,2023-02-07,1,Locker reset and app guidance provided
+CP0065,2023-02-07,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,216,Introduced a rotating selection of vegan options with the cafe vendor
+CP0066,2023-02-07,QR table cards,Noise,7,Resolved,2023-02-12,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0067,2023-02-07,QR table cards,Pantry stock,3,Resolved,2023-02-15,8,Restocking frequency increased on peak days
+CP0068,2023-02-07,Jive,Pantry stock,1,Resolved,2023-02-09,2,Restocking frequency increased on peak days
+CP0069,2023-02-10,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,213,Introduced a rotating selection of vegan options with the cafe vendor
+CP0070,2023-02-10,Email,Cleanliness,5,Resolved,2023-02-13,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0071,2023-02-10,Newsletter survey,Pantry stock,7,Resolved,2023-02-14,4,Restocking frequency increased on peak days
+CP0072,2023-02-10,QR table cards,Pantry stock,5,Resolved,2023-02-11,1,Restocking frequency increased on peak days
+CP0073,2023-02-13,QR table cards,Cafe pricing,1,Resolved,2023-02-26,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0074,2023-02-17,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,206,Introduced a rotating selection of vegan options with the cafe vendor
+CP0075,2023-02-22,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,201,Introduced a rotating selection of vegan options with the cafe vendor
+CP0076,2023-02-22,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,201,Introduced a rotating selection of vegan options with the cafe vendor
+CP0077,2023-02-22,Email,Cleanliness,3,Resolved,2023-02-28,6,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0078,2023-02-22,In person,Pantry stock,2,Resolved,2023-02-23,1,Restocking frequency increased on peak days
+CP0079,2023-02-23,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,200,Introduced a rotating selection of vegan options with the cafe vendor
+CP0080,2023-02-24,QR table cards,Cafe pricing,1,Resolved,2023-03-05,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0081,2023-02-24,Jive,Cleanliness,4,Resolved,2023-02-27,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0082,2023-02-27,Newsletter survey,Cafe pricing,1,Resolved,2023-03-12,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0083,2023-02-28,Newsletter survey,Cleanliness,7,Resolved,2023-03-02,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0084,2023-02-28,QR table cards,Pantry stock,5,Resolved,2023-03-03,3,Restocking frequency increased on peak days
+CP0085,2023-03-02,Email,Cleanliness,5,Resolved,2023-03-03,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0086,2023-03-02,QR table cards,Noise,7,Resolved,2023-03-07,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0087,2023-03-02,Newsletter survey,Noise,7,Resolved,2023-03-06,4,Reinforced neighborhood etiquette; quiet zone signage added
+CP0088,2023-03-03,Email,Not enough vegan options,1,Resolved,2023-09-11,192,Introduced a rotating selection of vegan options with the cafe vendor
+CP0089,2023-03-03,Newsletter survey,Cafe pricing,1,Resolved,2023-04-01,29,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0090,2023-03-03,Newsletter survey,Pantry stock,5,Resolved,2023-03-05,2,Restocking frequency increased on peak days
+CP0091,2023-03-06,QR table cards,Temperature,2,Resolved,2023-03-08,2,Work order raised with IFM partner; zone rebalanced
+CP0092,2023-03-07,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,188,Introduced a rotating selection of vegan options with the cafe vendor
+CP0093,2023-03-08,Email,Not enough vegan options,1,Resolved,2023-09-11,187,Introduced a rotating selection of vegan options with the cafe vendor
+CP0094,2023-03-09,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,186,Introduced a rotating selection of vegan options with the cafe vendor
+CP0095,2023-03-13,QR table cards,Temperature,7,Resolved,2023-03-15,2,Work order raised with IFM partner; zone rebalanced
+CP0096,2023-03-14,Email,Not enough vegan options,1,Resolved,2023-09-11,181,Introduced a rotating selection of vegan options with the cafe vendor
+CP0097,2023-03-14,Email,Cafe pricing,1,Resolved,2023-03-24,10,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0098,2023-03-14,QR table cards,Temperature,6,Resolved,2023-03-16,2,Work order raised with IFM partner; zone rebalanced
+CP0099,2023-03-16,Email,Cafe pricing,1,Resolved,2023-03-24,8,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0100,2023-03-17,Jive,Cleanliness,6,Resolved,2023-03-23,6,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0101,2023-03-17,In person,Lockers,5,Resolved,2023-03-18,1,Locker reset and app guidance provided
+CP0102,2023-03-21,Jive,Cafe pricing,1,Resolved,2023-03-30,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0103,2023-03-22,Jive,Noise,4,Resolved,2023-03-27,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0104,2023-03-22,Jive,Room booking,5,Resolved,2023-03-30,8,No-show release rule applied; user guidance shared
+CP0105,2023-03-23,Email,Not enough vegan options,1,Resolved,2023-09-11,172,Introduced a rotating selection of vegan options with the cafe vendor
+CP0106,2023-03-29,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,166,Introduced a rotating selection of vegan options with the cafe vendor
+CP0107,2023-03-29,In person,Cafe pricing,1,Resolved,2023-04-15,17,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0108,2023-03-30,Jive,Cleanliness,6,Resolved,2023-03-31,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0109,2023-03-31,Jive,Not enough vegan options,1,Resolved,2023-09-11,164,Introduced a rotating selection of vegan options with the cafe vendor
+CP0110,2023-04-03,In person,Not enough vegan options,1,Resolved,2023-09-11,161,Introduced a rotating selection of vegan options with the cafe vendor
+CP0111,2023-04-03,Newsletter survey,Room booking,4,Resolved,2023-04-15,12,No-show release rule applied; user guidance shared
+CP0112,2023-04-04,Email,Cafe pricing,1,Resolved,2023-04-13,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0113,2023-04-04,QR table cards,Room booking,7,Resolved,2023-04-14,10,No-show release rule applied; user guidance shared
+CP0114,2023-04-05,In person,Not enough vegan options,1,Resolved,2023-09-11,159,Introduced a rotating selection of vegan options with the cafe vendor
+CP0115,2023-04-06,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,158,Introduced a rotating selection of vegan options with the cafe vendor
+CP0116,2023-04-06,QR table cards,Temperature,6,Resolved,2023-04-09,3,Work order raised with IFM partner; zone rebalanced
+CP0117,2023-04-07,Newsletter survey,Temperature,3,Resolved,2023-04-09,2,Work order raised with IFM partner; zone rebalanced
+CP0118,2023-04-10,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,154,Introduced a rotating selection of vegan options with the cafe vendor
+CP0119,2023-04-12,Jive,Not enough vegan options,1,Resolved,2023-09-11,152,Introduced a rotating selection of vegan options with the cafe vendor
+CP0120,2023-04-14,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,150,Introduced a rotating selection of vegan options with the cafe vendor
+CP0121,2023-04-14,In person,Temperature,2,Resolved,2023-04-16,2,Work order raised with IFM partner; zone rebalanced
+CP0122,2023-04-17,Jive,Not enough vegan options,1,Resolved,2023-09-11,147,Introduced a rotating selection of vegan options with the cafe vendor
+CP0123,2023-04-17,Newsletter survey,Lockers,4,Resolved,2023-04-21,4,Locker reset and app guidance provided
+CP0124,2023-04-19,Newsletter survey,Room booking,1,Resolved,2023-04-23,4,No-show release rule applied; user guidance shared
+CP0125,2023-04-20,Newsletter survey,Cleanliness,4,Resolved,2023-04-23,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0126,2023-04-24,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,140,Introduced a rotating selection of vegan options with the cafe vendor
+CP0127,2023-04-26,Jive,Not enough vegan options,1,Resolved,2023-09-11,138,Introduced a rotating selection of vegan options with the cafe vendor
+CP0128,2023-04-27,Jive,Not enough vegan options,1,Resolved,2023-09-11,137,Introduced a rotating selection of vegan options with the cafe vendor
+CP0129,2023-04-28,Email,Temperature,6,Resolved,2023-05-01,3,Work order raised with IFM partner; zone rebalanced
+CP0130,2023-04-28,Email,Cleanliness,7,Resolved,2023-04-29,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0131,2023-05-03,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,131,Introduced a rotating selection of vegan options with the cafe vendor
+CP0132,2023-05-03,Email,Temperature,3,Resolved,2023-05-05,2,Work order raised with IFM partner; zone rebalanced
+CP0133,2023-05-04,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,130,Introduced a rotating selection of vegan options with the cafe vendor
+CP0134,2023-05-05,Jive,Pantry stock,4,Resolved,2023-05-06,1,Restocking frequency increased on peak days
+CP0135,2023-05-08,In person,Cafe pricing,1,Resolved,2023-05-14,6,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0136,2023-05-08,Jive,Cleanliness,5,Resolved,2023-05-09,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0137,2023-05-09,Newsletter survey,Temperature,5,Resolved,2023-05-12,3,Work order raised with IFM partner; zone rebalanced
+CP0138,2023-05-10,Jive,Room booking,5,Resolved,2023-05-13,3,No-show release rule applied; user guidance shared
+CP0139,2023-05-11,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,123,Introduced a rotating selection of vegan options with the cafe vendor
+CP0140,2023-05-15,Jive,Not enough vegan options,1,Resolved,2023-09-11,119,Introduced a rotating selection of vegan options with the cafe vendor
+CP0141,2023-05-16,Newsletter survey,Temperature,7,Resolved,2023-05-18,2,Work order raised with IFM partner; zone rebalanced
+CP0142,2023-05-16,Jive,Noise,7,Resolved,2023-05-21,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0143,2023-05-17,Jive,Not enough vegan options,1,Resolved,2023-09-11,117,Introduced a rotating selection of vegan options with the cafe vendor
+CP0144,2023-05-17,Newsletter survey,Cleanliness,6,Resolved,2023-05-19,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0145,2023-05-19,Newsletter survey,Noise,6,Resolved,2023-05-24,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0146,2023-05-19,Jive,Noise,3,Resolved,2023-05-23,4,Reinforced neighborhood etiquette; quiet zone signage added
+CP0147,2023-05-22,Newsletter survey,Temperature,7,Resolved,2023-05-27,5,Work order raised with IFM partner; zone rebalanced
+CP0148,2023-05-23,Jive,Temperature,2,Resolved,2023-05-24,1,Work order raised with IFM partner; zone rebalanced
+CP0149,2023-05-23,Email,Cleanliness,2,Resolved,2023-05-24,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0150,2023-05-23,Newsletter survey,Room booking,4,Resolved,2023-05-25,2,No-show release rule applied; user guidance shared
+CP0151,2023-05-24,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,110,Introduced a rotating selection of vegan options with the cafe vendor
+CP0152,2023-05-24,QR table cards,Lockers,1,Resolved,2023-05-26,2,Locker reset and app guidance provided
+CP0153,2023-05-25,Email,Not enough vegan options,1,Resolved,2023-09-11,109,Introduced a rotating selection of vegan options with the cafe vendor
+CP0154,2023-05-30,Jive,Not enough vegan options,1,Resolved,2023-09-11,104,Introduced a rotating selection of vegan options with the cafe vendor
+CP0155,2023-05-30,Jive,Room booking,7,Resolved,2023-06-01,2,No-show release rule applied; user guidance shared
+CP0156,2023-05-31,Jive,Not enough vegan options,1,Resolved,2023-09-11,103,Introduced a rotating selection of vegan options with the cafe vendor
+CP0157,2023-05-31,Jive,Cleanliness,4,Resolved,2023-06-02,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0158,2023-06-01,Jive,Not enough vegan options,1,Resolved,2023-09-11,102,Introduced a rotating selection of vegan options with the cafe vendor
+CP0159,2023-06-02,Email,Cleanliness,4,Resolved,2023-06-04,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0160,2023-06-05,In person,Not enough vegan options,1,Resolved,2023-09-11,98,Introduced a rotating selection of vegan options with the cafe vendor
+CP0161,2023-06-06,QR table cards,Cafe pricing,1,Resolved,2023-06-18,12,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0162,2023-06-08,QR table cards,Noise,6,Resolved,2023-06-13,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0163,2023-06-09,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,94,Introduced a rotating selection of vegan options with the cafe vendor
+CP0164,2023-06-12,QR table cards,Temperature,4,Resolved,2023-06-14,2,Work order raised with IFM partner; zone rebalanced
+CP0165,2023-06-16,Jive,Cafe pricing,1,Resolved,2023-06-26,10,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0166,2023-06-16,Newsletter survey,Noise,2,Resolved,2023-06-21,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0167,2023-06-20,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,83,Introduced a rotating selection of vegan options with the cafe vendor
+CP0168,2023-06-20,In person,Not enough vegan options,1,Resolved,2023-09-11,83,Introduced a rotating selection of vegan options with the cafe vendor
+CP0169,2023-06-20,Jive,Cleanliness,5,Resolved,2023-06-21,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0170,2023-06-22,QR table cards,Cafe pricing,1,Resolved,2023-06-27,5,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0171,2023-06-22,Email,Pantry stock,2,Resolved,2023-06-24,2,Restocking frequency increased on peak days
+CP0172,2023-06-23,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,80,Introduced a rotating selection of vegan options with the cafe vendor
+CP0173,2023-06-28,Email,Cleanliness,3,Resolved,2023-07-04,6,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0174,2023-06-29,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,74,Introduced a rotating selection of vegan options with the cafe vendor
+CP0175,2023-06-29,QR table cards,Room booking,4,Resolved,2023-07-06,7,No-show release rule applied; user guidance shared
+CP0176,2023-06-29,Jive,Lockers,2,Resolved,2023-07-05,6,Locker reset and app guidance provided
+CP0177,2023-06-30,Newsletter survey,Pantry stock,2,Resolved,2023-07-02,2,Restocking frequency increased on peak days
+CP0178,2023-07-05,QR table cards,Cleanliness,3,Resolved,2023-07-09,4,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0179,2023-07-05,In person,Pantry stock,4,Resolved,2023-07-07,2,Restocking frequency increased on peak days
+CP0180,2023-07-07,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,66,Introduced a rotating selection of vegan options with the cafe vendor
+CP0181,2023-07-07,Newsletter survey,Pantry stock,3,Resolved,2023-07-09,2,Restocking frequency increased on peak days
+CP0182,2023-07-10,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,63,Introduced a rotating selection of vegan options with the cafe vendor
+CP0183,2023-07-10,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,63,Introduced a rotating selection of vegan options with the cafe vendor
+CP0184,2023-07-12,QR table cards,Temperature,6,Resolved,2023-07-15,3,Work order raised with IFM partner; zone rebalanced
+CP0185,2023-07-13,Jive,Temperature,1,Resolved,2023-07-17,4,Work order raised with IFM partner; zone rebalanced
+CP0186,2023-07-17,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,56,Introduced a rotating selection of vegan options with the cafe vendor
+CP0187,2023-07-17,QR table cards,Noise,3,Resolved,2023-07-23,6,Reinforced neighborhood etiquette; quiet zone signage added
+CP0188,2023-07-17,Jive,Room booking,2,Resolved,2023-07-21,4,No-show release rule applied; user guidance shared
+CP0189,2023-07-18,Email,Temperature,1,Resolved,2023-07-20,2,Work order raised with IFM partner; zone rebalanced
+CP0190,2023-07-19,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,54,Introduced a rotating selection of vegan options with the cafe vendor
+CP0191,2023-07-20,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,53,Introduced a rotating selection of vegan options with the cafe vendor
+CP0192,2023-07-20,Newsletter survey,Room booking,3,Resolved,2023-07-23,3,No-show release rule applied; user guidance shared
+CP0193,2023-07-21,In person,Cafe pricing,1,Resolved,2023-08-03,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0194,2023-07-21,QR table cards,Temperature,2,Resolved,2023-07-26,5,Work order raised with IFM partner; zone rebalanced
+CP0195,2023-07-21,Newsletter survey,Pantry stock,2,Resolved,2023-07-24,3,Restocking frequency increased on peak days
+CP0196,2023-07-25,QR table cards,Noise,7,Resolved,2023-08-01,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0197,2023-07-26,Newsletter survey,Pantry stock,1,Resolved,2023-07-28,2,Restocking frequency increased on peak days
+CP0198,2023-07-27,Jive,Not enough vegan options,1,Resolved,2023-09-11,46,Introduced a rotating selection of vegan options with the cafe vendor
+CP0199,2023-07-31,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,42,Introduced a rotating selection of vegan options with the cafe vendor
+CP0200,2023-07-31,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,42,Introduced a rotating selection of vegan options with the cafe vendor
+CP0201,2023-07-31,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,42,Introduced a rotating selection of vegan options with the cafe vendor
+CP0202,2023-07-31,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,42,Introduced a rotating selection of vegan options with the cafe vendor
+CP0203,2023-08-02,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,40,Introduced a rotating selection of vegan options with the cafe vendor
+CP0204,2023-08-02,Jive,Not enough vegan options,1,Resolved,2023-09-11,40,Introduced a rotating selection of vegan options with the cafe vendor
+CP0205,2023-08-11,Email,Not enough vegan options,1,Resolved,2023-09-11,31,Introduced a rotating selection of vegan options with the cafe vendor
+CP0206,2023-08-14,In person,Not enough vegan options,1,Resolved,2023-09-11,28,Introduced a rotating selection of vegan options with the cafe vendor
+CP0207,2023-08-14,In person,Not enough vegan options,1,Resolved,2023-09-11,28,Introduced a rotating selection of vegan options with the cafe vendor
+CP0208,2023-08-17,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,25,Introduced a rotating selection of vegan options with the cafe vendor
+CP0209,2023-08-17,Email,Room booking,7,Resolved,2023-08-27,10,No-show release rule applied; user guidance shared
+CP0210,2023-08-18,QR table cards,Lockers,5,Resolved,2023-08-20,2,Locker reset and app guidance provided
+CP0211,2023-08-24,QR table cards,Noise,6,Resolved,2023-08-30,6,Reinforced neighborhood etiquette; quiet zone signage added
+CP0212,2023-08-25,Email,Temperature,4,Resolved,2023-08-29,4,Work order raised with IFM partner; zone rebalanced
+CP0213,2023-08-25,QR table cards,Room booking,5,Resolved,2023-08-31,6,No-show release rule applied; user guidance shared
+CP0214,2023-08-28,Jive,Not enough vegan options,1,Resolved,2023-09-11,14,Introduced a rotating selection of vegan options with the cafe vendor
+CP0215,2023-08-28,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,14,Introduced a rotating selection of vegan options with the cafe vendor
+CP0216,2023-08-28,Newsletter survey,Cleanliness,1,Resolved,2023-08-29,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0217,2023-08-28,Newsletter survey,Room booking,6,Resolved,2023-08-31,3,No-show release rule applied; user guidance shared
+CP0218,2023-08-28,Newsletter survey,Pantry stock,6,Resolved,2023-08-30,2,Restocking frequency increased on peak days
+CP0219,2023-08-28,QR table cards,Lockers,6,Resolved,2023-09-01,4,Locker reset and app guidance provided
+CP0220,2023-08-29,QR table cards,Cafe pricing,1,Resolved,2023-09-11,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0221,2023-08-29,QR table cards,Pantry stock,1,Resolved,2023-08-31,2,Restocking frequency increased on peak days
+CP0222,2023-08-30,In person,Not enough vegan options,1,Resolved,2023-09-11,12,Introduced a rotating selection of vegan options with the cafe vendor
+CP0223,2023-08-30,Newsletter survey,Cafe pricing,1,Resolved,2023-09-08,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0224,2023-08-30,In person,Cafe pricing,1,Resolved,2023-09-08,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0225,2023-08-30,QR table cards,Temperature,5,Resolved,2023-09-01,2,Work order raised with IFM partner; zone rebalanced
+CP0226,2023-08-30,In person,Temperature,4,Resolved,2023-09-01,2,Work order raised with IFM partner; zone rebalanced
+CP0227,2023-08-31,Email,Pantry stock,4,Resolved,2023-09-04,4,Restocking frequency increased on peak days
+CP0228,2023-09-01,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,10,Introduced a rotating selection of vegan options with the cafe vendor
+CP0229,2023-09-01,Newsletter survey,Cafe pricing,1,Resolved,2023-09-19,18,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0230,2023-09-05,QR table cards,Cafe pricing,1,Resolved,2023-09-16,11,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0231,2023-09-07,QR table cards,Not enough vegan options,1,Resolved,2023-09-11,4,Introduced a rotating selection of vegan options with the cafe vendor
+CP0232,2023-09-07,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-11,4,Introduced a rotating selection of vegan options with the cafe vendor
+CP0233,2023-09-07,Jive,Cleanliness,6,Resolved,2023-09-12,5,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0234,2023-09-12,QR table cards,Temperature,2,Resolved,2023-09-19,7,Work order raised with IFM partner; zone rebalanced
+CP0235,2023-09-12,QR table cards,Noise,3,Resolved,2023-09-15,3,Reinforced neighborhood etiquette; quiet zone signage added
+CP0236,2023-09-13,QR table cards,Cleanliness,1,Resolved,2023-09-15,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0237,2023-09-15,QR table cards,Cleanliness,3,Resolved,2023-09-18,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0238,2023-09-18,Newsletter survey,Not enough vegan options,1,Resolved,2023-09-22,4,Added to rotating vegan selection feedback; menu adjusted
+CP0239,2023-09-19,Jive,Temperature,6,Resolved,2023-09-21,2,Work order raised with IFM partner; zone rebalanced
+CP0240,2023-09-20,Jive,Cafe pricing,1,Resolved,2023-09-29,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0241,2023-09-21,In person,Cafe pricing,1,Resolved,2023-09-29,8,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0242,2023-09-28,QR table cards,Cleanliness,6,Resolved,2023-10-01,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0243,2023-09-29,QR table cards,Not enough vegan options,1,Resolved,2023-10-03,4,Added to rotating vegan selection feedback; menu adjusted
+CP0244,2023-09-29,In person,Cleanliness,2,Resolved,2023-10-01,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0245,2023-09-29,Jive,Cleanliness,2,Resolved,2023-10-02,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0246,2023-10-03,In person,Cafe pricing,1,Resolved,2023-10-13,10,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0247,2023-10-04,Jive,Cafe pricing,1,Resolved,2023-10-11,7,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0248,2023-10-05,Newsletter survey,Pantry stock,5,Resolved,2023-10-10,5,Restocking frequency increased on peak days
+CP0249,2023-10-12,Newsletter survey,Temperature,5,Resolved,2023-10-16,4,Work order raised with IFM partner; zone rebalanced
+CP0250,2023-10-13,Jive,Room booking,7,Resolved,2023-10-17,4,No-show release rule applied; user guidance shared
+CP0251,2023-10-16,QR table cards,Cleanliness,7,Resolved,2023-10-19,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0252,2023-10-17,QR table cards,Not enough vegan options,1,Resolved,2023-10-20,3,Added to rotating vegan selection feedback; menu adjusted
+CP0253,2023-10-17,QR table cards,Cleanliness,1,Resolved,2023-10-18,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0254,2023-10-18,QR table cards,Room booking,5,Resolved,2023-10-25,7,No-show release rule applied; user guidance shared
+CP0255,2023-10-23,QR table cards,Temperature,5,Resolved,2023-10-29,6,Work order raised with IFM partner; zone rebalanced
+CP0256,2023-10-23,QR table cards,Room booking,6,Resolved,2023-10-26,3,No-show release rule applied; user guidance shared
+CP0257,2023-10-23,QR table cards,Pantry stock,5,Resolved,2023-10-25,2,Restocking frequency increased on peak days
+CP0258,2023-10-24,Newsletter survey,Temperature,4,Resolved,2023-11-01,8,Work order raised with IFM partner; zone rebalanced
+CP0259,2023-10-31,Jive,Lockers,3,Resolved,2023-11-02,2,Locker reset and app guidance provided
+CP0260,2023-11-03,Newsletter survey,Room booking,6,Resolved,2023-11-07,4,No-show release rule applied; user guidance shared
+CP0261,2023-11-07,Newsletter survey,Temperature,4,Resolved,2023-11-08,1,Work order raised with IFM partner; zone rebalanced
+CP0262,2023-11-07,In person,Cleanliness,5,Resolved,2023-11-09,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0263,2023-11-10,Jive,Cafe pricing,1,Resolved,2023-11-24,14,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0264,2023-11-10,Jive,Noise,5,Resolved,2023-11-15,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0265,2023-11-10,Email,Noise,5,Resolved,2023-11-15,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0266,2023-11-14,Jive,Cafe pricing,1,Resolved,2023-11-20,6,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0267,2023-11-16,Email,Cafe pricing,1,Resolved,2023-11-25,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0268,2023-11-16,Email,Temperature,1,Resolved,2023-11-17,1,Work order raised with IFM partner; zone rebalanced
+CP0269,2023-11-16,Newsletter survey,Lockers,7,Resolved,2023-11-19,3,Locker reset and app guidance provided
+CP0270,2023-11-17,QR table cards,Cafe pricing,1,Resolved,2023-11-28,11,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0271,2023-11-17,QR table cards,Pantry stock,3,Resolved,2023-11-21,4,Restocking frequency increased on peak days
+CP0272,2023-11-27,In person,Pantry stock,7,Resolved,2023-11-29,2,Restocking frequency increased on peak days
+CP0273,2023-11-28,In person,Cafe pricing,1,Resolved,2023-12-11,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0274,2023-11-29,Newsletter survey,Cleanliness,2,Resolved,2023-12-02,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0275,2023-11-30,QR table cards,Noise,6,Resolved,2023-12-15,15,Reinforced neighborhood etiquette; quiet zone signage added
+CP0276,2023-12-08,Newsletter survey,Not enough vegan options,1,Resolved,2023-12-11,3,Added to rotating vegan selection feedback; menu adjusted
+CP0277,2023-12-08,Jive,Cafe pricing,1,Resolved,2023-12-16,8,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0278,2023-12-08,Newsletter survey,Noise,5,Resolved,2023-12-17,9,Reinforced neighborhood etiquette; quiet zone signage added
+CP0279,2023-12-08,Email,Noise,1,Resolved,2023-12-19,11,Reinforced neighborhood etiquette; quiet zone signage added
+CP0280,2023-12-11,In person,Cleanliness,4,Resolved,2023-12-14,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0281,2023-12-12,Email,Noise,7,Resolved,2023-12-21,9,Reinforced neighborhood etiquette; quiet zone signage added
+CP0282,2023-12-13,QR table cards,Pantry stock,7,Resolved,2023-12-16,3,Restocking frequency increased on peak days
+CP0283,2023-12-14,Newsletter survey,Cleanliness,2,Resolved,2023-12-17,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0284,2023-12-15,Jive,Noise,3,Resolved,2023-12-20,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0285,2023-12-15,Jive,Noise,3,Resolved,2023-12-22,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0286,2023-12-22,Email,Temperature,5,Resolved,2023-12-25,3,Work order raised with IFM partner; zone rebalanced
+CP0287,2023-12-26,Newsletter survey,Cafe pricing,1,Resolved,2024-01-05,10,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0288,2023-12-27,Email,Cafe pricing,1,Resolved,2024-01-12,16,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0289,2024-01-02,QR table cards,Lockers,3,Resolved,2024-01-05,3,Locker reset and app guidance provided
+CP0290,2024-01-04,Newsletter survey,Cafe pricing,1,Resolved,2024-01-20,16,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0291,2024-01-04,Jive,Lockers,7,Resolved,2024-01-06,2,Locker reset and app guidance provided
+CP0292,2024-01-10,Jive,Room booking,6,Resolved,2024-01-21,11,No-show release rule applied; user guidance shared
+CP0293,2024-01-12,Email,Cleanliness,6,Resolved,2024-01-14,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0294,2024-01-17,QR table cards,Temperature,6,Resolved,2024-01-24,7,Work order raised with IFM partner; zone rebalanced
+CP0295,2024-01-18,Newsletter survey,Noise,2,Resolved,2024-01-25,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0296,2024-01-18,Jive,Pantry stock,3,Resolved,2024-01-19,1,Restocking frequency increased on peak days
+CP0297,2024-01-19,Newsletter survey,Temperature,3,Resolved,2024-01-23,4,Work order raised with IFM partner; zone rebalanced
+CP0298,2024-01-19,Email,Cleanliness,2,Resolved,2024-01-23,4,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0299,2024-01-22,QR table cards,Cafe pricing,1,Resolved,2024-01-30,8,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0300,2024-01-22,Newsletter survey,Temperature,6,Resolved,2024-01-24,2,Work order raised with IFM partner; zone rebalanced
+CP0301,2024-01-22,QR table cards,Cleanliness,7,Resolved,2024-01-24,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0302,2024-01-23,Newsletter survey,Room booking,3,Resolved,2024-01-28,5,No-show release rule applied; user guidance shared
+CP0303,2024-01-25,Email,Temperature,3,Resolved,2024-01-28,3,Work order raised with IFM partner; zone rebalanced
+CP0304,2024-01-30,In person,Temperature,7,Resolved,2024-02-01,2,Work order raised with IFM partner; zone rebalanced
+CP0305,2024-01-31,Newsletter survey,Room booking,3,Resolved,2024-02-05,5,No-show release rule applied; user guidance shared
+CP0306,2024-02-02,QR table cards,Temperature,4,Resolved,2024-02-04,2,Work order raised with IFM partner; zone rebalanced
+CP0307,2024-02-07,QR table cards,Cleanliness,5,Resolved,2024-02-09,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0308,2024-02-07,Jive,Cleanliness,3,Resolved,2024-02-14,7,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0309,2024-02-08,QR table cards,Cafe pricing,1,Resolved,2024-02-16,8,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0310,2024-02-08,QR table cards,Temperature,4,Resolved,2024-02-12,4,Work order raised with IFM partner; zone rebalanced
+CP0311,2024-02-08,In person,Temperature,4,Resolved,2024-02-10,2,Work order raised with IFM partner; zone rebalanced
+CP0312,2024-02-09,In person,Cafe pricing,1,Resolved,2024-02-19,10,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0313,2024-02-09,Newsletter survey,Temperature,4,Resolved,2024-02-11,2,Work order raised with IFM partner; zone rebalanced
+CP0314,2024-02-09,Jive,Temperature,3,Resolved,2024-02-12,3,Work order raised with IFM partner; zone rebalanced
+CP0315,2024-02-09,Newsletter survey,Cleanliness,6,Resolved,2024-02-11,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0316,2024-02-13,Newsletter survey,Cleanliness,2,Resolved,2024-02-15,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0317,2024-02-14,QR table cards,Pantry stock,4,Resolved,2024-02-16,2,Restocking frequency increased on peak days
+CP0318,2024-02-15,QR table cards,Noise,6,Resolved,2024-02-28,13,Reinforced neighborhood etiquette; quiet zone signage added
+CP0319,2024-02-16,QR table cards,Cafe pricing,1,Resolved,2024-02-29,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0320,2024-02-20,QR table cards,Temperature,4,Resolved,2024-02-23,3,Work order raised with IFM partner; zone rebalanced
+CP0321,2024-02-21,QR table cards,Cafe pricing,1,Resolved,2024-02-28,7,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0322,2024-02-22,Jive,Temperature,7,Resolved,2024-02-24,2,Work order raised with IFM partner; zone rebalanced
+CP0323,2024-02-22,In person,Cleanliness,7,Resolved,2024-02-24,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0324,2024-02-26,QR table cards,Cafe pricing,1,Resolved,2024-03-27,30,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0325,2024-02-26,Jive,Temperature,4,Resolved,2024-03-02,5,Work order raised with IFM partner; zone rebalanced
+CP0326,2024-02-27,QR table cards,Temperature,6,Resolved,2024-03-01,3,Work order raised with IFM partner; zone rebalanced
+CP0327,2024-02-28,Email,Pantry stock,1,Resolved,2024-02-29,1,Restocking frequency increased on peak days
+CP0328,2024-03-01,Newsletter survey,Pantry stock,7,Resolved,2024-03-03,2,Restocking frequency increased on peak days
+CP0329,2024-03-04,Jive,Cafe pricing,1,Resolved,2024-03-12,8,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0330,2024-03-04,Newsletter survey,Room booking,1,Resolved,2024-03-06,2,No-show release rule applied; user guidance shared
+CP0331,2024-03-06,QR table cards,Temperature,5,Resolved,2024-03-09,3,Work order raised with IFM partner; zone rebalanced
+CP0332,2024-03-07,QR table cards,Room booking,6,Resolved,2024-03-12,5,No-show release rule applied; user guidance shared
+CP0333,2024-03-11,Newsletter survey,Temperature,3,Resolved,2024-03-15,4,Work order raised with IFM partner; zone rebalanced
+CP0334,2024-03-13,Email,Temperature,2,Resolved,2024-03-16,3,Work order raised with IFM partner; zone rebalanced
+CP0335,2024-03-15,Newsletter survey,Temperature,4,Resolved,2024-03-19,4,Work order raised with IFM partner; zone rebalanced
+CP0336,2024-03-22,Jive,Pantry stock,6,Resolved,2024-03-24,2,Restocking frequency increased on peak days
+CP0337,2024-03-26,QR table cards,Cleanliness,1,Resolved,2024-03-27,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0338,2024-03-28,QR table cards,Temperature,2,Resolved,2024-03-31,3,Work order raised with IFM partner; zone rebalanced
+CP0339,2024-03-28,Jive,Pantry stock,5,Resolved,2024-03-29,1,Restocking frequency increased on peak days
+CP0340,2024-03-29,QR table cards,Pantry stock,4,Resolved,2024-03-31,2,Restocking frequency increased on peak days
+CP0341,2024-04-02,Email,Pantry stock,3,Resolved,2024-04-03,1,Restocking frequency increased on peak days
+CP0342,2024-04-09,QR table cards,Cafe pricing,1,Resolved,2024-04-22,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0343,2024-04-09,QR table cards,Room booking,1,Resolved,2024-04-11,2,No-show release rule applied; user guidance shared
+CP0344,2024-04-10,Email,Room booking,5,Resolved,2024-04-14,4,No-show release rule applied; user guidance shared
+CP0345,2024-04-16,Newsletter survey,Cafe pricing,1,Resolved,2024-04-29,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0346,2024-04-16,Newsletter survey,Noise,5,Resolved,2024-04-28,12,Reinforced neighborhood etiquette; quiet zone signage added
+CP0347,2024-04-17,QR table cards,Cleanliness,7,Resolved,2024-04-18,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0348,2024-04-18,QR table cards,Temperature,1,Resolved,2024-04-21,3,Work order raised with IFM partner; zone rebalanced
+CP0349,2024-04-18,Newsletter survey,Cleanliness,7,Resolved,2024-04-21,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0350,2024-04-19,In person,Room booking,1,Resolved,2024-04-24,5,No-show release rule applied; user guidance shared
+CP0351,2024-04-24,Jive,Lockers,3,Resolved,2024-04-30,6,Locker reset and app guidance provided
+CP0352,2024-04-25,Email,Room booking,3,Resolved,2024-04-29,4,No-show release rule applied; user guidance shared
+CP0353,2024-04-26,QR table cards,Lockers,6,Resolved,2024-04-29,3,Locker reset and app guidance provided
+CP0354,2024-04-30,Email,Temperature,7,Resolved,2024-05-03,3,Work order raised with IFM partner; zone rebalanced
+CP0355,2024-05-03,Newsletter survey,Cafe pricing,1,Resolved,2024-05-08,5,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0356,2024-05-07,Email,Temperature,3,Resolved,2024-05-13,6,Work order raised with IFM partner; zone rebalanced
+CP0357,2024-05-07,QR table cards,Lockers,5,Resolved,2024-05-12,5,Locker reset and app guidance provided
+CP0358,2024-05-08,In person,Cafe pricing,1,Resolved,2024-05-24,16,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0359,2024-05-08,Email,Noise,6,Resolved,2024-05-17,9,Reinforced neighborhood etiquette; quiet zone signage added
+CP0360,2024-05-14,QR table cards,Temperature,1,Resolved,2024-05-15,1,Work order raised with IFM partner; zone rebalanced
+CP0361,2024-05-15,Newsletter survey,Cafe pricing,1,Resolved,2024-05-28,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0362,2024-05-16,QR table cards,Temperature,2,Resolved,2024-05-17,1,Work order raised with IFM partner; zone rebalanced
+CP0363,2024-05-16,Email,Room booking,2,Resolved,2024-05-23,7,No-show release rule applied; user guidance shared
+CP0364,2024-05-24,Jive,Room booking,2,Resolved,2024-05-27,3,No-show release rule applied; user guidance shared
+CP0365,2024-05-29,QR table cards,Cleanliness,4,Resolved,2024-05-30,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0366,2024-06-06,Email,Pantry stock,7,Resolved,2024-06-10,4,Restocking frequency increased on peak days
+CP0367,2024-06-11,Jive,Room booking,5,Resolved,2024-06-22,11,No-show release rule applied; user guidance shared
+CP0368,2024-06-11,Newsletter survey,Lockers,1,Resolved,2024-06-14,3,Locker reset and app guidance provided
+CP0369,2024-06-18,Newsletter survey,Noise,3,Resolved,2024-06-23,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0370,2024-06-21,Newsletter survey,Cleanliness,6,Resolved,2024-06-23,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0371,2024-06-26,QR table cards,Temperature,4,Resolved,2024-06-30,4,Work order raised with IFM partner; zone rebalanced
+CP0372,2024-06-28,Email,Cafe pricing,1,Resolved,2024-07-13,15,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0373,2024-07-08,QR table cards,Lockers,3,Resolved,2024-07-10,2,Locker reset and app guidance provided
+CP0374,2024-07-08,Newsletter survey,Lockers,6,Resolved,2024-07-11,3,Locker reset and app guidance provided
+CP0375,2024-07-10,In person,Room booking,3,Resolved,2024-07-14,4,No-show release rule applied; user guidance shared
+CP0376,2024-07-10,Jive,Room booking,3,Resolved,2024-07-18,8,No-show release rule applied; user guidance shared
+CP0377,2024-07-15,Newsletter survey,Cleanliness,4,Resolved,2024-07-16,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0378,2024-07-15,Newsletter survey,Noise,2,Resolved,2024-07-20,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0379,2024-07-16,Jive,Temperature,6,Resolved,2024-07-19,3,Work order raised with IFM partner; zone rebalanced
+CP0380,2024-07-16,QR table cards,Cleanliness,4,Resolved,2024-07-17,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0381,2024-07-31,Newsletter survey,Room booking,3,Resolved,2024-08-05,5,No-show release rule applied; user guidance shared
+CP0382,2024-08-05,Email,Noise,1,Resolved,2024-08-15,10,Reinforced neighborhood etiquette; quiet zone signage added
+CP0383,2024-08-07,Jive,Cafe pricing,1,Resolved,2024-08-18,11,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0384,2024-08-07,QR table cards,Temperature,7,Resolved,2024-08-10,3,Work order raised with IFM partner; zone rebalanced
+CP0385,2024-08-07,QR table cards,Temperature,5,Resolved,2024-08-09,2,Work order raised with IFM partner; zone rebalanced
+CP0386,2024-08-09,Newsletter survey,Cleanliness,2,Resolved,2024-08-11,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0387,2024-08-09,Email,Pantry stock,5,Resolved,2024-08-11,2,Restocking frequency increased on peak days
+CP0388,2024-08-12,Email,Cafe pricing,1,Resolved,2024-09-01,20,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0389,2024-08-13,QR table cards,Cafe pricing,1,Resolved,2024-09-05,23,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0390,2024-08-16,QR table cards,Room booking,7,Resolved,2024-08-24,8,No-show release rule applied; user guidance shared
+CP0391,2024-08-22,Newsletter survey,Room booking,3,Resolved,2024-08-29,7,No-show release rule applied; user guidance shared
+CP0392,2024-08-23,Jive,Temperature,7,Resolved,2024-08-26,3,Work order raised with IFM partner; zone rebalanced
+CP0393,2024-09-03,QR table cards,Lockers,5,Resolved,2024-09-07,4,Locker reset and app guidance provided
+CP0394,2024-09-06,Newsletter survey,Cafe pricing,1,Resolved,2024-09-19,13,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0395,2024-09-09,Email,Noise,3,Resolved,2024-09-13,4,Reinforced neighborhood etiquette; quiet zone signage added
+CP0396,2024-09-11,In person,Cafe pricing,1,Resolved,2024-09-26,15,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0397,2024-09-11,Newsletter survey,Pantry stock,6,Resolved,2024-09-13,2,Restocking frequency increased on peak days
+CP0398,2024-09-12,QR table cards,Temperature,5,Resolved,2024-09-14,2,Work order raised with IFM partner; zone rebalanced
+CP0399,2024-09-13,QR table cards,Temperature,6,Resolved,2024-09-15,2,Work order raised with IFM partner; zone rebalanced
+CP0400,2024-09-18,QR table cards,Temperature,4,Resolved,2024-09-23,5,Work order raised with IFM partner; zone rebalanced
+CP0401,2024-09-23,Newsletter survey,Temperature,2,Resolved,2024-09-27,4,Work order raised with IFM partner; zone rebalanced
+CP0402,2024-09-23,Jive,Room booking,5,Resolved,2024-09-28,5,No-show release rule applied; user guidance shared
+CP0403,2024-09-23,QR table cards,Room booking,4,Resolved,2024-09-27,4,No-show release rule applied; user guidance shared
+CP0404,2024-09-24,Jive,Room booking,7,Resolved,2024-09-29,5,No-show release rule applied; user guidance shared
+CP0405,2024-09-25,QR table cards,Cleanliness,6,Resolved,2024-09-28,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0406,2024-09-25,QR table cards,Pantry stock,3,Resolved,2024-09-27,2,Restocking frequency increased on peak days
+CP0407,2024-09-26,Newsletter survey,Noise,4,Resolved,2024-10-04,8,Reinforced neighborhood etiquette; quiet zone signage added
+CP0408,2024-10-02,QR table cards,Temperature,3,Resolved,2024-10-07,5,Work order raised with IFM partner; zone rebalanced
+CP0409,2024-10-10,QR table cards,Temperature,3,Resolved,2024-10-14,4,Work order raised with IFM partner; zone rebalanced
+CP0410,2024-10-15,Jive,Room booking,4,Resolved,2024-10-20,5,No-show release rule applied; user guidance shared
+CP0411,2024-10-15,Newsletter survey,Pantry stock,4,Resolved,2024-10-17,2,Restocking frequency increased on peak days
+CP0412,2024-10-17,QR table cards,Noise,4,Resolved,2024-10-29,12,Reinforced neighborhood etiquette; quiet zone signage added
+CP0413,2024-10-22,Newsletter survey,Pantry stock,6,Resolved,2024-10-23,1,Restocking frequency increased on peak days
+CP0414,2024-10-29,Newsletter survey,Temperature,1,Resolved,2024-10-31,2,Work order raised with IFM partner; zone rebalanced
+CP0415,2024-10-30,Email,Cleanliness,1,Resolved,2024-11-02,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0416,2024-10-30,QR table cards,Lockers,4,Resolved,2024-11-02,3,Locker reset and app guidance provided
+CP0417,2024-10-31,Jive,Noise,2,Resolved,2024-11-03,3,Reinforced neighborhood etiquette; quiet zone signage added
+CP0418,2024-11-04,Newsletter survey,Temperature,2,Resolved,2024-11-06,2,Work order raised with IFM partner; zone rebalanced
+CP0419,2024-11-06,Newsletter survey,Cleanliness,4,Resolved,2024-11-09,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0420,2024-11-06,Jive,Pantry stock,2,Resolved,2024-11-07,1,Restocking frequency increased on peak days
+CP0421,2024-11-07,Jive,Cafe pricing,1,Resolved,2024-11-18,11,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0422,2024-11-07,In person,Temperature,3,Resolved,2024-11-09,2,Work order raised with IFM partner; zone rebalanced
+CP0423,2024-11-08,QR table cards,Noise,7,Resolved,2024-11-16,8,Reinforced neighborhood etiquette; quiet zone signage added
+CP0424,2024-11-12,In person,Temperature,4,Resolved,2024-11-16,4,Work order raised with IFM partner; zone rebalanced
+CP0425,2024-11-12,QR table cards,Noise,6,Resolved,2024-11-19,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0426,2024-11-14,Newsletter survey,Temperature,7,Resolved,2024-11-17,3,Work order raised with IFM partner; zone rebalanced
+CP0427,2024-11-14,QR table cards,Pantry stock,4,Resolved,2024-11-16,2,Restocking frequency increased on peak days
+CP0428,2024-11-15,QR table cards,Room booking,7,Resolved,2024-11-20,5,No-show release rule applied; user guidance shared
+CP0429,2024-11-15,QR table cards,Room booking,1,Resolved,2024-11-17,2,No-show release rule applied; user guidance shared
+CP0430,2024-11-20,Newsletter survey,Noise,3,Resolved,2024-11-23,3,Reinforced neighborhood etiquette; quiet zone signage added
+CP0431,2024-11-21,Newsletter survey,Noise,1,Resolved,2024-11-26,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0432,2024-11-25,Jive,Temperature,2,Resolved,2024-11-29,4,Work order raised with IFM partner; zone rebalanced
+CP0433,2024-12-09,QR table cards,Temperature,3,Resolved,2024-12-11,2,Work order raised with IFM partner; zone rebalanced
+CP0434,2024-12-09,In person,Room booking,3,Resolved,2024-12-15,6,No-show release rule applied; user guidance shared
+CP0435,2024-12-10,Jive,Cleanliness,4,Resolved,2024-12-15,5,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0436,2024-12-16,Newsletter survey,Cafe pricing,1,Resolved,2024-12-25,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0437,2024-12-16,In person,Lockers,3,Resolved,2024-12-19,3,Locker reset and app guidance provided
+CP0438,2024-12-19,In person,Cafe pricing,1,Resolved,2024-12-24,5,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0439,2024-12-19,In person,Cleanliness,6,Resolved,2024-12-21,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0440,2024-12-23,In person,Room booking,5,Resolved,2024-12-24,1,No-show release rule applied; user guidance shared
+CP0441,2024-12-26,QR table cards,Temperature,5,Resolved,2024-12-27,1,Work order raised with IFM partner; zone rebalanced
+CP0442,2025-01-02,Newsletter survey,Lockers,1,Resolved,2025-01-04,2,Locker reset and app guidance provided
+CP0443,2025-01-03,Email,Temperature,1,Resolved,2025-01-06,3,Work order raised with IFM partner; zone rebalanced
+CP0444,2025-01-06,Email,Temperature,1,Resolved,2025-01-08,2,Work order raised with IFM partner; zone rebalanced
+CP0445,2025-01-07,QR table cards,Temperature,7,Resolved,2025-01-08,1,Work order raised with IFM partner; zone rebalanced
+CP0446,2025-01-14,Jive,Temperature,7,Resolved,2025-01-19,5,Work order raised with IFM partner; zone rebalanced
+CP0447,2025-01-14,QR table cards,Cleanliness,7,Resolved,2025-01-17,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0448,2025-01-14,Jive,Lockers,5,Resolved,2025-01-19,5,Locker reset and app guidance provided
+CP0449,2025-01-15,QR table cards,Cafe pricing,1,Resolved,2025-01-29,14,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0450,2025-01-15,Email,Temperature,5,Resolved,2025-01-18,3,Work order raised with IFM partner; zone rebalanced
+CP0451,2025-01-16,Newsletter survey,Cafe pricing,1,Resolved,2025-02-01,16,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0452,2025-01-16,QR table cards,Noise,4,Resolved,2025-01-25,9,Reinforced neighborhood etiquette; quiet zone signage added
+CP0453,2025-01-16,In person,Noise,7,Resolved,2025-01-21,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0454,2025-01-17,In person,Room booking,1,Resolved,2025-01-21,4,No-show release rule applied; user guidance shared
+CP0455,2025-01-21,QR table cards,Cleanliness,1,Resolved,2025-01-23,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0456,2025-01-22,QR table cards,Temperature,1,Resolved,2025-01-23,1,Work order raised with IFM partner; zone rebalanced
+CP0457,2025-01-22,Newsletter survey,Pantry stock,4,Resolved,2025-01-25,3,Restocking frequency increased on peak days
+CP0458,2025-01-24,QR table cards,Temperature,5,Resolved,2025-01-28,4,Work order raised with IFM partner; zone rebalanced
+CP0459,2025-01-24,Newsletter survey,Room booking,3,Resolved,2025-01-27,3,No-show release rule applied; user guidance shared
+CP0460,2025-01-24,QR table cards,Room booking,2,Resolved,2025-01-28,4,No-show release rule applied; user guidance shared
+CP0461,2025-01-27,Newsletter survey,Noise,2,Resolved,2025-02-02,6,Reinforced neighborhood etiquette; quiet zone signage added
+CP0462,2025-01-28,In person,Pantry stock,6,Resolved,2025-01-31,3,Restocking frequency increased on peak days
+CP0463,2025-01-28,QR table cards,Pantry stock,7,Resolved,2025-01-31,3,Restocking frequency increased on peak days
+CP0464,2025-01-28,Email,Lockers,1,Resolved,2025-02-03,6,Locker reset and app guidance provided
+CP0465,2025-01-30,Newsletter survey,Cafe pricing,1,Resolved,2025-02-06,7,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0466,2025-01-30,Newsletter survey,Temperature,5,Resolved,2025-02-01,2,Work order raised with IFM partner; zone rebalanced
+CP0467,2025-01-30,QR table cards,Temperature,4,Resolved,2025-02-01,2,Work order raised with IFM partner; zone rebalanced
+CP0468,2025-01-30,Email,Cleanliness,4,Resolved,2025-02-02,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0469,2025-02-03,Email,Cafe pricing,1,Resolved,2025-02-13,10,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0470,2025-02-05,Jive,Temperature,7,Resolved,2025-02-11,6,Work order raised with IFM partner; zone rebalanced
+CP0471,2025-02-07,QR table cards,Temperature,4,Resolved,2025-02-11,4,Work order raised with IFM partner; zone rebalanced
+CP0472,2025-02-11,QR table cards,Lockers,4,Resolved,2025-02-14,3,Locker reset and app guidance provided
+CP0473,2025-02-12,QR table cards,Noise,5,Resolved,2025-02-16,4,Reinforced neighborhood etiquette; quiet zone signage added
+CP0474,2025-02-13,Jive,Noise,1,Resolved,2025-02-24,11,Reinforced neighborhood etiquette; quiet zone signage added
+CP0475,2025-02-14,QR table cards,Cleanliness,4,Resolved,2025-02-16,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0476,2025-02-21,Jive,Cleanliness,7,Resolved,2025-02-25,4,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0477,2025-02-24,Newsletter survey,Noise,5,Resolved,2025-03-05,9,Reinforced neighborhood etiquette; quiet zone signage added
+CP0478,2025-02-24,Newsletter survey,Lockers,5,Resolved,2025-02-26,2,Locker reset and app guidance provided
+CP0479,2025-02-25,Email,Cafe pricing,1,Resolved,2025-03-01,4,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0480,2025-02-27,QR table cards,Cafe pricing,1,Resolved,2025-03-11,12,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0481,2025-02-28,QR table cards,Cafe pricing,1,Resolved,2025-03-05,5,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0482,2025-02-28,QR table cards,Cafe pricing,1,Resolved,2025-03-05,5,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0483,2025-02-28,QR table cards,Cleanliness,2,Resolved,2025-03-01,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0484,2025-02-28,Jive,Noise,2,Resolved,2025-03-06,6,Reinforced neighborhood etiquette; quiet zone signage added
+CP0485,2025-03-03,Newsletter survey,Pantry stock,7,Resolved,2025-03-04,1,Restocking frequency increased on peak days
+CP0486,2025-03-03,Jive,Pantry stock,4,Resolved,2025-03-07,4,Restocking frequency increased on peak days
+CP0487,2025-03-03,Email,Lockers,7,Resolved,2025-03-07,4,Locker reset and app guidance provided
+CP0488,2025-03-04,Email,Noise,5,Resolved,2025-03-08,4,Reinforced neighborhood etiquette; quiet zone signage added
+CP0489,2025-03-06,Newsletter survey,Temperature,2,Resolved,2025-03-09,3,Work order raised with IFM partner; zone rebalanced
+CP0490,2025-03-07,QR table cards,Pantry stock,7,Resolved,2025-03-09,2,Restocking frequency increased on peak days
+CP0491,2025-03-10,Jive,Temperature,1,Resolved,2025-03-12,2,Work order raised with IFM partner; zone rebalanced
+CP0492,2025-03-11,Newsletter survey,Cafe pricing,1,Resolved,2025-03-17,6,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0493,2025-03-13,QR table cards,Room booking,1,Resolved,2025-03-24,11,No-show release rule applied; user guidance shared
+CP0494,2025-03-14,In person,Cleanliness,5,Resolved,2025-03-15,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0495,2025-03-17,In person,Temperature,7,Resolved,2025-03-22,5,Work order raised with IFM partner; zone rebalanced
+CP0496,2025-03-18,QR table cards,Temperature,2,Resolved,2025-03-21,3,Work order raised with IFM partner; zone rebalanced
+CP0497,2025-03-18,QR table cards,Noise,4,Resolved,2025-03-23,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0498,2025-03-19,Email,Pantry stock,1,Resolved,2025-03-22,3,Restocking frequency increased on peak days
+CP0499,2025-03-26,Jive,Noise,6,Resolved,2025-04-08,13,Reinforced neighborhood etiquette; quiet zone signage added
+CP0500,2025-03-27,QR table cards,Temperature,2,Resolved,2025-03-29,2,Work order raised with IFM partner; zone rebalanced
+CP0501,2025-03-27,QR table cards,Temperature,3,Resolved,2025-03-30,3,Work order raised with IFM partner; zone rebalanced
+CP0502,2025-03-28,Newsletter survey,Room booking,1,Resolved,2025-04-02,5,No-show release rule applied; user guidance shared
+CP0503,2025-04-07,QR table cards,Not enough vegan options,1,Resolved,2025-04-08,1,Added to rotating vegan selection feedback; menu adjusted
+CP0504,2025-04-11,QR table cards,Lockers,4,Resolved,2025-04-15,4,Locker reset and app guidance provided
+CP0505,2025-04-14,Newsletter survey,Cafe pricing,1,Resolved,2025-04-20,6,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0506,2025-04-16,QR table cards,Temperature,7,Resolved,2025-04-18,2,Work order raised with IFM partner; zone rebalanced
+CP0507,2025-04-17,QR table cards,Lockers,1,Resolved,2025-04-19,2,Locker reset and app guidance provided
+CP0508,2025-04-18,Email,Room booking,7,Resolved,2025-04-20,2,No-show release rule applied; user guidance shared
+CP0509,2025-04-21,QR table cards,Pantry stock,4,Resolved,2025-04-23,2,Restocking frequency increased on peak days
+CP0510,2025-04-22,Jive,Cleanliness,6,Resolved,2025-04-24,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0511,2025-04-22,QR table cards,Cleanliness,3,Resolved,2025-04-27,5,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0512,2025-04-23,Newsletter survey,Room booking,7,Resolved,2025-04-26,3,No-show release rule applied; user guidance shared
+CP0513,2025-04-24,QR table cards,Pantry stock,5,Resolved,2025-04-26,2,Restocking frequency increased on peak days
+CP0514,2025-04-29,QR table cards,Cleanliness,4,Resolved,2025-04-30,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0515,2025-04-29,QR table cards,Pantry stock,6,Resolved,2025-05-02,3,Restocking frequency increased on peak days
+CP0516,2025-05-05,QR table cards,Cleanliness,2,Resolved,2025-05-07,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0517,2025-05-06,QR table cards,Cafe pricing,1,Resolved,2025-05-15,9,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0518,2025-05-06,Newsletter survey,Noise,1,Resolved,2025-05-12,6,Reinforced neighborhood etiquette; quiet zone signage added
+CP0519,2025-05-08,In person,Cleanliness,5,Resolved,2025-05-09,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0520,2025-05-12,QR table cards,Temperature,1,Resolved,2025-05-20,8,Work order raised with IFM partner; zone rebalanced
+CP0521,2025-05-12,QR table cards,Lockers,4,Resolved,2025-05-15,3,Locker reset and app guidance provided
+CP0522,2025-05-12,Jive,Lockers,3,Resolved,2025-05-14,2,Locker reset and app guidance provided
+CP0523,2025-05-14,QR table cards,Cleanliness,2,Resolved,2025-05-17,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0524,2025-05-20,Email,Cleanliness,2,Resolved,2025-05-22,2,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0525,2025-05-22,In person,Lockers,3,Resolved,2025-05-25,3,Locker reset and app guidance provided
+CP0526,2025-05-29,Jive,Temperature,2,Resolved,2025-05-31,2,Work order raised with IFM partner; zone rebalanced
+CP0527,2025-05-30,Newsletter survey,Cafe pricing,1,Resolved,2025-06-14,15,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0528,2025-05-30,QR table cards,Temperature,4,Resolved,2025-05-31,1,Work order raised with IFM partner; zone rebalanced
+CP0529,2025-06-02,QR table cards,Temperature,1,Resolved,2025-06-07,5,Work order raised with IFM partner; zone rebalanced
+CP0530,2025-06-02,Email,Noise,1,Resolved,2025-06-04,2,Reinforced neighborhood etiquette; quiet zone signage added
+CP0531,2025-06-09,QR table cards,Cafe pricing,1,Resolved,2025-06-20,11,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0532,2025-06-09,Email,Room booking,3,Resolved,2025-06-21,12,No-show release rule applied; user guidance shared
+CP0533,2025-06-09,Newsletter survey,Pantry stock,4,Resolved,2025-06-11,2,Restocking frequency increased on peak days
+CP0534,2025-06-11,Email,Noise,7,Resolved,2025-06-15,4,Reinforced neighborhood etiquette; quiet zone signage added
+CP0535,2025-06-16,Newsletter survey,Temperature,6,Resolved,2025-06-21,5,Work order raised with IFM partner; zone rebalanced
+CP0536,2025-06-16,Jive,Noise,1,Resolved,2025-06-28,12,Reinforced neighborhood etiquette; quiet zone signage added
+CP0537,2025-06-17,Newsletter survey,Cafe pricing,1,Resolved,2025-07-05,18,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0538,2025-06-25,QR table cards,Temperature,1,Resolved,2025-07-01,6,Work order raised with IFM partner; zone rebalanced
+CP0539,2025-06-26,Jive,Cleanliness,2,Resolved,2025-06-27,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0540,2025-06-26,Newsletter survey,Room booking,5,Resolved,2025-07-06,10,No-show release rule applied; user guidance shared
+CP0541,2025-06-30,Email,Noise,5,Resolved,2025-07-14,14,Reinforced neighborhood etiquette; quiet zone signage added
+CP0542,2025-07-01,Jive,Temperature,4,Resolved,2025-07-06,5,Work order raised with IFM partner; zone rebalanced
+CP0543,2025-07-01,In person,Temperature,6,Resolved,2025-07-03,2,Work order raised with IFM partner; zone rebalanced
+CP0544,2025-07-02,QR table cards,Temperature,7,Resolved,2025-07-09,7,Work order raised with IFM partner; zone rebalanced
+CP0545,2025-07-02,QR table cards,Temperature,2,Resolved,2025-07-05,3,Work order raised with IFM partner; zone rebalanced
+CP0546,2025-07-02,Jive,Noise,6,Resolved,2025-07-10,8,Reinforced neighborhood etiquette; quiet zone signage added
+CP0547,2025-07-03,Newsletter survey,Noise,2,Resolved,2025-07-09,6,Reinforced neighborhood etiquette; quiet zone signage added
+CP0548,2025-07-07,Newsletter survey,Temperature,3,Resolved,2025-07-12,5,Work order raised with IFM partner; zone rebalanced
+CP0549,2025-07-08,In person,Pantry stock,7,Resolved,2025-07-10,2,Restocking frequency increased on peak days
+CP0550,2025-07-09,Jive,Temperature,1,Resolved,2025-07-13,4,Work order raised with IFM partner; zone rebalanced
+CP0551,2025-07-10,QR table cards,Temperature,2,Resolved,2025-07-18,8,Work order raised with IFM partner; zone rebalanced
+CP0552,2025-07-11,QR table cards,Cafe pricing,1,Resolved,2025-07-15,4,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0553,2025-07-14,Jive,Temperature,1,Resolved,2025-07-16,2,Work order raised with IFM partner; zone rebalanced
+CP0554,2025-07-14,QR table cards,Cleanliness,6,Resolved,2025-07-20,6,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0555,2025-07-15,QR table cards,Cafe pricing,1,Resolved,2025-08-08,24,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0556,2025-07-18,Jive,Not enough vegan options,1,Resolved,2025-07-22,4,Added to rotating vegan selection feedback; menu adjusted
+CP0557,2025-07-18,Jive,Noise,4,Resolved,2025-07-26,8,Reinforced neighborhood etiquette; quiet zone signage added
+CP0558,2025-07-22,QR table cards,Cafe pricing,1,Resolved,2025-08-28,37,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0559,2025-07-23,QR table cards,Noise,6,Resolved,2025-07-29,6,Reinforced neighborhood etiquette; quiet zone signage added
+CP0560,2025-07-28,In person,Temperature,5,Resolved,2025-08-03,6,Work order raised with IFM partner; zone rebalanced
+CP0561,2025-07-28,In person,Cleanliness,1,Resolved,2025-07-31,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0562,2025-07-28,QR table cards,Noise,3,Resolved,2025-08-04,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0563,2025-07-30,QR table cards,Cleanliness,3,Resolved,2025-08-02,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0564,2025-07-30,QR table cards,Noise,1,Resolved,2025-08-03,4,Reinforced neighborhood etiquette; quiet zone signage added
+CP0565,2025-07-30,Newsletter survey,Noise,2,Resolved,2025-08-15,16,Reinforced neighborhood etiquette; quiet zone signage added
+CP0566,2025-08-01,Jive,Temperature,6,Resolved,2025-08-04,3,Work order raised with IFM partner; zone rebalanced
+CP0567,2025-08-01,QR table cards,Noise,3,Resolved,2025-08-08,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0568,2025-08-05,Jive,Cafe pricing,1,Resolved,2025-08-25,20,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0569,2025-08-11,Email,Temperature,4,Resolved,2025-08-15,4,Work order raised with IFM partner; zone rebalanced
+CP0570,2025-08-15,Email,Cleanliness,2,Resolved,2025-08-19,4,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0571,2025-08-20,Newsletter survey,Temperature,2,Resolved,2025-08-25,5,Work order raised with IFM partner; zone rebalanced
+CP0572,2025-08-25,Newsletter survey,Temperature,7,Resolved,2025-09-01,7,Work order raised with IFM partner; zone rebalanced
+CP0573,2025-08-26,QR table cards,Temperature,2,Resolved,2025-08-28,2,Work order raised with IFM partner; zone rebalanced
+CP0574,2025-08-28,QR table cards,Cafe pricing,1,Resolved,2025-09-14,17,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0575,2025-08-29,QR table cards,Temperature,5,Resolved,2025-09-02,4,Work order raised with IFM partner; zone rebalanced
+CP0576,2025-08-29,In person,Cleanliness,1,Resolved,2025-09-01,3,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0577,2025-08-29,Jive,Room booking,5,Resolved,2025-09-04,6,No-show release rule applied; user guidance shared
+CP0578,2025-08-29,QR table cards,Room booking,5,Resolved,2025-09-03,5,No-show release rule applied; user guidance shared
+CP0579,2025-09-05,Email,Noise,1,Resolved,2025-09-12,7,Reinforced neighborhood etiquette; quiet zone signage added
+CP0580,2025-09-08,Newsletter survey,Cleanliness,1,Resolved,2025-09-12,4,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0581,2025-09-12,QR table cards,Noise,5,Resolved,2025-09-17,5,Reinforced neighborhood etiquette; quiet zone signage added
+CP0582,2025-09-18,Jive,Cafe pricing,1,Resolved,2025-09-30,12,Reviewed pricing with cafe vendor; added value combo and daily special
+CP0583,2025-09-18,In person,Temperature,4,Resolved,2025-09-21,3,Work order raised with IFM partner; zone rebalanced
+CP0584,2025-09-23,In person,Cleanliness,4,Resolved,2025-09-24,1,Escalated to janitorial vendor; spot clean and schedule adjusted
+CP0585,2025-09-23,QR table cards,Pantry stock,5,Resolved,2025-09-27,4,Restocking frequency increased on peak days
+CP0586,2025-09-25,QR table cards,Temperature,1,Resolved,2025-09-29,4,Work order raised with IFM partner; zone rebalanced
+CP0587,2025-09-25,In person,Room booking,6,Resolved,2025-09-28,3,No-show release rule applied; user guidance shared
+CP0588,2025-09-25,Email,Pantry stock,5,Resolved,2025-09-29,4,Restocking frequency increased on peak days
+CP0589,2025-09-26,Newsletter survey,Temperature,5,Resolved,2025-09-27,1,Work order raised with IFM partner; zone rebalanced

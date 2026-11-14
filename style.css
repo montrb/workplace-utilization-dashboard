@@ -154,3 +154,4 @@ td.num, th.num { text-align: right; }
 }
 
 .filters[hidden] { display: none; }
+.filters label[hidden] { display: none; }

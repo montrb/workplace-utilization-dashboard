@@ -1,0 +1,161 @@
+month,site_id,site_label,status,workplace_staff,social_events,attendees,spend_usd
+2022-11,BAL,Baltimore Waterfront Campus,Active,2,1,197,4670
+2022-12,BAL,Baltimore Waterfront Campus,Active,2,3,1280,29140
+2022-12,GA-A,Georgia Site A,Ramping up,1,1,59,1710
+2023-01,BAL,Baltimore Waterfront Campus,Active,2,1,113,2450
+2023-01,GA-A,Georgia Site A,Ramping up,1,1,54,1670
+2023-02,BAL,Baltimore Waterfront Campus,Active,2,2,358,7670
+2023-02,GA-A,Georgia Site A,Ramping up,1,1,76,2010
+2023-03,BAL,Baltimore Waterfront Campus,Active,2,3,451,9600
+2023-03,GA-A,Georgia Site A,Active,2,1,86,2670
+2023-04,BAL,Baltimore Waterfront Campus,Active,2,2,344,6970
+2023-04,GA-A,Georgia Site A,Active,2,1,111,3620
+2023-05,BAL,Baltimore Waterfront Campus,Active,2,2,338,8650
+2023-05,GA-A,Georgia Site A,Active,2,1,102,3350
+2023-06,BAL,Baltimore Waterfront Campus,Active,2,3,516,11370
+2023-06,GA-A,Georgia Site A,Active,2,1,108,3540
+2023-06,GA-B,Georgia Site B,Ramping up,1,1,34,900
+2023-07,BAL,Baltimore Waterfront Campus,Active,2,3,519,12830
+2023-07,GA-A,Georgia Site A,Active,2,1,87,2670
+2023-07,GA-B,Georgia Site B,Ramping up,1,1,27,840
+2023-08,BAL,Baltimore Waterfront Campus,Active,2,2,457,10800
+2023-08,GA-A,Georgia Site A,Active,2,1,122,3430
+2023-08,GA-B,Georgia Site B,Ramping up,1,1,44,1190
+2023-09,BAL,Baltimore Waterfront Campus,Active,2,2,361,8440
+2023-09,GA-A,Georgia Site A,Active,2,1,102,3410
+2023-09,GA-B,Georgia Site B,Active,2,1,72,2100
+2023-10,BAL,Baltimore Waterfront Campus,Active,2,2,462,10390
+2023-10,GA-A,Georgia Site A,Active,2,1,90,2820
+2023-10,GA-B,Georgia Site B,Active,2,1,104,2760
+2023-11,BAL,Baltimore Waterfront Campus,Active,2,2,334,7450
+2023-11,GA-A,Georgia Site A,Active,2,1,58,1870
+2023-11,GA-B,Georgia Site B,Active,2,1,99,2690
+2023-12,BAL,Baltimore Waterfront Campus,Active,2,3,1443,35380
+2023-12,GA-A,Georgia Site A,Active,2,1,86,2430
+2023-12,GA-B,Georgia Site B,Active,2,1,91,2860
+2024-01,BAL,Baltimore Waterfront Campus,Active,2,3,664,15680
+2024-01,GA-A,Georgia Site A,Active,2,1,120,3130
+2024-01,GA-B,Georgia Site B,Active,2,1,81,2390
+2024-02,BAL,Baltimore Waterfront Campus,Active,2,3,548,11800
+2024-02,GA-A,Georgia Site A,Active,2,1,107,2820
+2024-02,GA-B,Georgia Site B,Active,2,1,95,2900
+2024-02,UT-A,Utah Site A,Ramping up,1,1,41,1340
+2024-03,BAL,Baltimore Waterfront Campus,Active,2,4,1047,24570
+2024-03,GA-A,Georgia Site A,Active,2,1,75,2300
+2024-03,GA-B,Georgia Site B,Active,2,1,73,1910
+2024-03,UT-A,Utah Site A,Ramping up,1,1,44,1180
+2024-03,IL,Illinois Site,Ramping up,1,1,32,860
+2024-04,BAL,Baltimore Waterfront Campus,Active,2,3,784,17070
+2024-04,GA-A,Georgia Site A,Active,2,1,101,2980
+2024-04,GA-B,Georgia Site B,Active,2,1,62,2030
+2024-04,UT-A,Utah Site A,Ramping up,1,1,24,780
+2024-04,UT-B,Utah Site B,Ramping up,1,1,39,1070
+2024-04,IL,Illinois Site,Ramping up,1,1,41,1380
+2024-05,BAL,Baltimore Waterfront Campus,Active,2,2,366,9050
+2024-05,GA-A,Georgia Site A,Active,2,1,100,2630
+2024-05,GA-B,Georgia Site B,Active,2,1,82,2620
+2024-05,UT-A,Utah Site A,Active,2,1,72,1960
+2024-05,UT-B,Utah Site B,Ramping up,1,1,34,990
+2024-05,IL,Illinois Site,Ramping up,1,1,40,1070
+2024-05,CA,California Site,Ramping up,1,1,57,1780
+2024-06,BAL,Baltimore Waterfront Campus,Active,2,2,597,12670
+2024-06,GA-A,Georgia Site A,Active,2,1,98,2960
+2024-06,GA-B,Georgia Site B,Active,2,1,58,1580
+2024-06,UT-A,Utah Site A,Active,2,1,87,2490
+2024-06,UT-B,Utah Site B,Active,2,1,37,1230
+2024-06,IL,Illinois Site,Active,2,1,83,2190
+2024-06,CA,California Site,Ramping up,1,1,48,1640
+2024-07,BAL,Baltimore Waterfront Campus,Active,2,2,499,12310
+2024-07,GA-A,Georgia Site A,Active,2,1,115,3080
+2024-07,GA-B,Georgia Site B,Active,2,1,83,2220
+2024-07,UT-A,Utah Site A,Active,2,1,75,2190
+2024-07,UT-B,Utah Site B,Active,2,1,80,2300
+2024-07,IL,Illinois Site,Active,2,1,104,2920
+2024-07,CA,California Site,Active,2,1,102,2830
+2024-08,BAL,Baltimore Waterfront Campus,Active,2,3,648,13910
+2024-08,GA-A,Georgia Site A,Active,2,1,76,2410
+2024-08,GA-B,Georgia Site B,Active,2,1,65,1940
+2024-08,UT-A,Utah Site A,Active,2,1,37,1240
+2024-08,UT-B,Utah Site B,Active,2,1,88,2480
+2024-08,IL,Illinois Site,Active,2,1,80,2670
+2024-08,CA,California Site,Active,2,1,117,3180
+2024-09,BAL,Baltimore Waterfront Campus,Active,2,3,626,13970
+2024-09,GA-A,Georgia Site A,Active,2,1,113,3280
+2024-09,GA-B,Georgia Site B,Active,2,1,72,2450
+2024-09,UT-A,Utah Site A,Active,2,1,65,1760
+2024-09,UT-B,Utah Site B,Active,2,1,81,2440
+2024-09,IL,Illinois Site,Active,2,1,77,2470
+2024-09,CA,California Site,Active,2,1,69,2280
+2024-10,BAL,Baltimore Waterfront Campus,Active,2,3,775,18110
+2024-10,GA-A,Georgia Site A,Active,2,1,109,3360
+2024-10,GA-B,Georgia Site B,Active,2,1,74,2340
+2024-10,UT-A,Utah Site A,Active,2,1,62,1840
+2024-10,UT-B,Utah Site B,Active,2,1,78,2510
+2024-10,IL,Illinois Site,Active,2,1,55,1770
+2024-10,CA,California Site,Active,2,1,90,2450
+2024-11,BAL,Baltimore Waterfront Campus,Active,2,2,411,8510
+2024-11,GA-A,Georgia Site A,Active,2,1,95,2830
+2024-11,GA-B,Georgia Site B,Active,2,1,48,1490
+2024-11,UT-A,Utah Site A,Active,2,1,53,1460
+2024-11,UT-B,Utah Site B,Active,2,1,47,1450
+2024-11,IL,Illinois Site,Active,2,1,102,2810
+2024-11,CA,California Site,Active,2,1,59,1860
+2024-12,BAL,Baltimore Waterfront Campus,Active,2,5,1645,40040
+2024-12,GA-A,Georgia Site A,Active,2,1,81,2430
+2024-12,GA-B,Georgia Site B,Active,2,1,86,2450
+2024-12,UT-A,Utah Site A,Active,2,1,80,2370
+2024-12,UT-B,Utah Site B,Active,2,1,89,2480
+2024-12,IL,Illinois Site,Active,2,1,96,2540
+2024-12,CA,California Site,Active,2,1,58,1540
+2025-01,BAL,Baltimore Waterfront Campus,Active,2,3,631,14580
+2025-01,GA-A,Georgia Site A,Active,2,1,78,2570
+2025-01,GA-B,Georgia Site B,Active,2,1,48,1250
+2025-01,UT-A,Utah Site A,Active,2,1,62,1760
+2025-01,UT-B,Utah Site B,Active,2,1,39,1170
+2025-01,IL,Illinois Site,Active,2,1,84,2550
+2025-01,CA,California Site,Active,2,1,86,2670
+2025-02,BAL,Baltimore Waterfront Campus,Active,2,2,406,9150
+2025-02,GA-A,Georgia Site A,Active,2,1,95,2720
+2025-02,GA-B,Georgia Site B,Active,2,1,72,2380
+2025-02,UT-A,Utah Site A,Active,2,1,42,1270
+2025-02,UT-B,Utah Site B,Active,2,1,82,2480
+2025-02,IL,Illinois Site,Active,2,1,103,2960
+2025-02,CA,California Site,Active,2,1,79,2330
+2025-03,BAL,Baltimore Waterfront Campus,Active,2,3,919,19810
+2025-03,GA-A,Georgia Site A,Active,2,1,123,3280
+2025-03,GA-B,Georgia Site B,Active,2,1,50,1630
+2025-03,UT-A,Utah Site A,Active,2,1,45,1470
+2025-03,UT-B,Utah Site B,Active,2,1,44,1510
+2025-03,IL,Illinois Site,Active,2,1,75,2460
+2025-04,BAL,Baltimore Waterfront Campus,Active,2,3,662,13920
+2025-04,GA-A,Georgia Site A,Active,2,1,60,1820
+2025-04,GA-B,Georgia Site B,Active,2,1,83,2410
+2025-04,UT-A,Utah Site A,Reduced scope,1,1,23,670
+2025-04,UT-B,Utah Site B,Reduced scope,1,1,43,1150
+2025-04,IL,Illinois Site,Active,2,1,95,2640
+2025-05,BAL,Baltimore Waterfront Campus,Active,2,2,538,11940
+2025-05,GA-A,Georgia Site A,Active,2,1,110,3280
+2025-05,GA-B,Georgia Site B,Active,2,1,43,1250
+2025-05,UT-A,Utah Site A,Reduced scope,1,1,33,1090
+2025-05,UT-B,Utah Site B,Reduced scope,1,1,36,1030
+2025-05,IL,Illinois Site,Active,2,1,59,1720
+2025-06,BAL,Baltimore Waterfront Campus,Active,2,3,659,14770
+2025-06,GA-A,Georgia Site A,Active,2,1,114,3240
+2025-06,GA-B,Georgia Site B,Active,2,1,75,2190
+2025-06,UT-A,Utah Site A,Reduced scope,1,1,45,1170
+2025-06,UT-B,Utah Site B,Reduced scope,1,1,21,600
+2025-07,BAL,Baltimore Waterfront Campus,Active,2,2,347,7310
+2025-07,GA-A,Georgia Site A,Active,2,1,81,2300
+2025-07,GA-B,Georgia Site B,Active,2,1,84,2740
+2025-07,UT-A,Utah Site A,Reduced scope,1,1,19,520
+2025-07,UT-B,Utah Site B,Reduced scope,1,1,28,780
+2025-08,BAL,Baltimore Waterfront Campus,Active,2,3,700,16940
+2025-08,GA-A,Georgia Site A,Active,2,1,115,3060
+2025-08,GA-B,Georgia Site B,Active,2,1,68,1870
+2025-08,UT-A,Utah Site A,Reduced scope,1,1,17,560
+2025-08,UT-B,Utah Site B,Reduced scope,1,1,29,800
+2025-09,BAL,Baltimore Waterfront Campus,Active,2,3,672,15600
+2025-09,GA-A,Georgia Site A,Active,2,1,87,2720
+2025-09,GA-B,Georgia Site B,Active,2,1,90,2420
+2025-09,UT-A,Utah Site A,Reduced scope,1,1,16,500
+2025-09,UT-B,Utah Site B,Reduced scope,1,1,20,620

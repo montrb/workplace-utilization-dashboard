@@ -16,7 +16,7 @@ The data-entry screen (Log Observation) exists only in the web version, because 
 1. Open Tableau Public. Under **Connect**, choose **Text file** and open `attendance_daily.csv`.
 2. Tableau renames fields automatically (for example `badge_swipes` becomes **Badge Swipes**). Confirm **Date** is a Date and **Floor** is a Number (whole).
 3. Add each remaining CSV as its own data source (**Data > New Data Source > Text file**):
-   `room_bookings_monthly.csv`, `focus_room_hourly.csv`, `space_observations_weekly.csv`, `clean_desk_weekly.csv`, `tech_tickets_monthly.csv`, `booking_channel_monthly.csv`, `events.csv`, `floors.csv`.
+   `room_bookings_monthly.csv`, `focus_room_hourly.csv`, `space_observations_weekly.csv`, `clean_desk_weekly.csv`, `tech_tickets_monthly.csv`, `booking_channel_monthly.csv`, `events.csv`, `catering_orders.csv`, `csat_monthly.csv`, `complaints.csv`, `rcs_log.csv`, `sites.csv`, `site_event_spend_monthly.csv`, `floors.csv`.
 4. For the monthly files, change **Month** to a Date: right-click the field > **Change Data Type > Date**. For weekly files, confirm **Week Start** is a Date.
 
 Separate data sources keep each table at its own grain, which avoids double counting when daily, weekly and monthly data sit in one view.
@@ -114,11 +114,38 @@ SUM([Satisfaction Score] * [Survey Responses]) / SUM([Survey Responses])
 ```
 Worked example: an event scored 4.0 from 100 responses and another scored 5.0 from 20 responses. (400 + 100) / 120 = 4.17.
 
-**Cost per Attendee** (events)
+**Cost per Social Attendee** (events)
 ```
-SUM([Cost Usd]) / SUM([Attendees])
+SUM([Cost Usd]) / SUM(IF [Category] = "Social" THEN [Attendees] END)
 ```
-Worked example: all events, full period: $1,153,060 / 63,123 = $18.27.
+Only social events draw on the contract event budget; wellness and firm-sponsored events carry no contract cost. Worked example: $487,520 / 21,317 = $22.87.
+
+**Home Site Share** (site_event_spend_monthly)
+```
+SUM(IF [Site Id] = "BAL" THEN [Spend Usd] END) / SUM([Spend Usd])
+```
+Worked example: $487,520 / $750,000 = 65.0%.
+
+**Order Accuracy** (catering_orders)
+```
+SUM(IF [Order Accurate] = "Yes" THEN 1 ELSE 0 END) / COUNT([Order Id])
+```
+Worked example: 1,525 / 1,610 = 94.7%. Create Coding Accuracy the same way from Chargeback Coded Correctly.
+
+**CSAT** (csat_monthly)
+```
+SUM([Satisfied Responses]) / SUM([Responses])
+```
+Worked example: QR table cards, March 2024: 277 / 304 = 91.1%, above the 88% target.
+
+**CSAT Target** (csat_monthly): a constant `0.88`, added to the CSAT line chart as a reference line.
+
+**Days to Resolve, median** (complaints): use MEDIAN([Days To Resolve]). Worked example: complaint CP0180 was logged 7 July 2023 and resolved 11 September 2023 = 66 days.
+
+**RCS Floor Filter** (rcs_log), so site-wide items appear under every floor
+```
+[Select Floor] = "All" OR [Floor] = 0 OR STR([Floor]) = [Select Floor]
+```
 
 **Event Day Rate** and **Non-Event Day Rate** (attendance_daily)
 ```
@@ -160,6 +187,24 @@ On every worksheet, drag **Floor Filter** and **In Date Range** to **Filters** a
 | Event Day Lift | Measure Names (Event Day Rate, Non-Event Day Rate) | Measure Values | Bar |
 | Latest Events | Date, Start Time, Event Name, Category, Floor, Venue | | Text table, sorted by Date descending |
 
+| Catering by Month | MONTH(Date) | SUM(Order Total) | Bar; currency format |
+| Catering by Business Unit | SUM(Order Total) | Business Unit (sorted descending) | Horizontal bar |
+| Days to Charge Back | MONTH(Date) | AVG(Days To Chargeback) | Line |
+| CSAT Trend | MONTH(Month) | CSAT | Line; reference line at CSAT Target |
+| CSAT by Channel | Source | CSAT | Bar |
+| CSAT by Service Area | CSAT | Service Area | Horizontal bar |
+| Complaints by Month | MONTH(Date Logged) | CNT(Complaint Id) | Stacked bar; Color: Category |
+| Vegan Complaints | MONTH(Date Logged) | CNT(Complaint Id) | Bar; filter Category = Not enough vegan options; annotate September 2023 |
+| Complaints Days to Resolve | MEDIAN(Days To Resolve) | Category | Horizontal bar |
+| RCS Items by Month | MONTH(Meeting Date) | CNT(Item Id) | Stacked bar; Color: Raised By |
+| RCS Days to Close | AVG(Days Open) | Category | Horizontal bar; filter Status = Closed |
+| Spend by Site and Month | MONTH(Month) | SUM(Spend Usd) | Stacked bar; Color: Site Label |
+| Cumulative Spend | MONTH(Month) | RUNNING_SUM(SUM(Spend Usd)) | Line; reference line at 750,000 |
+| Team by Site and Month | MONTH(Month) | SUM(Workplace Staff) | Stacked bar; Color: Site Label |
+| Site Roster | Site Label, Region, Contract Start, Scope Reduced, Contract Ended, Status At Close | | Text table (from sites.csv) |
+
+On the CSAT and Sites sheets, skip the Floor Filter: those views are site level.
+
 For the six room sections, duplicate the two room sheets and set the Room Type filter to Conference, Huddle, Team, Phone, Focus and Wellness in turn.
 
 Colors: keep Tableau's default **Tableau 10** palette. Use blue for primary measures, light blue for non-peak bars, and orange for highlights such as the lunch window.
@@ -169,7 +214,7 @@ Colors: keep Tableau's default **Tableau 10** palette. Use blue for primary meas
 Create one dashboard per section (**Dashboard > New Dashboard**), sized **Automatic** or 1280 x 900.
 
 1. **Header**: add a Text object at the top: "Global Financial Services Firm" (small, grey) above "Baltimore Waterfront Campus | Workplace Utilization Dashboard" (bold, 20pt).
-2. **Section navigation**: below the header, add a Horizontal container of **Navigation** objects (Dashboard > Objects > Navigation), one per section: Executive Summary, Attendance, Conference Rooms, Huddle Rooms, Team Rooms, Phone Rooms, Focus Rooms, Wellness Rooms, Lockers, Soft Seating, Pantries, Clean Desk, Technology Adoption, Events. Set each to **Text** style so it reads as a hyperlink. Copy the finished container onto every dashboard.
+2. **Section navigation**: below the header, add a Horizontal container of **Navigation** objects (Dashboard > Objects > Navigation), one per section: Executive Summary, Attendance, Conference Rooms, Huddle Rooms, Team Rooms, Phone Rooms, Focus Rooms, Wellness Rooms, Lockers, Soft Seating, Pantries, Clean Desk, Technology Adoption, Events, Catering, CSAT, Complaints, RCS Log, Sites. Set each to **Text** style so it reads as a hyperlink. Copy the finished container onto every dashboard.
 3. **Filters**: show the Select Floor, Start Month and End Month parameter controls under the navigation bar on every dashboard. On the Events dashboard, also add Category to Filters on each events sheet, show it as a single-value drop-down, and apply it to all sheets using the events data source.
 4. **Content**: KPI sheets across the top, a wide trend sheet in the middle, two supporting sheets side by side below.
 5. **Insight text**: add a Text object with the finding for that section, for example "From 11:00 to 13:59, focus rooms are occupied far more often than they are booked."
@@ -196,5 +241,7 @@ Focus Booked vs Occupied | Focus Dwell by Hour
 
 - Select Floor 4 and confirm the Wellness Rooms dashboard shows no data (wellness rooms are on floors 2, 3, 5 and 6 only).
 - With all floors selected and the full date range, Executive Summary attendance should be about 59.1% (about 1,212 badge-ins per day) and midweek attendance about 74.0%, matching the web version.
-- On the Events dashboard with all categories, confirm 250 events, 63,123 attendees and an 81.8% show rate, with firm-sponsored highest in attendees and social highest in spend.
+- On the Events dashboard with all categories, confirm 250 events, 63,123 attendees and an 81.8% show rate, with firm-sponsored highest in attendees and contract event spend of $487,520, all from social events.
+- On the Sites dashboard, confirm total spend of $750,000, a 65% home site share and a peak team of 14 in July 2024.
+- On the CSAT dashboard, confirm 89.4% overall and September 2023 as the first month at or above 88%.
 - Confirm Tuesday, Wednesday and Thursday are the three tallest bars on Attendance by Weekday.

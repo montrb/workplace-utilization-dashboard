@@ -1,0 +1,421 @@
+month,source,service_area,responses,satisfied_responses,csat
+2022-11,QR table cards,Cafe and catering,39,30,0.7692
+2022-11,QR table cards,Events,52,45,0.8654
+2022-11,QR table cards,Workplace services,43,37,0.8605
+2022-11,QR table cards,Amenities and space,46,39,0.8478
+2022-11,Newsletter survey,Cafe and catering,25,19,0.76
+2022-11,Newsletter survey,Events,29,25,0.8621
+2022-11,Newsletter survey,Workplace services,33,27,0.8182
+2022-11,Newsletter survey,Amenities and space,31,25,0.8065
+2022-11,Jive,Cafe and catering,14,11,0.7857
+2022-11,Jive,Events,14,11,0.7857
+2022-11,Jive,Workplace services,13,11,0.8462
+2022-11,Jive,Amenities and space,13,10,0.7692
+2022-12,QR table cards,Cafe and catering,46,36,0.7826
+2022-12,QR table cards,Events,54,46,0.8519
+2022-12,QR table cards,Workplace services,51,44,0.8627
+2022-12,QR table cards,Amenities and space,57,47,0.8246
+2022-12,Newsletter survey,Cafe and catering,31,25,0.8065
+2022-12,Newsletter survey,Events,34,30,0.8824
+2022-12,Newsletter survey,Workplace services,33,28,0.8485
+2022-12,Newsletter survey,Amenities and space,30,25,0.8333
+2022-12,Jive,Cafe and catering,15,12,0.8
+2022-12,Jive,Events,14,12,0.8571
+2022-12,Jive,Workplace services,15,12,0.8
+2022-12,Jive,Amenities and space,12,10,0.8333
+2023-01,QR table cards,Cafe and catering,60,48,0.8
+2023-01,QR table cards,Events,64,57,0.8906
+2023-01,QR table cards,Workplace services,63,55,0.873
+2023-01,QR table cards,Amenities and space,56,48,0.8571
+2023-01,Newsletter survey,Cafe and catering,41,32,0.7805
+2023-01,Newsletter survey,Events,40,35,0.875
+2023-01,Newsletter survey,Workplace services,43,37,0.8605
+2023-01,Newsletter survey,Amenities and space,43,37,0.8605
+2023-01,Jive,Cafe and catering,17,13,0.7647
+2023-01,Jive,Events,18,15,0.8333
+2023-01,Jive,Workplace services,16,13,0.8125
+2023-01,Jive,Amenities and space,16,13,0.8125
+2023-02,QR table cards,Cafe and catering,66,54,0.8182
+2023-02,QR table cards,Events,64,57,0.8906
+2023-02,QR table cards,Workplace services,66,59,0.8939
+2023-02,QR table cards,Amenities and space,74,65,0.8784
+2023-02,Newsletter survey,Cafe and catering,38,31,0.8158
+2023-02,Newsletter survey,Events,45,39,0.8667
+2023-02,Newsletter survey,Workplace services,41,36,0.878
+2023-02,Newsletter survey,Amenities and space,45,37,0.8222
+2023-02,Jive,Cafe and catering,19,15,0.7895
+2023-02,Jive,Events,20,17,0.85
+2023-02,Jive,Workplace services,20,17,0.85
+2023-02,Jive,Amenities and space,17,14,0.8235
+2023-03,QR table cards,Cafe and catering,68,55,0.8088
+2023-03,QR table cards,Events,67,58,0.8657
+2023-03,QR table cards,Workplace services,76,67,0.8816
+2023-03,QR table cards,Amenities and space,68,58,0.8529
+2023-03,Newsletter survey,Cafe and catering,42,34,0.8095
+2023-03,Newsletter survey,Events,46,41,0.8913
+2023-03,Newsletter survey,Workplace services,54,47,0.8704
+2023-03,Newsletter survey,Amenities and space,51,44,0.8627
+2023-03,Jive,Cafe and catering,19,15,0.7895
+2023-03,Jive,Events,17,15,0.8824
+2023-03,Jive,Workplace services,22,19,0.8636
+2023-03,Jive,Amenities and space,22,18,0.8182
+2023-04,QR table cards,Cafe and catering,80,64,0.8
+2023-04,QR table cards,Events,68,61,0.8971
+2023-04,QR table cards,Workplace services,83,74,0.8916
+2023-04,QR table cards,Amenities and space,67,59,0.8806
+2023-04,Newsletter survey,Cafe and catering,46,36,0.7826
+2023-04,Newsletter survey,Events,51,44,0.8627
+2023-04,Newsletter survey,Workplace services,44,39,0.8864
+2023-04,Newsletter survey,Amenities and space,49,42,0.8571
+2023-04,Jive,Cafe and catering,18,14,0.7778
+2023-04,Jive,Events,22,19,0.8636
+2023-04,Jive,Workplace services,20,17,0.85
+2023-04,Jive,Amenities and space,18,15,0.8333
+2023-05,QR table cards,Cafe and catering,65,52,0.8
+2023-05,QR table cards,Events,84,75,0.8929
+2023-05,QR table cards,Workplace services,72,64,0.8889
+2023-05,QR table cards,Amenities and space,69,59,0.8551
+2023-05,Newsletter survey,Cafe and catering,50,41,0.82
+2023-05,Newsletter survey,Events,49,44,0.898
+2023-05,Newsletter survey,Workplace services,48,42,0.875
+2023-05,Newsletter survey,Amenities and space,53,45,0.8491
+2023-05,Jive,Cafe and catering,20,16,0.8
+2023-05,Jive,Events,21,18,0.8571
+2023-05,Jive,Workplace services,18,16,0.8889
+2023-05,Jive,Amenities and space,18,15,0.8333
+2023-06,QR table cards,Cafe and catering,83,68,0.8193
+2023-06,QR table cards,Events,71,65,0.9155
+2023-06,QR table cards,Workplace services,80,71,0.8875
+2023-06,QR table cards,Amenities and space,74,65,0.8784
+2023-06,Newsletter survey,Cafe and catering,45,37,0.8222
+2023-06,Newsletter survey,Events,42,38,0.9048
+2023-06,Newsletter survey,Workplace services,50,45,0.9
+2023-06,Newsletter survey,Amenities and space,42,36,0.8571
+2023-06,Jive,Cafe and catering,19,15,0.7895
+2023-06,Jive,Events,22,19,0.8636
+2023-06,Jive,Workplace services,22,19,0.8636
+2023-06,Jive,Amenities and space,18,15,0.8333
+2023-07,QR table cards,Cafe and catering,77,62,0.8052
+2023-07,QR table cards,Events,69,63,0.913
+2023-07,QR table cards,Workplace services,80,71,0.8875
+2023-07,QR table cards,Amenities and space,76,67,0.8816
+2023-07,Newsletter survey,Cafe and catering,48,38,0.7917
+2023-07,Newsletter survey,Events,49,45,0.9184
+2023-07,Newsletter survey,Workplace services,55,48,0.8727
+2023-07,Newsletter survey,Amenities and space,44,38,0.8636
+2023-07,Jive,Cafe and catering,23,18,0.7826
+2023-07,Jive,Events,21,19,0.9048
+2023-07,Jive,Workplace services,20,17,0.85
+2023-07,Jive,Amenities and space,21,18,0.8571
+2023-08,QR table cards,Cafe and catering,74,61,0.8243
+2023-08,QR table cards,Events,77,68,0.8831
+2023-08,QR table cards,Workplace services,75,67,0.8933
+2023-08,QR table cards,Amenities and space,71,65,0.9155
+2023-08,Newsletter survey,Cafe and catering,40,33,0.825
+2023-08,Newsletter survey,Events,46,41,0.8913
+2023-08,Newsletter survey,Workplace services,45,39,0.8667
+2023-08,Newsletter survey,Amenities and space,43,37,0.8605
+2023-08,Jive,Cafe and catering,23,18,0.7826
+2023-08,Jive,Events,19,17,0.8947
+2023-08,Jive,Workplace services,20,17,0.85
+2023-08,Jive,Amenities and space,21,18,0.8571
+2023-09,QR table cards,Cafe and catering,82,70,0.8537
+2023-09,QR table cards,Events,66,61,0.9242
+2023-09,QR table cards,Workplace services,73,66,0.9041
+2023-09,QR table cards,Amenities and space,67,60,0.8955
+2023-09,Newsletter survey,Cafe and catering,41,34,0.8293
+2023-09,Newsletter survey,Events,50,45,0.9
+2023-09,Newsletter survey,Workplace services,50,45,0.9
+2023-09,Newsletter survey,Amenities and space,54,48,0.8889
+2023-09,Jive,Cafe and catering,20,17,0.85
+2023-09,Jive,Events,21,19,0.9048
+2023-09,Jive,Workplace services,19,16,0.8421
+2023-09,Jive,Amenities and space,22,19,0.8636
+2023-10,QR table cards,Cafe and catering,67,59,0.8806
+2023-10,QR table cards,Events,71,65,0.9155
+2023-10,QR table cards,Workplace services,85,75,0.8824
+2023-10,QR table cards,Amenities and space,86,76,0.8837
+2023-10,Newsletter survey,Cafe and catering,40,35,0.875
+2023-10,Newsletter survey,Events,48,45,0.9375
+2023-10,Newsletter survey,Workplace services,52,47,0.9038
+2023-10,Newsletter survey,Amenities and space,44,39,0.8864
+2023-10,Jive,Cafe and catering,20,17,0.85
+2023-10,Jive,Events,19,17,0.8947
+2023-10,Jive,Workplace services,22,20,0.9091
+2023-10,Jive,Amenities and space,18,15,0.8333
+2023-11,QR table cards,Cafe and catering,72,64,0.8889
+2023-11,QR table cards,Events,69,61,0.8841
+2023-11,QR table cards,Workplace services,86,79,0.9186
+2023-11,QR table cards,Amenities and space,74,67,0.9054
+2023-11,Newsletter survey,Cafe and catering,52,45,0.8654
+2023-11,Newsletter survey,Events,49,44,0.898
+2023-11,Newsletter survey,Workplace services,51,46,0.902
+2023-11,Newsletter survey,Amenities and space,44,37,0.8409
+2023-11,Jive,Cafe and catering,19,16,0.8421
+2023-11,Jive,Events,22,19,0.8636
+2023-11,Jive,Workplace services,19,17,0.8947
+2023-11,Jive,Amenities and space,22,19,0.8636
+2023-12,QR table cards,Cafe and catering,73,64,0.8767
+2023-12,QR table cards,Events,72,67,0.9306
+2023-12,QR table cards,Workplace services,79,73,0.9241
+2023-12,QR table cards,Amenities and space,86,77,0.8953
+2023-12,Newsletter survey,Cafe and catering,45,39,0.8667
+2023-12,Newsletter survey,Events,48,45,0.9375
+2023-12,Newsletter survey,Workplace services,48,43,0.8958
+2023-12,Newsletter survey,Amenities and space,55,49,0.8909
+2023-12,Jive,Cafe and catering,20,17,0.85
+2023-12,Jive,Events,19,17,0.8947
+2023-12,Jive,Workplace services,18,16,0.8889
+2023-12,Jive,Amenities and space,21,18,0.8571
+2024-01,QR table cards,Cafe and catering,71,64,0.9014
+2024-01,QR table cards,Events,76,69,0.9079
+2024-01,QR table cards,Workplace services,64,59,0.9219
+2024-01,QR table cards,Amenities and space,75,68,0.9067
+2024-01,Newsletter survey,Cafe and catering,51,45,0.8824
+2024-01,Newsletter survey,Events,42,38,0.9048
+2024-01,Newsletter survey,Workplace services,44,40,0.9091
+2024-01,Newsletter survey,Amenities and space,51,45,0.8824
+2024-01,Jive,Cafe and catering,18,15,0.8333
+2024-01,Jive,Events,19,17,0.8947
+2024-01,Jive,Workplace services,22,19,0.8636
+2024-01,Jive,Amenities and space,17,14,0.8235
+2024-02,QR table cards,Cafe and catering,84,76,0.9048
+2024-02,QR table cards,Events,78,72,0.9231
+2024-02,QR table cards,Workplace services,76,70,0.9211
+2024-02,QR table cards,Amenities and space,79,70,0.8861
+2024-02,Newsletter survey,Cafe and catering,47,42,0.8936
+2024-02,Newsletter survey,Events,41,38,0.9268
+2024-02,Newsletter survey,Workplace services,52,46,0.8846
+2024-02,Newsletter survey,Amenities and space,48,43,0.8958
+2024-02,Jive,Cafe and catering,17,15,0.8824
+2024-02,Jive,Events,21,19,0.9048
+2024-02,Jive,Workplace services,22,19,0.8636
+2024-02,Jive,Amenities and space,18,16,0.8889
+2024-03,QR table cards,Cafe and catering,77,69,0.8961
+2024-03,QR table cards,Events,73,69,0.9452
+2024-03,QR table cards,Workplace services,79,73,0.9241
+2024-03,QR table cards,Amenities and space,75,66,0.88
+2024-03,Newsletter survey,Cafe and catering,48,43,0.8958
+2024-03,Newsletter survey,Events,46,42,0.913
+2024-03,Newsletter survey,Workplace services,47,43,0.9149
+2024-03,Newsletter survey,Amenities and space,55,50,0.9091
+2024-03,Jive,Cafe and catering,17,15,0.8824
+2024-03,Jive,Events,22,20,0.9091
+2024-03,Jive,Workplace services,19,17,0.8947
+2024-03,Jive,Amenities and space,19,17,0.8947
+2024-04,QR table cards,Cafe and catering,85,76,0.8941
+2024-04,QR table cards,Events,70,66,0.9429
+2024-04,QR table cards,Workplace services,82,75,0.9146
+2024-04,QR table cards,Amenities and space,75,70,0.9333
+2024-04,Newsletter survey,Cafe and catering,46,42,0.913
+2024-04,Newsletter survey,Events,44,41,0.9318
+2024-04,Newsletter survey,Workplace services,53,47,0.8868
+2024-04,Newsletter survey,Amenities and space,44,39,0.8864
+2024-04,Jive,Cafe and catering,19,16,0.8421
+2024-04,Jive,Events,17,15,0.8824
+2024-04,Jive,Workplace services,19,17,0.8947
+2024-04,Jive,Amenities and space,18,16,0.8889
+2024-05,QR table cards,Cafe and catering,76,69,0.9079
+2024-05,QR table cards,Events,81,76,0.9383
+2024-05,QR table cards,Workplace services,80,73,0.9125
+2024-05,QR table cards,Amenities and space,73,68,0.9315
+2024-05,Newsletter survey,Cafe and catering,51,45,0.8824
+2024-05,Newsletter survey,Events,54,50,0.9259
+2024-05,Newsletter survey,Workplace services,42,38,0.9048
+2024-05,Newsletter survey,Amenities and space,51,45,0.8824
+2024-05,Jive,Cafe and catering,18,16,0.8889
+2024-05,Jive,Events,20,19,0.95
+2024-05,Jive,Workplace services,19,17,0.8947
+2024-05,Jive,Amenities and space,18,16,0.8889
+2024-06,QR table cards,Cafe and catering,79,70,0.8861
+2024-06,QR table cards,Events,68,64,0.9412
+2024-06,QR table cards,Workplace services,76,71,0.9342
+2024-06,QR table cards,Amenities and space,65,59,0.9077
+2024-06,Newsletter survey,Cafe and catering,46,41,0.8913
+2024-06,Newsletter survey,Events,53,49,0.9245
+2024-06,Newsletter survey,Workplace services,54,48,0.8889
+2024-06,Newsletter survey,Amenities and space,42,38,0.9048
+2024-06,Jive,Cafe and catering,18,16,0.8889
+2024-06,Jive,Events,19,17,0.8947
+2024-06,Jive,Workplace services,20,18,0.9
+2024-06,Jive,Amenities and space,20,18,0.9
+2024-07,QR table cards,Cafe and catering,84,75,0.8929
+2024-07,QR table cards,Events,71,66,0.9296
+2024-07,QR table cards,Workplace services,78,72,0.9231
+2024-07,QR table cards,Amenities and space,83,76,0.9157
+2024-07,Newsletter survey,Cafe and catering,48,43,0.8958
+2024-07,Newsletter survey,Events,42,39,0.9286
+2024-07,Newsletter survey,Workplace services,52,47,0.9038
+2024-07,Newsletter survey,Amenities and space,48,43,0.8958
+2024-07,Jive,Cafe and catering,21,19,0.9048
+2024-07,Jive,Events,21,19,0.9048
+2024-07,Jive,Workplace services,21,19,0.9048
+2024-07,Jive,Amenities and space,19,17,0.8947
+2024-08,QR table cards,Cafe and catering,67,60,0.8955
+2024-08,QR table cards,Events,74,69,0.9324
+2024-08,QR table cards,Workplace services,67,62,0.9254
+2024-08,QR table cards,Amenities and space,80,72,0.9
+2024-08,Newsletter survey,Cafe and catering,53,47,0.8868
+2024-08,Newsletter survey,Events,48,45,0.9375
+2024-08,Newsletter survey,Workplace services,44,40,0.9091
+2024-08,Newsletter survey,Amenities and space,50,45,0.9
+2024-08,Jive,Cafe and catering,21,18,0.8571
+2024-08,Jive,Events,17,15,0.8824
+2024-08,Jive,Workplace services,19,17,0.8947
+2024-08,Jive,Amenities and space,18,16,0.8889
+2024-09,QR table cards,Cafe and catering,84,75,0.8929
+2024-09,QR table cards,Events,65,61,0.9385
+2024-09,QR table cards,Workplace services,81,74,0.9136
+2024-09,QR table cards,Amenities and space,81,73,0.9012
+2024-09,Newsletter survey,Cafe and catering,42,38,0.9048
+2024-09,Newsletter survey,Events,46,42,0.913
+2024-09,Newsletter survey,Workplace services,48,43,0.8958
+2024-09,Newsletter survey,Amenities and space,41,38,0.9268
+2024-09,Jive,Cafe and catering,22,19,0.8636
+2024-09,Jive,Events,17,16,0.9412
+2024-09,Jive,Workplace services,18,16,0.8889
+2024-09,Jive,Amenities and space,23,20,0.8696
+2024-10,QR table cards,Cafe and catering,82,74,0.9024
+2024-10,QR table cards,Events,82,78,0.9512
+2024-10,QR table cards,Workplace services,75,69,0.92
+2024-10,QR table cards,Amenities and space,64,58,0.9062
+2024-10,Newsletter survey,Cafe and catering,53,48,0.9057
+2024-10,Newsletter survey,Events,42,39,0.9286
+2024-10,Newsletter survey,Workplace services,51,47,0.9216
+2024-10,Newsletter survey,Amenities and space,44,40,0.9091
+2024-10,Jive,Cafe and catering,19,17,0.8947
+2024-10,Jive,Events,18,16,0.8889
+2024-10,Jive,Workplace services,19,17,0.8947
+2024-10,Jive,Amenities and space,21,19,0.9048
+2024-11,QR table cards,Cafe and catering,72,64,0.8889
+2024-11,QR table cards,Events,83,78,0.9398
+2024-11,QR table cards,Workplace services,72,67,0.9306
+2024-11,QR table cards,Amenities and space,65,60,0.9231
+2024-11,Newsletter survey,Cafe and catering,43,38,0.8837
+2024-11,Newsletter survey,Events,51,48,0.9412
+2024-11,Newsletter survey,Workplace services,50,45,0.9
+2024-11,Newsletter survey,Amenities and space,50,45,0.9
+2024-11,Jive,Cafe and catering,20,18,0.9
+2024-11,Jive,Events,22,21,0.9545
+2024-11,Jive,Workplace services,17,15,0.8824
+2024-11,Jive,Amenities and space,21,18,0.8571
+2024-12,QR table cards,Cafe and catering,65,59,0.9077
+2024-12,QR table cards,Events,73,67,0.9178
+2024-12,QR table cards,Workplace services,84,77,0.9167
+2024-12,QR table cards,Amenities and space,77,72,0.9351
+2024-12,Newsletter survey,Cafe and catering,48,42,0.875
+2024-12,Newsletter survey,Events,50,46,0.92
+2024-12,Newsletter survey,Workplace services,41,39,0.9512
+2024-12,Newsletter survey,Amenities and space,42,38,0.9048
+2024-12,Jive,Cafe and catering,22,20,0.9091
+2024-12,Jive,Events,18,17,0.9444
+2024-12,Jive,Workplace services,19,17,0.8947
+2024-12,Jive,Amenities and space,22,20,0.9091
+2025-01,QR table cards,Cafe and catering,85,78,0.9176
+2025-01,QR table cards,Events,83,78,0.9398
+2025-01,QR table cards,Workplace services,74,68,0.9189
+2025-01,QR table cards,Amenities and space,82,76,0.9268
+2025-01,Newsletter survey,Cafe and catering,52,46,0.8846
+2025-01,Newsletter survey,Events,52,49,0.9423
+2025-01,Newsletter survey,Workplace services,46,41,0.8913
+2025-01,Newsletter survey,Amenities and space,49,44,0.898
+2025-01,Jive,Cafe and catering,19,17,0.8947
+2025-01,Jive,Events,23,21,0.913
+2025-01,Jive,Workplace services,17,15,0.8824
+2025-01,Jive,Amenities and space,21,18,0.8571
+2025-02,QR table cards,Cafe and catering,81,73,0.9012
+2025-02,QR table cards,Events,64,61,0.9531
+2025-02,QR table cards,Workplace services,81,75,0.9259
+2025-02,QR table cards,Amenities and space,77,70,0.9091
+2025-02,Newsletter survey,Cafe and catering,51,45,0.8824
+2025-02,Newsletter survey,Events,43,40,0.9302
+2025-02,Newsletter survey,Workplace services,46,42,0.913
+2025-02,Newsletter survey,Amenities and space,48,44,0.9167
+2025-02,Jive,Cafe and catering,21,18,0.8571
+2025-02,Jive,Events,21,19,0.9048
+2025-02,Jive,Workplace services,21,18,0.8571
+2025-02,Jive,Amenities and space,18,16,0.8889
+2025-03,QR table cards,Cafe and catering,85,78,0.9176
+2025-03,QR table cards,Events,79,73,0.9241
+2025-03,QR table cards,Workplace services,79,73,0.9241
+2025-03,QR table cards,Amenities and space,69,64,0.9275
+2025-03,Newsletter survey,Cafe and catering,45,41,0.9111
+2025-03,Newsletter survey,Events,48,46,0.9583
+2025-03,Newsletter survey,Workplace services,41,37,0.9024
+2025-03,Newsletter survey,Amenities and space,46,42,0.913
+2025-03,Jive,Cafe and catering,21,19,0.9048
+2025-03,Jive,Events,20,18,0.9
+2025-03,Jive,Workplace services,23,20,0.8696
+2025-03,Jive,Amenities and space,18,16,0.8889
+2025-04,QR table cards,Cafe and catering,81,72,0.8889
+2025-04,QR table cards,Events,73,68,0.9315
+2025-04,QR table cards,Workplace services,85,80,0.9412
+2025-04,QR table cards,Amenities and space,80,73,0.9125
+2025-04,Newsletter survey,Cafe and catering,50,45,0.9
+2025-04,Newsletter survey,Events,46,43,0.9348
+2025-04,Newsletter survey,Workplace services,51,47,0.9216
+2025-04,Newsletter survey,Amenities and space,51,46,0.902
+2025-04,Jive,Cafe and catering,19,16,0.8421
+2025-04,Jive,Events,21,20,0.9524
+2025-04,Jive,Workplace services,19,17,0.8947
+2025-04,Jive,Amenities and space,18,16,0.8889
+2025-05,QR table cards,Cafe and catering,71,65,0.9155
+2025-05,QR table cards,Events,71,68,0.9577
+2025-05,QR table cards,Workplace services,76,71,0.9342
+2025-05,QR table cards,Amenities and space,73,66,0.9041
+2025-05,Newsletter survey,Cafe and catering,50,44,0.88
+2025-05,Newsletter survey,Events,48,45,0.9375
+2025-05,Newsletter survey,Workplace services,52,47,0.9038
+2025-05,Newsletter survey,Amenities and space,51,47,0.9216
+2025-05,Jive,Cafe and catering,17,15,0.8824
+2025-05,Jive,Events,22,20,0.9091
+2025-05,Jive,Workplace services,21,19,0.9048
+2025-05,Jive,Amenities and space,18,16,0.8889
+2025-06,QR table cards,Cafe and catering,74,66,0.8919
+2025-06,QR table cards,Events,69,65,0.942
+2025-06,QR table cards,Workplace services,78,73,0.9359
+2025-06,QR table cards,Amenities and space,66,60,0.9091
+2025-06,Newsletter survey,Cafe and catering,50,44,0.88
+2025-06,Newsletter survey,Events,51,47,0.9216
+2025-06,Newsletter survey,Workplace services,50,45,0.9
+2025-06,Newsletter survey,Amenities and space,44,40,0.9091
+2025-06,Jive,Cafe and catering,20,18,0.9
+2025-06,Jive,Events,22,20,0.9091
+2025-06,Jive,Workplace services,22,19,0.8636
+2025-06,Jive,Amenities and space,20,18,0.9
+2025-07,QR table cards,Cafe and catering,81,74,0.9136
+2025-07,QR table cards,Events,75,70,0.9333
+2025-07,QR table cards,Workplace services,76,73,0.9605
+2025-07,QR table cards,Amenities and space,84,79,0.9405
+2025-07,Newsletter survey,Cafe and catering,51,45,0.8824
+2025-07,Newsletter survey,Events,45,42,0.9333
+2025-07,Newsletter survey,Workplace services,53,48,0.9057
+2025-07,Newsletter survey,Amenities and space,45,41,0.9111
+2025-07,Jive,Cafe and catering,22,19,0.8636
+2025-07,Jive,Events,20,18,0.9
+2025-07,Jive,Workplace services,20,18,0.9
+2025-07,Jive,Amenities and space,22,20,0.9091
+2025-08,QR table cards,Cafe and catering,76,68,0.8947
+2025-08,QR table cards,Events,70,64,0.9143
+2025-08,QR table cards,Workplace services,78,72,0.9231
+2025-08,QR table cards,Amenities and space,82,76,0.9268
+2025-08,Newsletter survey,Cafe and catering,47,42,0.8936
+2025-08,Newsletter survey,Events,42,39,0.9286
+2025-08,Newsletter survey,Workplace services,43,40,0.9302
+2025-08,Newsletter survey,Amenities and space,44,40,0.9091
+2025-08,Jive,Cafe and catering,17,15,0.8824
+2025-08,Jive,Events,20,18,0.9
+2025-08,Jive,Workplace services,18,16,0.8889
+2025-08,Jive,Amenities and space,23,20,0.8696
+2025-09,QR table cards,Cafe and catering,77,71,0.9221
+2025-09,QR table cards,Events,74,70,0.9459
+2025-09,QR table cards,Workplace services,71,66,0.9296
+2025-09,QR table cards,Amenities and space,78,71,0.9103
+2025-09,Newsletter survey,Cafe and catering,51,47,0.9216
+2025-09,Newsletter survey,Events,51,47,0.9216
+2025-09,Newsletter survey,Workplace services,51,47,0.9216
+2025-09,Newsletter survey,Amenities and space,45,41,0.9111
+2025-09,Jive,Cafe and catering,21,19,0.9048
+2025-09,Jive,Events,20,18,0.9
+2025-09,Jive,Workplace services,18,16,0.8889
+2025-09,Jive,Amenities and space,20,17,0.85
