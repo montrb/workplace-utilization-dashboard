@@ -18,6 +18,7 @@ I self-initiated a Tableau dashboard that combined three sources:
 1. **Badge-access data** for employees assigned to each floor
 2. **Community manager floor walks**: visual headcounts and space observations entered by floor, date and time
 3. **System data**: monthly room reservations, support tickets and requests sent to the corporate services mailbox
+4. **Event records**: RSVPs, check-ins and post-event survey scores for social, wellness and firm-sponsored programming that supported the return-to-office effort
 
 Monthly results fed an executive data summary presented to business unit and senior site leadership, informing space-planning and hybrid-policy decisions. The approach was later adopted at other community manager sites.
 
@@ -32,6 +33,7 @@ Monthly results fed an executive data summary presented to business unit and sen
 | Lockers, Soft Seating, Pantries | Community manager floor walk | Floor, week |
 | Clean Desk | Desks tagged noncompliant, bags of personal items collected | Floor, week |
 | Technology Adoption | Support tickets, mailbox booking requests | Floor and site, month |
+| Events | Event calendar, RSVPs, check-ins and post-event surveys; filter by Social, Wellness or Firm-sponsored | Event |
 | Log Observation | Recreated community manager entry screen | Entry |
 
 Every view responds to a **floor filter (Floors 1 to 7)** and a **month range**. Section names in the header are hyperlinks, mirroring the original layout. Floor amenities: cafe on Floor 1, mail room on Floor 4, reception on Floor 7.
@@ -41,6 +43,7 @@ Every view responds to a **floor filter (Floors 1 to 7)** and a **month range**.
 - **Tuesday to Thursday peaks.** Midweek attendance runs roughly double Monday and Friday, so peak-day demand, not average demand, sets desk, locker and room requirements.
 - **Lunch-hour camping in focus rooms.** Between 11:00 and 13:59, focus rooms are occupied far more often than they are booked, and average dwell time roughly doubles. Employees were using focus rooms through lunch without reservations.
 - **Technology adoption.** Support tickets and manual booking requests to the corporate services mailbox fell sharply as employees moved to self-service booking.
+- **Events bring people in.** Tuesday to Thursday attendance runs about three points higher on days with an event than on days without one. Firm-sponsored events convert RSVPs to attendance best, social events least, which sets how far to over-invite for each type.
 - **Clean desk compliance.** Tagging noncompliant desks and collecting personal items weekly drove the noncompliance rate down steadily after launch.
 
 ## Metric definitions
@@ -74,6 +77,18 @@ Example, same week: 7 / 225 = **3.1%**, with 4 bags of personal items collected
 **Self-service booking share** = self-service bookings / (self-service bookings + mailbox requests)
 Example, site level, March 2024: 4,583 / (4,583 + 60) = **98.7%**
 
+**Event show rate** = attendees checked in / RSVPs
+Example, Site Town Hall, 17 September 2025 (Floor 7, Firm-sponsored): 320 / 379 = **84.4%**
+
+**Average satisfaction** = sum of (event score x survey responses) / total survey responses, so larger events carry more weight than small ones
+Example, two events scored 4.0 with 100 responses and 5.0 with 20 responses: (4.0 x 100 + 5.0 x 20) / 120 = **4.17**, not the simple average of 4.5
+
+**Cost per attendee** = total event cost / total attendees
+Example, all events: $368,190 / 26,244 = **$14.03**
+
+**Event-day attendance lift** = attendance rate on Tuesday to Thursday event days - attendance rate on Tuesday to Thursday days with no event
+Example, all floors, full period: 67.6% - 64.7% = **2.9 points**. Limiting both sides to Tuesday to Thursday keeps the comparison fair, because most events are scheduled midweek.
+
 **Mailbox request reduction** = (average of first 3 months - average of latest 3 months) / average of first 3 months
 Example, full period: (337 - 35) / 337 = **89.6%**
 
@@ -85,13 +100,14 @@ All tables are CSV files in the repository root and join on `floor`.
 |---|---|---|
 | `floors.csv` | Floor | assigned_headcount, desks, lockers, soft_seats, amenity, has_wellness_room |
 | `rooms.csv` | Room | room_id, floor, room_type |
-| `attendance_daily.csv` | Floor x business day | badge_swipes, observed_headcount, attendance_rate, desk_occupancy, observation_time, community_manager |
+| `attendance_daily.csv` | Floor x business day | badge_swipes, observed_headcount, attendance_rate, desk_occupancy, observation_time, community_manager, event_day |
 | `room_bookings_monthly.csv` | Room x month | bookings, booked_hours, available_hours, utilization_pct |
 | `focus_room_hourly.csv` | Floor x month x hour | booked_pct, occupied_pct, unbooked_occupancy_pct, avg_dwell_minutes |
 | `space_observations_weekly.csv` | Floor x week | lockers_in_use, soft_seating_peak, pantry_peak_count |
 | `clean_desk_weekly.csv` | Floor x week | desks_tagged_noncompliant, noncompliance_rate, bags_collected |
 | `tech_tickets_monthly.csv` | Floor x month x category | tickets |
 | `booking_channel_monthly.csv` | Site x month | mailbox_requests, self_service_bookings, self_service_share |
+| `events.csv` | Event | date, start_time, floor, venue, category, event_name, capacity, rsvps, attendees, show_rate, survey_responses, satisfaction_score, cost_usd |
 
 ## How the synthetic data is built
 
@@ -103,6 +119,7 @@ All tables are CSV files in the repository root and join on `floor`.
 - Room demand scaled to monthly attendance, with type-specific utilization and booking lengths
 - A lunch-hour gap between focus room occupancy and bookings, with longer dwell times
 - Decay curves for clean desk noncompliance, support tickets and mailbox requests after launch
+- An event calendar of social, wellness and firm-sponsored programming, mostly midweek, with a holiday celebration each December and a site-wide attendance lift on event days
 
 ## Repository structure
 
