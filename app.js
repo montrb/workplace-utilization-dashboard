@@ -44,7 +44,7 @@
     { id: 'phone', label: 'Phone Rooms', room: 'Phone' },
     { id: 'focus', label: 'Focus Rooms', room: 'Focus' },
     { id: 'wellness', label: 'Wellness Rooms', room: 'Wellness' },
-    { id: 'lockers', label: 'Lockers' },
+    { id: 'lockers', label: 'Locker Utilization' },
     { id: 'soft-seating', label: 'Soft Seating' },
     { id: 'pantries', label: 'Pantries' },
     { id: 'clean-desk', label: 'Clean Desk' },
@@ -373,20 +373,48 @@
   }
 
   function renderLockers() {
-    renderWeekly({
-      title: 'Lockers', lede: 'Weekly count of lockers in use from the locker system, observed midweek.',
-      seriesLabel: 'Locker utilization', pct: true,
-      trendTitle: 'Locker utilization by week', floorTitle: 'Locker utilization by floor',
-      agg: (r) => sum(r.map((x) => x.lockers_in_use)) / sum(r.map((x) => x.lockers_total)),
-      kpis: (rows, weeks) => {
-        const last = rows.filter((r) => r.week_start === weeks[weeks.length - 1]);
-        return kpi('Lockers in scope', num(sum(floorsInScope().map((f) => f.lockers))), scopeLabel()) +
-          kpi('Avg lockers in use', num(sum(rows.map((r) => r.lockers_in_use)) / weeks.length), 'Per weekly observation') +
-          kpi('Utilization', pct(sum(rows.map((r) => r.lockers_in_use)) / sum(rows.map((r) => r.lockers_total))), rangeLabel()) +
-          kpi('Latest week', pct(sum(last.map((r) => r.lockers_in_use)) / sum(last.map((r) => r.lockers_total))), 'Week of ' + weeks[weeks.length - 1]);
-      },
-      insight: () => 'Locker use climbed as hot desking matured: employees who initially carried belongings floor to floor adopted assigned-for-the-day lockers once the booking workflow was familiar.',
-    });
+    const rows = filt(SPACE, 'week_start');
+    if (!rows.length) return empty('No data in the selected range.');
+    const byWeek = groupBy(rows, (r) => r.week_start);
+    const weeks = sortedKeys(byWeek);
+    const total = sum(floorsInScope().map((f) => f.lockers));
+    const avgAssigned = sum(rows.map((r) => r.lockers_assigned)) / weeks.length;
+    const avgInUse = sum(rows.map((r) => r.lockers_in_use)) / weeks.length;
+    const lastWk = weeks[weeks.length - 1];
+    const last = byWeek.get(lastWk);
+    let html = header('Locker Utilization', 'Lockers assigned to employees in the locker system, logged by floor alongside lockers in use from the weekly floor walk.');
+    html += '<div class="kpis">' +
+      kpi('Lockers in scope', num(total), scopeLabel()) +
+      kpi('Avg lockers assigned', num(avgAssigned), pct(avgAssigned / total) + ' of lockers') +
+      kpi('Avg lockers in use', num(avgInUse), pct(avgInUse / total) + ' of lockers') +
+      kpi('In use of assigned', pct(avgInUse / avgAssigned), 'Lockers in use / lockers assigned') +
+      kpi('Latest week', num(sum(last.map((r) => r.lockers_assigned))) + ' / ' + num(sum(last.map((r) => r.lockers_in_use))), 'Assigned / in use, week of ' + lastWk) +
+      '</div>';
+    html += insight([
+      'On average ' + num(avgAssigned - avgInUse) + ' assigned lockers sat unused each week (' + pct(1 - avgInUse / avgAssigned, 0) + ' of assignments), the gap that informs locker release and reassignment.',
+      'Assignments climbed as hot desking matured: employees who initially carried belongings floor to floor adopted lockers once the booking workflow was familiar.',
+    ]);
+    html += '<div class="grid">' + sheet('ch-lk-trend', 'Lockers assigned and in use by week', true) + sheet('ch-lk-floor', 'Lockers assigned and in use by floor (weekly average)') + sheet('ch-lk-rate', 'Assignment and utilization rate by floor') + '</div>';
+    const fl = floorsInScope();
+    html += '<div class="sheet wide" style="margin-top:16px"><h3>Latest week by floor: ' + lastWk + '</h3><div class="table-wrap"><table><thead><tr><th>Floor</th><th class="num">Total lockers</th><th class="num">Assigned</th><th class="num">In use</th><th class="num">Assigned rate</th><th class="num">Utilization</th><th class="num">In use of assigned</th></tr></thead><tbody>' +
+      fl.map((f) => { const r = last.find((x) => x.floor === f.floor); return r ? '<tr><td>Floor ' + f.floor + '</td><td class="num">' + r.lockers_total + '</td><td class="num">' + r.lockers_assigned + '</td><td class="num">' + r.lockers_in_use + '</td><td class="num">' + pct(r.lockers_assigned / r.lockers_total) + '</td><td class="num">' + pct(r.lockers_in_use / r.lockers_total) + '</td><td class="num">' + pct(r.lockers_in_use / r.lockers_assigned) + '</td></tr>' : ''; }).join('') +
+      '</tbody></table></div></div>';
+    $('view').innerHTML = html;
+    lineChart('ch-lk-trend', weeks.map(shortWeek), [
+      { label: 'Assigned', data: weeks.map((w) => sum(byWeek.get(w).map((r) => r.lockers_assigned))) },
+      { label: 'In use', data: weeks.map((w) => sum(byWeek.get(w).map((r) => r.lockers_in_use))), color: C.orange },
+      { label: 'Total lockers', data: weeks.map(() => total), color: C.grey, borderDash: [6, 4], borderWidth: 1.5 },
+    ]);
+    const byFloor = groupBy(rows, (r) => r.floor);
+    const n = (f) => byFloor.get(f.floor).length;
+    barChart('ch-lk-floor', fl.map((f) => 'Floor ' + f.floor), [
+      { label: 'Assigned', data: fl.map((f) => sum(byFloor.get(f.floor).map((r) => r.lockers_assigned)) / n(f)), backgroundColor: C.blue },
+      { label: 'In use', data: fl.map((f) => sum(byFloor.get(f.floor).map((r) => r.lockers_in_use)) / n(f)), backgroundColor: C.orange },
+    ]);
+    barChart('ch-lk-rate', fl.map((f) => 'Floor ' + f.floor), [
+      { label: 'Assigned rate', data: fl.map((f) => sum(byFloor.get(f.floor).map((r) => r.lockers_assigned)) / sum(byFloor.get(f.floor).map((r) => r.lockers_total))), backgroundColor: C.blue },
+      { label: 'Utilization', data: fl.map((f) => sum(byFloor.get(f.floor).map((r) => r.lockers_in_use)) / sum(byFloor.get(f.floor).map((r) => r.lockers_total))), backgroundColor: C.orange },
+    ], { pct: true, max: 1 });
   }
 
   function renderSoftSeating() {
@@ -778,7 +806,7 @@
     phone: [['occupants', 'Occupants observed'], ['reservation_on_file', 'Reservation on file (1 = yes, 0 = no)']],
     focus: [['occupants', 'Occupants observed'], ['reservation_on_file', 'Reservation on file (1 = yes, 0 = no)']],
     wellness: [['occupants', 'Occupants observed'], ['reservation_on_file', 'Reservation on file (1 = yes, 0 = no)']],
-    lockers: [['lockers_in_use', 'Lockers in use']],
+    lockers: [['lockers_assigned', 'Lockers assigned'], ['lockers_in_use', 'Lockers in use']],
     'soft-seating': [['seats_occupied', 'Soft seats occupied']],
     pantries: [['pantry_occupancy', 'People in pantry']],
     'clean-desk': [['desks_tagged_noncompliant', 'Desks tagged noncompliant'], ['bags_collected', 'Bags of personal items collected']],
@@ -904,7 +932,7 @@
     $('client-name').textContent = D.site.client;
     $('site-name').textContent = D.site.site + ' | Workplace Utilization Dashboard';
     const assigned = sum(FLOORS.map((f) => f.assigned_headcount));
-    $('site-meta').textContent = D.site.square_feet.toLocaleString('en-US') + ' sq ft  ·  ' + D.site.floors + ' floors  ·  ' + assigned.toLocaleString('en-US') + ' assigned employees  ·  ' + monthLabel(MONTHS[0]) + ' to ' + monthLabel(MONTHS[MONTHS.length - 1]) + '  ·  Synthetic data';
+    $('site-meta').textContent = D.site.square_feet.toLocaleString('en-US') + ' sq ft  ·  ' + D.site.floors + ' floors  ·  ' + assigned.toLocaleString('en-US') + ' assigned employees  ·  ' + monthLabel(MONTHS[0]) + ' to ' + monthLabel(MONTHS[MONTHS.length - 1]);
 
     $('section-nav').innerHTML = SECTIONS.map((s) => '<a href="#' + s.id + '" data-id="' + s.id + '">' + esc(s.label) + '</a>').join('');
     $('floor-filter').innerHTML = '<option value="all">All floors</option>' + FLOORS.map((f) => '<option value="' + f.floor + '">Floor ' + f.floor + (f.amenity ? ' (' + esc(f.amenity) + ')' : '') + '</option>').join('');

@@ -5,7 +5,7 @@ An interactive recreation of the hybrid-workplace KPI dashboard I designed and r
 **Live dashboard:** https://montrb.github.io/workplace-utilization-dashboard/
 **Tableau Public version:** see [TABLEAU_BUILD_GUIDE.md](TABLEAU_BUILD_GUIDE.md)
 
-> **Data notice.** The client is anonymized as a Global Financial Services Firm, Baltimore Waterfront Campus. Every figure in this repository is synthetic. The generator reproduces the program's methodology, scale and observed patterns; it contains no client data.
+> **Data Note:** Metrics reflect representative real-world operational data, with figures modified to preserve confidentiality. Dashboard design and analytical methodology reflect my professional experience. The client is presented as a Global Financial Services Firm, Baltimore Waterfront Campus.
 
 ---
 
@@ -34,7 +34,8 @@ Monthly results fed an executive data summary presented to business unit and sen
 | Attendance | Badge swipes and visual headcount | Floor, business day |
 | Conference, Huddle, Team, Phone, Focus Rooms | Room reservations | Room, month (one of each type per floor) |
 | Wellness Rooms | Room reservations | Room, month (four rooms: floors 2, 3, 5, 6) |
-| Lockers, Soft Seating, Pantries | Community manager floor walk | Floor, week |
+| Locker Utilization | Lockers assigned through the locker system and lockers in use from the floor walk | Floor, week |
+| Soft Seating, Pantries | Community manager floor walk | Floor, week |
 | Clean Desk | Desks tagged noncompliant, bags of personal items collected | Floor, week |
 | Technology Adoption | Support tickets, mailbox booking requests | Floor and site, month |
 | Events | Event calendar, RSVPs, check-ins and post-event surveys; filter by Social, Wellness or Firm-sponsored | Event |
@@ -79,8 +80,14 @@ Example, Floor 4 focus room, March 2024: 21 business days x 10 = 210 available h
 **Unbooked occupancy (focus rooms)** = observed occupancy rate - booked rate, by hour
 Example, Floor 4, 12:00, March 2024: occupied 84.6% - booked 38.7% = **46.0 points** of occupancy with no reservation behind it; average dwell 93 minutes
 
+**Locker assignment rate** = lockers assigned / total lockers
+Example, Floor 4, week of 11 March 2024: 215 / 250 = **86.0%**
+
 **Locker utilization** = lockers in use / total lockers
-Example, week of 11 March 2024: 173 / 250 = **69.2%**
+Example, same week: 173 / 250 = **69.2%**
+
+**In use of assigned** = lockers in use / lockers assigned; the gap shows assigned lockers sitting unused and available for release
+Example, same week: 173 / 215 = **80.5%**, so 42 assigned lockers were not in use
 
 **Soft seating utilization** = peak soft seats occupied / total soft seats
 Example, same week: 22 / 32 = **68.8%**
@@ -138,7 +145,7 @@ All tables are CSV files in the repository root and join on `floor`.
 | `attendance_daily.csv` | Floor x business day | badge_swipes, observed_headcount, attendance_rate, desk_occupancy, observation_time, community_manager, event_day |
 | `room_bookings_monthly.csv` | Room x month | bookings, booked_hours, available_hours, utilization_pct |
 | `focus_room_hourly.csv` | Floor x month x hour | booked_pct, occupied_pct, unbooked_occupancy_pct, avg_dwell_minutes |
-| `space_observations_weekly.csv` | Floor x week | lockers_in_use, soft_seating_peak, pantry_peak_count |
+| `space_observations_weekly.csv` | Floor x week | lockers_assigned, lockers_in_use, soft_seating_peak, pantry_peak_count |
 | `clean_desk_weekly.csv` | Floor x week | desks_tagged_noncompliant, noncompliance_rate, bags_collected |
 | `tech_tickets_monthly.csv` | Floor x month x category | tickets |
 | `booking_channel_monthly.csv` | Site x month | mailbox_requests, self_service_bookings, self_service_share |
@@ -150,9 +157,9 @@ All tables are CSV files in the repository root and join on `floor`.
 | `sites.csv` | Site | site_label, region, contract_start, full_staffing_from, scope_reduced, contract_ended, status_at_close, peak_staff |
 | `site_event_spend_monthly.csv` | Site x month | status, workplace_staff, social_events, attendees, spend_usd |
 
-## How the synthetic data is built
+## How the data model is built
 
-[`generate_data.py`](generate_data.py) uses a fixed random seed so results are reproducible. It models:
+[`generate_data.py`](generate_data.py) rebuilds the program's figures at their operating scale, with values modified to preserve confidentiality. It uses a fixed random seed so results are reproducible, and models:
 
 - Weekday attendance factors with a Tuesday to Thursday peak
 - A return-to-office adoption curve from launch, with policy steps in September 2024 and January 2025
@@ -174,7 +181,7 @@ style.css                   Tableau-style theme (edit the CSS variables to re-th
 data.js                     Generated data for the web dashboard
 chart.umd.min.js            Chart.js (bundled so the page works offline)
 *.csv                       Data tables for Tableau Public
-generate_data.py            Synthetic data generator
+generate_data.py            Data model generator
 TABLEAU_BUILD_GUIDE.md      Step-by-step Tableau Public build
 ```
 

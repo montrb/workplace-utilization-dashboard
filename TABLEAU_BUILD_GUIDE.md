@@ -85,6 +85,18 @@ SUM([Lockers In Use]) / SUM([Lockers Total])
 ```
 Worked example: Floor 4, week of 11 March 2024: 173 / 250 = 69.2%.
 
+**Locker Assignment Rate** (space_observations_weekly)
+```
+SUM([Lockers Assigned]) / SUM([Lockers Total])
+```
+Worked example: Floor 4, week of 11 March 2024: 215 / 250 = 86.0%.
+
+**In Use of Assigned** (space_observations_weekly)
+```
+SUM([Lockers In Use]) / SUM([Lockers Assigned])
+```
+Worked example: same week: 173 / 215 = 80.5%, so 42 assigned lockers were not in use.
+
 **Soft Seating Utilization** (space_observations_weekly)
 ```
 SUM([Soft Seating Peak]) / SUM([Soft Seats Total])
@@ -172,7 +184,8 @@ On every worksheet, drag **Floor Filter** and **In Date Range** to **Filters** a
 | Room Utilization by Floor | Floor | Room Utilization | Bar; filter Room Type |
 | Focus Booked vs Occupied | Hour Label | AVG(Booked Pct), AVG(Occupied Pct) | Line; Measure Names on Color |
 | Focus Dwell by Hour | Hour Label | AVG(Avg Dwell Minutes) | Bar; Color: Lunch Window |
-| Locker Utilization Trend | WEEK(Week Start) | Locker Utilization | Line |
+| Lockers Assigned vs In Use | WEEK(Week Start) | SUM(Lockers Assigned), SUM(Lockers In Use) | Line; Measure Names on Color |
+| Lockers by Floor | Floor | SUM(Lockers Assigned), SUM(Lockers In Use) | Side-by-side bar |
 | Soft Seating Trend | WEEK(Week Start) | Soft Seating Utilization | Line |
 | Pantry Trend | WEEK(Week Start) | SUM(Pantry Peak Count) | Line |
 | Clean Desk Trend | WEEK(Week Start) | SUM(Desks Tagged Noncompliant), SUM(Bags Collected) dual axis | Bar and Line |
@@ -214,7 +227,7 @@ Colors: keep Tableau's default **Tableau 10** palette. Use blue for primary meas
 Create one dashboard per section (**Dashboard > New Dashboard**), sized **Automatic** or 1280 x 900.
 
 1. **Header**: add a Text object at the top: "Global Financial Services Firm" (small, grey) above "Baltimore Waterfront Campus | Workplace Utilization Dashboard" (bold, 20pt).
-2. **Section navigation**: below the header, add a Horizontal container of **Navigation** objects (Dashboard > Objects > Navigation), one per section: Executive Summary, Attendance, Conference Rooms, Huddle Rooms, Team Rooms, Phone Rooms, Focus Rooms, Wellness Rooms, Lockers, Soft Seating, Pantries, Clean Desk, Technology Adoption, Events, Catering, CSAT, Complaints, RCS Log, Sites. Set each to **Text** style so it reads as a hyperlink. Copy the finished container onto every dashboard.
+2. **Section navigation**: below the header, add a Horizontal container of **Navigation** objects (Dashboard > Objects > Navigation), one per section: Executive Summary, Attendance, Conference Rooms, Huddle Rooms, Team Rooms, Phone Rooms, Focus Rooms, Wellness Rooms, Locker Utilization, Soft Seating, Pantries, Clean Desk, Technology Adoption, Events, Catering, CSAT, Complaints, RCS Log, Sites. Set each to **Text** style so it reads as a hyperlink. Copy the finished container onto every dashboard.
 3. **Filters**: show the Select Floor, Start Month and End Month parameter controls under the navigation bar on every dashboard. On the Events dashboard, also add Category to Filters on each events sheet, show it as a single-value drop-down, and apply it to all sheets using the events data source.
 4. **Content**: KPI sheets across the top, a wide trend sheet in the middle, two supporting sheets side by side below.
 5. **Insight text**: add a Text object with the finding for that section, for example "From 11:00 to 13:59, focus rooms are occupied far more often than they are booked."
@@ -234,7 +247,7 @@ Focus Booked vs Occupied | Focus Dwell by Hour
 ## 7. Publish
 
 1. **File > Save to Tableau Public As**, name the workbook "Workplace Utilization Dashboard".
-2. On your Tableau Public profile, open the workbook, select **Edit Details**, and add a description noting that the data is synthetic.
+2. On your Tableau Public profile, open the workbook, select **Edit Details**, and add this description: "Data Note: Metrics reflect representative real-world operational data, with figures modified to preserve confidentiality. Dashboard design and analytical methodology reflect my professional experience."
 3. Copy the workbook URL and add it to the repository README beside the live dashboard link.
 
 ## 8. Quality checks

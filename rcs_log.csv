@@ -1,67 +1,67 @@
 item_id,meeting_date,raised_by,category,item,floor,priority,owner,status,date_closed,days_open
-RCS0001,2022-11-03,VP Regional Client Services,Event support,Client visit hospitality,0,Low,IFM partner,Closed,2022-11-26,23
+RCS0001,2022-11-03,VP Regional Client Services,Event support,Client visit hospitality,0,Low,Service vendor,Closed,2022-11-26,23
 RCS0002,2022-11-03,IFM partner,Maintenance,Generator test notice,0,High,IFM partner,Closed,2022-11-09,6
 RCS0003,2022-11-03,IFM partner,Health and safety,Fire drill coordination,0,High,IFM partner,Closed,2022-11-07,4
 RCS0004,2022-11-03,IFM partner,Health and safety,AED and first aid kit audit,0,Low,IFM partner,Closed,2022-11-08,5
 RCS0005,2022-11-10,IFM partner,Maintenance,Badge reader fault at floor 3 entrance,3,Medium,IFM partner,Closed,2022-11-23,13
 RCS0006,2022-11-10,VP Regional Client Services,Event support,Holiday celebration planning,0,High,Workplace experience team,Closed,2022-11-21,11
-RCS0007,2022-11-10,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Low,Workplace experience team,Closed,2022-12-19,39
-RCS0008,2022-11-17,IFM partner,Building project,Elevator modernization phasing,0,Medium,Workplace experience team,Closed,2023-02-20,95
-RCS0009,2022-11-17,Service vendor,Vendor performance,Janitorial coverage gaps on floor 3,3,High,IFM partner,Closed,2022-12-10,23
+RCS0007,2022-11-10,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Low,IFM partner,Closed,2022-12-19,39
+RCS0008,2022-11-17,IFM partner,Building project,Elevator modernization phasing,0,Medium,IFM partner,Closed,2023-02-20,95
+RCS0009,2022-11-17,Service vendor,Vendor performance,Janitorial coverage gaps on floor 3,3,High,Service vendor,Closed,2022-12-10,23
 RCS0010,2022-11-17,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,IFM partner,Closed,2022-11-30,13
-RCS0011,2022-11-17,VP Regional Client Services,Space change,Desk count adjustment on floor 3,3,Medium,Service vendor,Closed,2022-12-03,16
+RCS0011,2022-11-17,VP Regional Client Services,Space change,Desk count adjustment on floor 3,3,Medium,Workplace experience team,Closed,2022-12-03,16
 RCS0012,2022-11-17,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Workplace experience team,Closed,2022-12-04,17
 RCS0013,2022-12-01,VP Regional Client Services,Event support,Client visit hospitality,0,Low,Workplace experience team,Closed,2022-12-08,7
 RCS0014,2022-12-01,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2022-12-08,7
 RCS0015,2022-12-01,VP Regional Client Services,Event support,Volunteer day logistics,0,High,Workplace experience team,Closed,2022-12-13,12
-RCS0016,2022-12-01,IFM partner,Building project,Window washing schedule,0,Low,IFM partner,Closed,2023-02-01,62
+RCS0016,2022-12-01,IFM partner,Building project,Window washing schedule,0,Low,Service vendor,Closed,2023-02-01,62
 RCS0017,2022-12-01,IFM partner,Maintenance,Water leak in floor 1 pantry,1,Low,IFM partner,Closed,2022-12-09,8
-RCS0018,2022-12-08,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,Workplace experience team,Closed,2022-12-17,9
+RCS0018,2022-12-08,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,IFM partner,Closed,2022-12-17,9
 RCS0019,2022-12-08,VP Regional Client Services,Event support,Client visit hospitality,0,Medium,Workplace experience team,Closed,2023-01-01,24
 RCS0020,2022-12-08,Service vendor,Vendor performance,Mail room delivery timing,0,Low,Service vendor,Closed,2022-12-31,23
 RCS0021,2022-12-08,IFM partner,Building project,Window washing schedule,0,Medium,IFM partner,Closed,2023-02-20,74
 RCS0022,2022-12-15,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,Workplace experience team,Closed,2022-12-25,10
-RCS0023,2022-12-15,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,IFM partner,Closed,2022-12-30,15
+RCS0023,2022-12-15,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Service vendor,Closed,2022-12-30,15
 RCS0024,2022-12-15,IFM partner,Building project,Restroom renovation on floor 2,2,Medium,IFM partner,Closed,2023-01-03,19
 RCS0025,2022-12-15,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,Workplace experience team,Closed,2023-01-10,26
-RCS0026,2022-12-22,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Service vendor,Closed,2022-12-30,8
+RCS0026,2022-12-22,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2022-12-30,8
 RCS0027,2022-12-22,IFM partner,Maintenance,Generator test notice,0,Low,IFM partner,Closed,2023-01-02,11
 RCS0028,2022-12-22,Workplace experience team,Workplace programs,Clean desk campaign update,0,High,Workplace experience team,Closed,2022-12-30,8
 RCS0029,2022-12-22,Service vendor,Vendor performance,Pantry restock delays,0,Low,Service vendor,Closed,2023-01-05,14
 RCS0030,2022-12-29,VP Regional Client Services,Event support,Town hall setup and AV,0,High,Workplace experience team,Closed,2023-01-05,7
-RCS0031,2023-01-05,IFM partner,Health and safety,Fire drill coordination,0,High,IFM partner,Closed,2023-01-10,5
+RCS0031,2023-01-05,IFM partner,Health and safety,Fire drill coordination,0,High,Service vendor,Closed,2023-01-10,5
 RCS0032,2023-01-05,VP Regional Client Services,Space change,Business unit move to floor 4,4,Medium,Workplace experience team,Closed,2023-01-18,13
-RCS0033,2023-01-12,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,Service vendor,Closed,2023-02-16,35
+RCS0033,2023-01-12,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,Workplace experience team,Closed,2023-02-16,35
 RCS0034,2023-01-12,IFM partner,Maintenance,Badge reader fault at floor 7 entrance,7,Medium,IFM partner,Closed,2023-01-22,10
-RCS0035,2023-01-19,VP Regional Client Services,Space change,New hire onboarding wave,0,Medium,Service vendor,Closed,2023-02-13,25
+RCS0035,2023-01-19,VP Regional Client Services,Space change,New hire onboarding wave,0,Medium,Workplace experience team,Closed,2023-02-13,25
 RCS0036,2023-01-19,VP Regional Client Services,Space change,Business unit move to floor 3,3,Medium,Workplace experience team,Closed,2023-02-14,26
 RCS0037,2023-01-19,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2023-01-25,6
-RCS0038,2023-01-26,VP Regional Client Services,Space change,Business unit move to floor 7,7,Medium,IFM partner,Closed,2023-03-17,50
-RCS0039,2023-01-26,VP Regional Client Services,Space change,Neighborhood reassignment on floor 7,7,Low,Service vendor,Closed,2023-03-03,36
+RCS0038,2023-01-26,VP Regional Client Services,Space change,Business unit move to floor 7,7,Medium,Service vendor,Closed,2023-03-17,50
+RCS0039,2023-01-26,VP Regional Client Services,Space change,Neighborhood reassignment on floor 7,7,Low,Workplace experience team,Closed,2023-03-03,36
 RCS0040,2023-01-26,Service vendor,Vendor performance,Janitorial coverage gaps on floor 4,4,Medium,Service vendor,Closed,2023-02-05,10
 RCS0041,2023-01-26,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2023-02-03,8
 RCS0042,2023-01-26,VP Regional Client Services,Event support,Heritage month programming,0,Low,Workplace experience team,Closed,2023-02-08,13
 RCS0043,2023-01-26,IFM partner,Maintenance,Water leak in floor 3 pantry,3,Medium,IFM partner,Closed,2023-01-30,4
-RCS0044,2023-02-02,VP Regional Client Services,Space change,Business unit move to floor 5,5,Medium,IFM partner,Closed,2023-02-18,16
+RCS0044,2023-02-02,VP Regional Client Services,Space change,Business unit move to floor 5,5,Medium,Service vendor,Closed,2023-02-18,16
 RCS0045,2023-02-02,IFM partner,Maintenance,Plumbing repair on floor 3,3,Medium,IFM partner,Closed,2023-02-27,25
-RCS0046,2023-02-02,IFM partner,Building project,LED lighting retrofit,0,Low,Service vendor,Closed,2023-03-07,33
+RCS0046,2023-02-02,IFM partner,Building project,LED lighting retrofit,0,Low,Workplace experience team,Closed,2023-03-07,33
 RCS0047,2023-02-02,IFM partner,Building project,Furniture refresh on floor 6,6,High,IFM partner,Closed,2023-02-25,23
 RCS0048,2023-02-09,IFM partner,Maintenance,Plumbing repair on floor 7,7,Low,IFM partner,Closed,2023-02-16,7
 RCS0049,2023-02-09,IFM partner,Building project,Carpet replacement on floor 6,6,Medium,IFM partner,Closed,2023-03-12,31
 RCS0050,2023-02-09,IFM partner,Maintenance,Generator test notice,0,High,IFM partner,Closed,2023-02-19,10
 RCS0051,2023-02-09,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,Workplace experience team,Closed,2023-02-23,14
 RCS0052,2023-02-09,Service vendor,Vendor performance,Janitorial coverage gaps on floor 2,2,Medium,Service vendor,Closed,2023-03-04,23
-RCS0053,2023-02-09,Service vendor,Vendor performance,Mail room delivery timing,0,High,Workplace experience team,Closed,2023-02-25,16
+RCS0053,2023-02-09,Service vendor,Vendor performance,Mail room delivery timing,0,High,IFM partner,Closed,2023-02-25,16
 RCS0054,2023-02-09,IFM partner,Building project,Window washing schedule,0,Medium,IFM partner,Closed,2023-03-05,24
-RCS0055,2023-02-16,IFM partner,Health and safety,Floor warden roster update,0,Low,Workplace experience team,Closed,2023-02-20,4
+RCS0055,2023-02-16,IFM partner,Health and safety,Floor warden roster update,0,Low,IFM partner,Closed,2023-02-20,4
 RCS0056,2023-02-23,IFM partner,Building project,Furniture refresh on floor 3,3,Medium,IFM partner,Closed,2023-03-20,25
 RCS0057,2023-02-23,IFM partner,Health and safety,Severe weather early closure,0,Medium,IFM partner,Closed,2023-03-03,8
 RCS0058,2023-02-23,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,High,Service vendor,Closed,2023-03-08,13
 RCS0059,2023-03-02,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,Service vendor,Closed,2023-03-20,18
-RCS0060,2023-03-02,VP Regional Client Services,Event support,Volunteer day logistics,0,High,Service vendor,Closed,2023-03-06,4
+RCS0060,2023-03-02,VP Regional Client Services,Event support,Volunteer day logistics,0,High,Workplace experience team,Closed,2023-03-06,4
 RCS0061,2023-03-02,IFM partner,Building project,Window washing schedule,0,Low,IFM partner,Closed,2023-03-18,16
 RCS0062,2023-03-02,VP Regional Client Services,Event support,Client visit hospitality,0,Low,Workplace experience team,Closed,2023-03-15,13
-RCS0063,2023-03-09,Service vendor,Vendor performance,Mail room delivery timing,0,Low,IFM partner,Closed,2023-03-20,11
+RCS0063,2023-03-09,Service vendor,Vendor performance,Mail room delivery timing,0,Low,Service vendor,Closed,2023-03-20,11
 RCS0064,2023-03-09,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Low,Workplace experience team,Closed,2023-04-04,26
 RCS0065,2023-03-09,IFM partner,Health and safety,Fire drill coordination,0,Medium,IFM partner,Closed,2023-03-15,6
 RCS0066,2023-03-09,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2023-03-21,12
@@ -71,58 +71,58 @@ RCS0069,2023-03-09,Workplace experience team,Workplace programs,Room booking no-
 RCS0070,2023-03-16,VP Regional Client Services,Event support,Heritage month programming,0,Medium,Workplace experience team,Closed,2023-03-27,11
 RCS0071,2023-03-16,Service vendor,Vendor performance,Mail room delivery timing,0,Low,Service vendor,Closed,2023-04-21,36
 RCS0072,2023-03-23,Workplace experience team,Workplace programs,Rotating vegan menu review,0,High,Workplace experience team,Closed,2023-04-02,10
-RCS0073,2023-03-23,IFM partner,Building project,Furniture refresh on floor 1,1,Medium,Workplace experience team,Closed,2023-04-23,31
-RCS0074,2023-03-23,IFM partner,Maintenance,Plumbing repair on floor 2,2,Medium,Service vendor,Closed,2023-04-15,23
+RCS0073,2023-03-23,IFM partner,Building project,Furniture refresh on floor 1,1,Medium,IFM partner,Closed,2023-04-23,31
+RCS0074,2023-03-23,IFM partner,Maintenance,Plumbing repair on floor 2,2,Medium,Workplace experience team,Closed,2023-04-15,23
 RCS0075,2023-03-23,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2023-04-08,16
-RCS0076,2023-03-23,VP Regional Client Services,Space change,Neighborhood reassignment on floor 2,2,Medium,Service vendor,Closed,2023-04-10,18
-RCS0077,2023-03-23,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,IFM partner,Closed,2023-04-03,11
-RCS0078,2023-03-30,IFM partner,Building project,Elevator modernization phasing,0,Low,IFM partner,Closed,2023-05-27,58
-RCS0079,2023-03-30,IFM partner,Maintenance,Badge reader fault at floor 3 entrance,3,Medium,IFM partner,Closed,2023-04-14,15
-RCS0080,2023-04-06,VP Regional Client Services,Event support,Holiday celebration planning,0,Low,Service vendor,Closed,2023-05-03,27
-RCS0081,2023-04-06,IFM partner,Maintenance,Plumbing repair on floor 7,7,Medium,Workplace experience team,Closed,2023-04-24,18
+RCS0076,2023-03-23,VP Regional Client Services,Space change,Neighborhood reassignment on floor 2,2,Medium,Workplace experience team,Closed,2023-04-10,18
+RCS0077,2023-03-23,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Service vendor,Closed,2023-04-03,11
+RCS0078,2023-03-30,IFM partner,Building project,Elevator modernization phasing,0,Low,Service vendor,Closed,2023-05-27,58
+RCS0079,2023-03-30,IFM partner,Maintenance,Badge reader fault at floor 3 entrance,3,Medium,Service vendor,Closed,2023-04-14,15
+RCS0080,2023-04-06,VP Regional Client Services,Event support,Holiday celebration planning,0,Low,Workplace experience team,Closed,2023-05-03,27
+RCS0081,2023-04-06,IFM partner,Maintenance,Plumbing repair on floor 7,7,Medium,IFM partner,Closed,2023-04-24,18
 RCS0082,2023-04-06,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,High,Service vendor,Closed,2023-04-12,6
 RCS0083,2023-04-13,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,IFM partner,Closed,2023-04-17,4
-RCS0084,2023-04-20,VP Regional Client Services,Event support,Client visit hospitality,0,High,Workplace experience team,Closed,2023-04-29,9
+RCS0084,2023-04-20,VP Regional Client Services,Event support,Client visit hospitality,0,High,IFM partner,Closed,2023-04-29,9
 RCS0085,2023-04-20,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2023-04-26,6
 RCS0086,2023-04-20,IFM partner,Building project,Window washing schedule,0,Low,IFM partner,Closed,2023-05-16,26
 RCS0087,2023-04-20,Service vendor,Vendor performance,Mail room delivery timing,0,Low,Service vendor,Closed,2023-06-22,63
 RCS0088,2023-04-27,IFM partner,Maintenance,Water leak in floor 4 pantry,4,Medium,IFM partner,Closed,2023-05-22,25
-RCS0089,2023-04-27,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Low,Service vendor,Closed,2023-05-08,11
+RCS0089,2023-04-27,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Low,Workplace experience team,Closed,2023-05-08,11
 RCS0090,2023-05-04,IFM partner,Maintenance,HVAC balancing on floor 4,4,Medium,IFM partner,Closed,2023-05-15,11
-RCS0091,2023-05-04,IFM partner,Maintenance,Water leak in floor 2 pantry,2,Low,Service vendor,Closed,2023-05-23,19
-RCS0092,2023-05-04,IFM partner,Health and safety,Floor warden roster update,0,Medium,Workplace experience team,Closed,2023-05-11,7
-RCS0093,2023-05-04,IFM partner,Building project,Window washing schedule,0,Medium,Workplace experience team,Closed,2023-06-14,41
+RCS0091,2023-05-04,IFM partner,Maintenance,Water leak in floor 2 pantry,2,Low,Workplace experience team,Closed,2023-05-23,19
+RCS0092,2023-05-04,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2023-05-11,7
+RCS0093,2023-05-04,IFM partner,Building project,Window washing schedule,0,Medium,IFM partner,Closed,2023-06-14,41
 RCS0094,2023-05-04,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,Service vendor,Closed,2023-05-09,5
 RCS0095,2023-05-04,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,High,Workplace experience team,Closed,2023-06-01,28
-RCS0096,2023-05-04,IFM partner,Health and safety,Severe weather early closure,0,High,IFM partner,Closed,2023-05-06,2
+RCS0096,2023-05-04,IFM partner,Health and safety,Severe weather early closure,0,High,Service vendor,Closed,2023-05-06,2
 RCS0097,2023-05-04,IFM partner,Building project,Furniture refresh on floor 4,4,High,IFM partner,Closed,2023-06-20,47
 RCS0098,2023-05-04,IFM partner,Health and safety,Fire drill coordination,0,Medium,IFM partner,Closed,2023-05-14,10
 RCS0099,2023-05-11,VP Regional Client Services,Space change,Neighborhood reassignment on floor 7,7,Low,Workplace experience team,Closed,2023-05-22,11
 RCS0100,2023-05-11,IFM partner,Health and safety,Floor warden roster update,0,High,IFM partner,Closed,2023-05-14,3
 RCS0101,2023-05-18,Workplace experience team,Workplace programs,Newsletter content plan,0,High,Workplace experience team,Closed,2023-05-31,13
-RCS0102,2023-05-18,VP Regional Client Services,Event support,Volunteer day logistics,0,High,IFM partner,Closed,2023-05-28,10
-RCS0103,2023-05-25,IFM partner,Health and safety,AED and first aid kit audit,0,High,IFM partner,Closed,2023-06-07,13
-RCS0104,2023-05-25,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Workplace experience team,Closed,2023-06-01,7
+RCS0102,2023-05-18,VP Regional Client Services,Event support,Volunteer day logistics,0,High,Service vendor,Closed,2023-05-28,10
+RCS0103,2023-05-25,IFM partner,Health and safety,AED and first aid kit audit,0,High,Service vendor,Closed,2023-06-07,13
+RCS0104,2023-05-25,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,IFM partner,Closed,2023-06-01,7
 RCS0105,2023-05-25,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2023-06-10,16
 RCS0106,2023-06-01,IFM partner,Building project,Restroom renovation on floor 2,2,Medium,IFM partner,Closed,2023-06-19,18
 RCS0107,2023-06-01,VP Regional Client Services,Event support,Client visit hospitality,0,High,Workplace experience team,Closed,2023-06-16,15
 RCS0108,2023-06-01,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2023-06-09,8
-RCS0109,2023-06-01,VP Regional Client Services,Space change,Neighborhood reassignment on floor 6,6,Medium,Service vendor,Closed,2023-07-09,38
+RCS0109,2023-06-01,VP Regional Client Services,Space change,Neighborhood reassignment on floor 6,6,Medium,Workplace experience team,Closed,2023-07-09,38
 RCS0110,2023-06-08,IFM partner,Building project,Window washing schedule,0,Medium,IFM partner,Closed,2023-06-29,21
-RCS0111,2023-06-08,IFM partner,Health and safety,Fire drill coordination,0,Medium,Service vendor,Closed,2023-06-14,6
-RCS0112,2023-06-15,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2023-07-05,20
-RCS0113,2023-06-15,VP Regional Client Services,Space change,Desk count adjustment on floor 2,2,Medium,IFM partner,Closed,2023-07-19,34
+RCS0111,2023-06-08,IFM partner,Health and safety,Fire drill coordination,0,Medium,Workplace experience team,Closed,2023-06-14,6
+RCS0112,2023-06-15,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,IFM partner,Closed,2023-07-05,20
+RCS0113,2023-06-15,VP Regional Client Services,Space change,Desk count adjustment on floor 2,2,Medium,Service vendor,Closed,2023-07-19,34
 RCS0114,2023-06-15,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Medium,Workplace experience team,Closed,2023-06-30,15
 RCS0115,2023-06-15,IFM partner,Building project,Restroom renovation on floor 2,2,High,IFM partner,Closed,2023-07-01,16
-RCS0116,2023-06-15,IFM partner,Maintenance,Generator test notice,0,High,IFM partner,Closed,2023-06-20,5
+RCS0116,2023-06-15,IFM partner,Maintenance,Generator test notice,0,High,Service vendor,Closed,2023-06-20,5
 RCS0117,2023-06-22,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Service vendor,Closed,2023-07-02,10
-RCS0118,2023-06-22,VP Regional Client Services,Space change,New hire onboarding wave,0,Low,Service vendor,Closed,2023-07-11,19
+RCS0118,2023-06-22,VP Regional Client Services,Space change,New hire onboarding wave,0,Low,Workplace experience team,Closed,2023-07-11,19
 RCS0119,2023-06-29,IFM partner,Building project,Carpet replacement on floor 1,1,Medium,IFM partner,Closed,2023-07-23,24
-RCS0120,2023-06-29,IFM partner,Building project,Window washing schedule,0,Medium,Workplace experience team,Closed,2023-07-09,10
+RCS0120,2023-06-29,IFM partner,Building project,Window washing schedule,0,Medium,IFM partner,Closed,2023-07-09,10
 RCS0121,2023-06-29,IFM partner,Maintenance,Plumbing repair on floor 6,6,Low,IFM partner,Closed,2023-07-09,10
 RCS0122,2023-06-29,Service vendor,Vendor performance,Mail room delivery timing,0,Low,Service vendor,Closed,2023-07-02,3
-RCS0123,2023-07-06,Workplace experience team,Workplace programs,Newsletter content plan,0,High,Service vendor,Closed,2023-07-18,12
-RCS0124,2023-07-06,Workplace experience team,Workplace programs,Clean desk campaign update,0,Medium,Workplace experience team,Closed,2023-07-22,16
+RCS0123,2023-07-06,Workplace experience team,Workplace programs,Newsletter content plan,0,High,Workplace experience team,Closed,2023-07-18,12
+RCS0124,2023-07-06,Workplace experience team,Workplace programs,Clean desk campaign update,0,Medium,IFM partner,Closed,2023-07-22,16
 RCS0125,2023-07-06,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,IFM partner,Closed,2023-07-10,4
 RCS0126,2023-07-06,VP Regional Client Services,Space change,Neighborhood reassignment on floor 5,5,Medium,Workplace experience team,Closed,2023-07-14,8
 RCS0127,2023-07-06,Service vendor,Vendor performance,Janitorial coverage gaps on floor 6,6,Medium,Service vendor,Closed,2023-07-17,11
@@ -134,61 +134,61 @@ RCS0132,2023-07-27,VP Regional Client Services,Space change,Desk count adjustmen
 RCS0133,2023-07-27,IFM partner,Health and safety,Fire drill coordination,0,High,IFM partner,Closed,2023-07-30,3
 RCS0134,2023-07-27,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Service vendor,Closed,2023-08-10,14
 RCS0135,2023-07-27,IFM partner,Health and safety,Fire drill coordination,0,Medium,IFM partner,Closed,2023-08-02,6
-RCS0136,2023-07-27,IFM partner,Building project,LED lighting retrofit,0,Medium,Service vendor,Closed,2023-09-24,59
+RCS0136,2023-07-27,IFM partner,Building project,LED lighting retrofit,0,Medium,Workplace experience team,Closed,2023-09-24,59
 RCS0137,2023-07-27,VP Regional Client Services,Space change,Desk count adjustment on floor 1,1,Medium,Workplace experience team,Closed,2023-08-08,12
 RCS0138,2023-08-03,VP Regional Client Services,Event support,Heritage month programming,0,Low,Workplace experience team,Closed,2023-08-18,15
 RCS0139,2023-08-03,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,IFM partner,Closed,2023-08-09,6
-RCS0140,2023-08-10,IFM partner,Health and safety,Floor warden roster update,0,Medium,Service vendor,Closed,2023-08-31,21
+RCS0140,2023-08-10,IFM partner,Health and safety,Floor warden roster update,0,Medium,Workplace experience team,Closed,2023-08-31,21
 RCS0141,2023-08-17,VP Regional Client Services,Space change,Neighborhood reassignment on floor 4,4,Low,Workplace experience team,Closed,2023-09-05,19
 RCS0142,2023-08-24,IFM partner,Maintenance,Badge reader fault at floor 5 entrance,5,Medium,IFM partner,Closed,2023-08-28,4
 RCS0143,2023-08-24,Service vendor,Vendor performance,Janitorial coverage gaps on floor 5,5,Medium,Service vendor,Closed,2023-09-21,28
 RCS0144,2023-08-24,IFM partner,Health and safety,Fire drill coordination,0,Medium,IFM partner,Closed,2023-08-26,2
-RCS0145,2023-08-24,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,IFM partner,Closed,2023-09-05,12
-RCS0146,2023-08-24,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Medium,Workplace experience team,Closed,2023-09-13,20
+RCS0145,2023-08-24,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,Service vendor,Closed,2023-09-05,12
+RCS0146,2023-08-24,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Medium,IFM partner,Closed,2023-09-13,20
 RCS0147,2023-08-24,Service vendor,Vendor performance,Pantry restock delays,0,High,Service vendor,Closed,2023-08-31,7
 RCS0148,2023-08-31,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,Workplace experience team,Closed,2023-09-12,12
-RCS0149,2023-08-31,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,IFM partner,Closed,2023-09-16,16
+RCS0149,2023-08-31,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Service vendor,Closed,2023-09-16,16
 RCS0150,2023-08-31,Service vendor,Vendor performance,Pantry restock delays,0,Low,Service vendor,Closed,2023-09-17,17
 RCS0151,2023-08-31,Service vendor,Vendor performance,Pantry restock delays,0,Low,Service vendor,Closed,2023-10-12,42
 RCS0152,2023-08-31,VP Regional Client Services,Event support,Client visit hospitality,0,Medium,Workplace experience team,Closed,2023-09-13,13
 RCS0153,2023-09-07,IFM partner,Maintenance,Generator test notice,0,High,IFM partner,Closed,2023-09-11,4
 RCS0154,2023-09-07,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Service vendor,Closed,2023-09-18,11
 RCS0155,2023-09-14,IFM partner,Building project,Furniture refresh on floor 7,7,Medium,IFM partner,Closed,2023-10-16,32
-RCS0156,2023-09-14,IFM partner,Health and safety,Severe weather early closure,0,Medium,Service vendor,Closed,2023-09-19,5
+RCS0156,2023-09-14,IFM partner,Health and safety,Severe weather early closure,0,Medium,Workplace experience team,Closed,2023-09-19,5
 RCS0157,2023-09-14,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2023-09-20,6
 RCS0158,2023-09-21,IFM partner,Maintenance,HVAC balancing on floor 7,7,High,IFM partner,Closed,2023-10-05,14
 RCS0159,2023-09-21,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2023-10-10,19
 RCS0160,2023-09-21,VP Regional Client Services,Event support,Heritage month programming,0,High,Workplace experience team,Closed,2023-10-03,12
 RCS0161,2023-09-21,IFM partner,Maintenance,HVAC balancing on floor 5,5,Medium,IFM partner,Closed,2023-09-28,7
-RCS0162,2023-09-28,VP Regional Client Services,Space change,Business unit move to floor 1,1,Low,IFM partner,Closed,2023-10-17,19
+RCS0162,2023-09-28,VP Regional Client Services,Space change,Business unit move to floor 1,1,Low,Service vendor,Closed,2023-10-17,19
 RCS0163,2023-09-28,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Workplace experience team,Closed,2023-10-13,15
 RCS0164,2023-09-28,IFM partner,Health and safety,AED and first aid kit audit,0,High,IFM partner,Closed,2023-09-30,2
-RCS0165,2023-09-28,VP Regional Client Services,Space change,Neighborhood reassignment on floor 4,4,Low,Service vendor,Closed,2023-11-09,42
+RCS0165,2023-09-28,VP Regional Client Services,Space change,Neighborhood reassignment on floor 4,4,Low,Workplace experience team,Closed,2023-11-09,42
 RCS0166,2023-09-28,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2023-10-10,12
-RCS0167,2023-10-05,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Service vendor,Closed,2023-10-24,19
-RCS0168,2023-10-05,IFM partner,Building project,Carpet replacement on floor 5,5,High,Workplace experience team,Closed,2023-12-02,58
-RCS0169,2023-10-05,IFM partner,Building project,Carpet replacement on floor 7,7,High,Workplace experience team,Closed,2023-10-12,7
+RCS0167,2023-10-05,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Workplace experience team,Closed,2023-10-24,19
+RCS0168,2023-10-05,IFM partner,Building project,Carpet replacement on floor 5,5,High,IFM partner,Closed,2023-12-02,58
+RCS0169,2023-10-05,IFM partner,Building project,Carpet replacement on floor 7,7,High,IFM partner,Closed,2023-10-12,7
 RCS0170,2023-10-12,Workplace experience team,Workplace programs,Newsletter content plan,0,High,Workplace experience team,Closed,2023-10-15,3
-RCS0171,2023-10-12,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,Workplace experience team,Closed,2023-11-03,22
-RCS0172,2023-10-12,Service vendor,Vendor performance,Mail room delivery timing,0,Low,IFM partner,Closed,2023-10-21,9
+RCS0171,2023-10-12,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,IFM partner,Closed,2023-11-03,22
+RCS0172,2023-10-12,Service vendor,Vendor performance,Mail room delivery timing,0,Low,Service vendor,Closed,2023-10-21,9
 RCS0173,2023-10-19,Service vendor,Vendor performance,Janitorial coverage gaps on floor 3,3,Low,Service vendor,Closed,2023-10-27,8
 RCS0174,2023-10-19,IFM partner,Health and safety,Floor warden roster update,0,High,IFM partner,Closed,2023-10-22,3
 RCS0175,2023-10-19,VP Regional Client Services,Space change,Neighborhood reassignment on floor 3,3,High,Workplace experience team,Closed,2023-10-27,8
-RCS0176,2023-10-19,Workplace experience team,Workplace programs,Rotating vegan menu review,0,High,Workplace experience team,Closed,2023-11-01,13
-RCS0177,2023-10-19,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Low,Workplace experience team,Closed,2023-11-06,18
+RCS0176,2023-10-19,Workplace experience team,Workplace programs,Rotating vegan menu review,0,High,IFM partner,Closed,2023-11-01,13
+RCS0177,2023-10-19,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Low,IFM partner,Closed,2023-11-06,18
 RCS0178,2023-10-19,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2023-10-26,7
-RCS0179,2023-10-19,IFM partner,Health and safety,Floor warden roster update,0,Medium,Workplace experience team,Closed,2023-10-21,2
-RCS0180,2023-10-19,VP Regional Client Services,Event support,Heritage month programming,0,High,Service vendor,Closed,2023-11-12,24
+RCS0179,2023-10-19,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2023-10-21,2
+RCS0180,2023-10-19,VP Regional Client Services,Event support,Heritage month programming,0,High,Workplace experience team,Closed,2023-11-12,24
 RCS0181,2023-10-26,Service vendor,Vendor performance,Mail room delivery timing,0,High,Service vendor,Closed,2023-11-15,20
 RCS0182,2023-10-26,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2023-11-01,6
-RCS0183,2023-10-26,IFM partner,Building project,LED lighting retrofit,0,High,IFM partner,Closed,2023-11-26,31
+RCS0183,2023-10-26,IFM partner,Building project,LED lighting retrofit,0,High,Service vendor,Closed,2023-11-26,31
 RCS0184,2023-10-26,VP Regional Client Services,Space change,Desk count adjustment on floor 2,2,Medium,Workplace experience team,Closed,2023-11-04,9
 RCS0185,2023-10-26,Service vendor,Vendor performance,Catering delivery late arrival,0,High,Service vendor,Closed,2023-12-16,51
 RCS0186,2023-11-02,IFM partner,Health and safety,Floor warden roster update,0,High,IFM partner,Closed,2023-11-06,4
-RCS0187,2023-11-02,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,IFM partner,Closed,2023-11-11,9
+RCS0187,2023-11-02,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,Service vendor,Closed,2023-11-11,9
 RCS0188,2023-11-02,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Service vendor,Closed,2023-11-10,8
 RCS0189,2023-11-02,Service vendor,Vendor performance,Pantry restock delays,0,Low,Service vendor,Closed,2023-11-24,22
-RCS0190,2023-11-09,VP Regional Client Services,Space change,Desk count adjustment on floor 1,1,Medium,Workplace experience team,Closed,2023-11-20,11
+RCS0190,2023-11-09,VP Regional Client Services,Space change,Desk count adjustment on floor 1,1,Medium,IFM partner,Closed,2023-11-20,11
 RCS0191,2023-11-09,IFM partner,Maintenance,Badge reader fault at floor 2 entrance,2,Medium,IFM partner,Closed,2023-11-12,3
 RCS0192,2023-11-09,IFM partner,Maintenance,HVAC balancing on floor 4,4,Medium,IFM partner,Closed,2023-11-29,20
 RCS0193,2023-11-16,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2023-11-20,4
@@ -200,57 +200,57 @@ RCS0198,2023-11-30,Workplace experience team,Workplace programs,Rotating vegan m
 RCS0199,2023-11-30,VP Regional Client Services,Space change,Desk count adjustment on floor 1,1,Low,Workplace experience team,Closed,2023-12-31,31
 RCS0200,2023-12-07,IFM partner,Building project,Furniture refresh on floor 4,4,High,IFM partner,Closed,2023-12-31,24
 RCS0201,2023-12-07,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2023-12-24,17
-RCS0202,2023-12-07,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,High,Service vendor,Closed,2024-01-11,35
-RCS0203,2023-12-07,VP Regional Client Services,Event support,Heritage month programming,0,Medium,Service vendor,Closed,2023-12-17,10
-RCS0204,2023-12-14,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Workplace experience team,Closed,2024-01-01,18
+RCS0202,2023-12-07,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,High,Workplace experience team,Closed,2024-01-11,35
+RCS0203,2023-12-07,VP Regional Client Services,Event support,Heritage month programming,0,Medium,Workplace experience team,Closed,2023-12-17,10
+RCS0204,2023-12-14,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,IFM partner,Closed,2024-01-01,18
 RCS0205,2023-12-21,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2024-01-08,18
 RCS0206,2023-12-21,Service vendor,Vendor performance,Pantry restock delays,0,Low,Service vendor,Closed,2024-01-25,35
-RCS0207,2023-12-21,IFM partner,Building project,Carpet replacement on floor 7,7,High,Workplace experience team,Closed,2024-01-29,39
-RCS0208,2023-12-21,IFM partner,Building project,Furniture refresh on floor 3,3,Medium,IFM partner,Closed,2024-02-08,49
+RCS0207,2023-12-21,IFM partner,Building project,Carpet replacement on floor 7,7,High,IFM partner,Closed,2024-01-29,39
+RCS0208,2023-12-21,IFM partner,Building project,Furniture refresh on floor 3,3,Medium,Service vendor,Closed,2024-02-08,49
 RCS0209,2023-12-21,IFM partner,Building project,Window washing schedule,0,Medium,IFM partner,Closed,2024-02-10,51
 RCS0210,2023-12-28,Service vendor,Vendor performance,Janitorial coverage gaps on floor 4,4,Medium,Service vendor,Closed,2024-01-05,8
 RCS0211,2023-12-28,VP Regional Client Services,Space change,Neighborhood reassignment on floor 5,5,High,Workplace experience team,Closed,2024-01-02,5
-RCS0212,2023-12-28,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Workplace experience team,Closed,2024-02-09,43
+RCS0212,2023-12-28,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,IFM partner,Closed,2024-02-09,43
 RCS0213,2024-01-04,Service vendor,Vendor performance,Pantry restock delays,0,Medium,Service vendor,Closed,2024-01-19,15
-RCS0214,2024-01-04,IFM partner,Health and safety,Fire drill coordination,0,Medium,IFM partner,Closed,2024-01-07,3
+RCS0214,2024-01-04,IFM partner,Health and safety,Fire drill coordination,0,Medium,Service vendor,Closed,2024-01-07,3
 RCS0215,2024-01-04,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,Workplace experience team,Closed,2024-01-19,15
-RCS0216,2024-01-11,VP Regional Client Services,Event support,Client visit hospitality,0,Low,Service vendor,Closed,2024-01-18,7
+RCS0216,2024-01-11,VP Regional Client Services,Event support,Client visit hospitality,0,Low,Workplace experience team,Closed,2024-01-18,7
 RCS0217,2024-01-11,Service vendor,Vendor performance,Pantry restock delays,0,Medium,Service vendor,Closed,2024-01-21,10
-RCS0218,2024-01-11,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,Workplace experience team,Closed,2024-02-03,23
+RCS0218,2024-01-11,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,IFM partner,Closed,2024-02-03,23
 RCS0219,2024-01-11,Service vendor,Vendor performance,Catering delivery late arrival,0,High,Service vendor,Closed,2024-01-20,9
 RCS0220,2024-01-11,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2024-01-20,9
-RCS0221,2024-01-11,IFM partner,Building project,Restroom renovation on floor 5,5,Medium,IFM partner,Closed,2024-02-20,40
+RCS0221,2024-01-11,IFM partner,Building project,Restroom renovation on floor 5,5,Medium,Service vendor,Closed,2024-02-20,40
 RCS0222,2024-01-18,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2024-02-05,18
 RCS0223,2024-01-18,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Service vendor,Closed,2024-02-19,32
 RCS0224,2024-01-25,IFM partner,Health and safety,Floor warden roster update,0,Low,IFM partner,Closed,2024-02-01,7
-RCS0225,2024-01-25,IFM partner,Building project,LED lighting retrofit,0,Medium,IFM partner,Closed,2024-03-21,56
-RCS0226,2024-01-25,IFM partner,Health and safety,Severe weather early closure,0,Low,Service vendor,Closed,2024-02-09,15
+RCS0225,2024-01-25,IFM partner,Building project,LED lighting retrofit,0,Medium,Service vendor,Closed,2024-03-21,56
+RCS0226,2024-01-25,IFM partner,Health and safety,Severe weather early closure,0,Low,Workplace experience team,Closed,2024-02-09,15
 RCS0227,2024-01-25,Service vendor,Vendor performance,Pantry restock delays,0,Low,Service vendor,Closed,2024-02-01,7
-RCS0228,2024-01-25,VP Regional Client Services,Space change,Desk count adjustment on floor 4,4,Medium,IFM partner,Closed,2024-02-14,20
+RCS0228,2024-01-25,VP Regional Client Services,Space change,Desk count adjustment on floor 4,4,Medium,Service vendor,Closed,2024-02-14,20
 RCS0229,2024-01-25,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,Workplace experience team,Closed,2024-02-16,22
-RCS0230,2024-01-25,VP Regional Client Services,Space change,Neighborhood reassignment on floor 4,4,Medium,Service vendor,Closed,2024-02-09,15
+RCS0230,2024-01-25,VP Regional Client Services,Space change,Neighborhood reassignment on floor 4,4,Medium,Workplace experience team,Closed,2024-02-09,15
 RCS0231,2024-01-25,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Service vendor,Closed,2024-01-31,6
 RCS0232,2024-01-25,VP Regional Client Services,Event support,Town hall setup and AV,0,Low,Workplace experience team,Closed,2024-02-04,10
 RCS0233,2024-01-25,IFM partner,Building project,Elevator modernization phasing,0,Low,IFM partner,Closed,2024-04-10,76
-RCS0234,2024-02-01,IFM partner,Building project,Furniture refresh on floor 4,4,Low,IFM partner,Closed,2024-03-21,49
-RCS0235,2024-02-01,Service vendor,Vendor performance,Catering delivery late arrival,0,High,Service vendor,Closed,2024-02-24,23
+RCS0234,2024-02-01,IFM partner,Building project,Furniture refresh on floor 4,4,Low,Service vendor,Closed,2024-03-21,49
+RCS0235,2024-02-01,Service vendor,Vendor performance,Catering delivery late arrival,0,High,Workplace experience team,Closed,2024-02-24,23
 RCS0236,2024-02-01,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,Workplace experience team,Closed,2024-02-27,26
 RCS0237,2024-02-01,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,Workplace experience team,Closed,2024-04-22,81
-RCS0238,2024-02-08,IFM partner,Health and safety,Floor warden roster update,0,Medium,Workplace experience team,Closed,2024-02-16,8
+RCS0238,2024-02-08,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2024-02-16,8
 RCS0239,2024-02-08,Workplace experience team,Workplace programs,Newsletter content plan,0,High,Workplace experience team,Closed,2024-02-12,4
 RCS0240,2024-02-08,VP Regional Client Services,Space change,Desk count adjustment on floor 1,1,Medium,Workplace experience team,Closed,2024-03-08,29
-RCS0241,2024-02-08,Service vendor,Vendor performance,Pantry restock delays,0,Medium,IFM partner,Closed,2024-03-03,24
+RCS0241,2024-02-08,Service vendor,Vendor performance,Pantry restock delays,0,Medium,Service vendor,Closed,2024-03-03,24
 RCS0242,2024-02-08,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2024-02-23,15
-RCS0243,2024-02-08,IFM partner,Maintenance,HVAC balancing on floor 4,4,Low,Workplace experience team,Closed,2024-02-13,5
-RCS0244,2024-02-15,IFM partner,Building project,Elevator modernization phasing,0,High,IFM partner,Closed,2024-03-08,22
-RCS0245,2024-02-15,VP Regional Client Services,Event support,Holiday celebration planning,0,High,IFM partner,Closed,2024-02-22,7
-RCS0246,2024-02-15,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,Service vendor,Closed,2024-03-14,28
+RCS0243,2024-02-08,IFM partner,Maintenance,HVAC balancing on floor 4,4,Low,IFM partner,Closed,2024-02-13,5
+RCS0244,2024-02-15,IFM partner,Building project,Elevator modernization phasing,0,High,Service vendor,Closed,2024-03-08,22
+RCS0245,2024-02-15,VP Regional Client Services,Event support,Holiday celebration planning,0,High,Service vendor,Closed,2024-02-22,7
+RCS0246,2024-02-15,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,Workplace experience team,Closed,2024-03-14,28
 RCS0247,2024-02-15,IFM partner,Health and safety,Severe weather early closure,0,Medium,IFM partner,Closed,2024-02-21,6
 RCS0248,2024-02-15,IFM partner,Health and safety,Floor warden roster update,0,Low,IFM partner,Closed,2024-02-21,6
 RCS0249,2024-02-22,IFM partner,Maintenance,Water leak in floor 1 pantry,1,Low,IFM partner,Closed,2024-03-09,16
 RCS0250,2024-02-22,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Service vendor,Closed,2024-03-07,14
 RCS0251,2024-02-22,VP Regional Client Services,Space change,New hire onboarding wave,0,High,Workplace experience team,Closed,2024-03-09,16
-RCS0252,2024-02-22,VP Regional Client Services,Space change,New hire onboarding wave,0,Low,IFM partner,Closed,2024-03-26,33
+RCS0252,2024-02-22,VP Regional Client Services,Space change,New hire onboarding wave,0,Low,Service vendor,Closed,2024-03-26,33
 RCS0253,2024-02-22,VP Regional Client Services,Space change,Business unit move to floor 6,6,Low,Workplace experience team,Closed,2024-03-12,19
 RCS0254,2024-02-29,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,Workplace experience team,Closed,2024-03-04,4
 RCS0255,2024-03-07,IFM partner,Building project,Window washing schedule,0,Low,IFM partner,Closed,2024-04-08,32
@@ -262,8 +262,8 @@ RCS0260,2024-03-21,IFM partner,Health and safety,Floor warden roster update,0,Hi
 RCS0261,2024-03-21,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2024-04-03,13
 RCS0262,2024-03-21,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2024-03-29,8
 RCS0263,2024-03-21,VP Regional Client Services,Space change,New hire onboarding wave,0,High,Workplace experience team,Closed,2024-04-07,17
-RCS0264,2024-03-21,VP Regional Client Services,Space change,Desk count adjustment on floor 7,7,Medium,IFM partner,Closed,2024-04-11,21
-RCS0265,2024-03-21,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,IFM partner,Closed,2024-04-20,30
+RCS0264,2024-03-21,VP Regional Client Services,Space change,Desk count adjustment on floor 7,7,Medium,Service vendor,Closed,2024-04-11,21
+RCS0265,2024-03-21,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Service vendor,Closed,2024-04-20,30
 RCS0266,2024-03-21,VP Regional Client Services,Event support,Town hall setup and AV,0,Low,Workplace experience team,Closed,2024-04-17,27
 RCS0267,2024-03-28,VP Regional Client Services,Space change,Desk count adjustment on floor 1,1,Medium,Workplace experience team,Closed,2024-04-23,26
 RCS0268,2024-03-28,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Workplace experience team,Closed,2024-04-03,6
@@ -271,85 +271,85 @@ RCS0269,2024-03-28,IFM partner,Health and safety,AED and first aid kit audit,0,H
 RCS0270,2024-03-28,IFM partner,Maintenance,HVAC balancing on floor 3,3,Low,IFM partner,Closed,2024-03-30,2
 RCS0271,2024-04-04,IFM partner,Building project,Furniture refresh on floor 2,2,Low,IFM partner,Closed,2024-05-20,46
 RCS0272,2024-04-04,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2024-04-11,7
-RCS0273,2024-04-11,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Workplace experience team,Closed,2024-04-27,16
+RCS0273,2024-04-11,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,IFM partner,Closed,2024-04-27,16
 RCS0274,2024-04-11,Workplace experience team,Workplace programs,Clean desk campaign update,0,Medium,Workplace experience team,Closed,2024-04-17,6
-RCS0275,2024-04-11,IFM partner,Building project,Elevator modernization phasing,0,Low,IFM partner,Closed,2024-05-21,40
+RCS0275,2024-04-11,IFM partner,Building project,Elevator modernization phasing,0,Low,Service vendor,Closed,2024-05-21,40
 RCS0276,2024-04-11,IFM partner,Health and safety,AED and first aid kit audit,0,High,IFM partner,Closed,2024-04-16,5
 RCS0277,2024-04-11,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,High,Workplace experience team,Closed,2024-04-17,6
-RCS0278,2024-04-11,IFM partner,Building project,Restroom renovation on floor 4,4,Medium,Workplace experience team,Closed,2024-06-09,59
+RCS0278,2024-04-11,IFM partner,Building project,Restroom renovation on floor 4,4,Medium,IFM partner,Closed,2024-06-09,59
 RCS0279,2024-04-11,Service vendor,Vendor performance,Pantry restock delays,0,Medium,Service vendor,Closed,2024-04-22,11
 RCS0280,2024-04-18,IFM partner,Building project,Restroom renovation on floor 7,7,Low,IFM partner,Closed,2024-05-02,14
 RCS0281,2024-04-18,IFM partner,Maintenance,Generator test notice,0,High,IFM partner,Closed,2024-04-24,6
-RCS0282,2024-04-18,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Workplace experience team,Closed,2024-05-16,28
-RCS0283,2024-04-25,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Medium,Service vendor,Closed,2024-05-02,7
+RCS0282,2024-04-18,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,IFM partner,Closed,2024-05-16,28
+RCS0283,2024-04-25,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Medium,Workplace experience team,Closed,2024-05-02,7
 RCS0284,2024-04-25,VP Regional Client Services,Event support,Heritage month programming,0,Low,Workplace experience team,Closed,2024-05-02,7
-RCS0285,2024-04-25,VP Regional Client Services,Space change,Neighborhood reassignment on floor 2,2,High,Workplace experience team,Closed,2024-05-10,15
-RCS0286,2024-04-25,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,Service vendor,Closed,2024-05-02,7
+RCS0285,2024-04-25,VP Regional Client Services,Space change,Neighborhood reassignment on floor 2,2,High,IFM partner,Closed,2024-05-10,15
+RCS0286,2024-04-25,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,Workplace experience team,Closed,2024-05-02,7
 RCS0287,2024-04-25,IFM partner,Maintenance,HVAC balancing on floor 1,1,High,IFM partner,Closed,2024-04-28,3
-RCS0288,2024-04-25,IFM partner,Maintenance,Water leak in floor 4 pantry,4,Low,Service vendor,Closed,2024-04-30,5
-RCS0289,2024-05-02,VP Regional Client Services,Space change,Desk count adjustment on floor 7,7,Low,Service vendor,Closed,2024-07-05,64
-RCS0290,2024-05-02,VP Regional Client Services,Space change,Neighborhood reassignment on floor 3,3,High,IFM partner,Closed,2024-05-08,6
-RCS0291,2024-05-02,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,IFM partner,Closed,2024-05-24,22
-RCS0292,2024-05-09,IFM partner,Building project,LED lighting retrofit,0,Medium,IFM partner,Closed,2024-06-16,38
-RCS0293,2024-05-09,VP Regional Client Services,Space change,Neighborhood reassignment on floor 4,4,Medium,Service vendor,Closed,2024-06-03,25
+RCS0288,2024-04-25,IFM partner,Maintenance,Water leak in floor 4 pantry,4,Low,Workplace experience team,Closed,2024-04-30,5
+RCS0289,2024-05-02,VP Regional Client Services,Space change,Desk count adjustment on floor 7,7,Low,Workplace experience team,Closed,2024-07-05,64
+RCS0290,2024-05-02,VP Regional Client Services,Space change,Neighborhood reassignment on floor 3,3,High,Service vendor,Closed,2024-05-08,6
+RCS0291,2024-05-02,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Service vendor,Closed,2024-05-24,22
+RCS0292,2024-05-09,IFM partner,Building project,LED lighting retrofit,0,Medium,Service vendor,Closed,2024-06-16,38
+RCS0293,2024-05-09,VP Regional Client Services,Space change,Neighborhood reassignment on floor 4,4,Medium,Workplace experience team,Closed,2024-06-03,25
 RCS0294,2024-05-16,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2024-05-30,14
 RCS0295,2024-05-16,IFM partner,Building project,Furniture refresh on floor 3,3,Medium,IFM partner,Closed,2024-07-20,65
 RCS0296,2024-05-16,VP Regional Client Services,Space change,New hire onboarding wave,0,Low,Workplace experience team,Closed,2024-06-05,20
-RCS0297,2024-05-16,IFM partner,Building project,LED lighting retrofit,0,High,Service vendor,Closed,2024-06-16,31
+RCS0297,2024-05-16,IFM partner,Building project,LED lighting retrofit,0,High,Workplace experience team,Closed,2024-06-16,31
 RCS0298,2024-05-16,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2024-05-30,14
 RCS0299,2024-05-16,VP Regional Client Services,Event support,Heritage month programming,0,High,Workplace experience team,Closed,2024-05-31,15
 RCS0300,2024-05-16,IFM partner,Health and safety,Severe weather early closure,0,Low,IFM partner,Closed,2024-05-25,9
-RCS0301,2024-05-16,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,IFM partner,Closed,2024-05-21,5
-RCS0302,2024-05-23,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,IFM partner,Closed,2024-06-20,28
-RCS0303,2024-05-23,VP Regional Client Services,Space change,Business unit move to floor 7,7,High,IFM partner,Closed,2024-06-02,10
+RCS0301,2024-05-16,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,Service vendor,Closed,2024-05-21,5
+RCS0302,2024-05-23,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,Service vendor,Closed,2024-06-20,28
+RCS0303,2024-05-23,VP Regional Client Services,Space change,Business unit move to floor 7,7,High,Service vendor,Closed,2024-06-02,10
 RCS0304,2024-05-23,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Workplace experience team,Closed,2024-06-23,31
 RCS0305,2024-05-23,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,Service vendor,Closed,2024-06-23,31
 RCS0306,2024-05-23,IFM partner,Building project,LED lighting retrofit,0,High,IFM partner,Closed,2024-06-11,19
 RCS0307,2024-05-23,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,High,Workplace experience team,Closed,2024-06-16,24
-RCS0308,2024-05-30,VP Regional Client Services,Event support,Town hall setup and AV,0,High,Workplace experience team,Closed,2024-06-05,6
+RCS0308,2024-05-30,VP Regional Client Services,Event support,Town hall setup and AV,0,High,IFM partner,Closed,2024-06-05,6
 RCS0309,2024-05-30,VP Regional Client Services,Event support,Client visit hospitality,0,Medium,Workplace experience team,Closed,2024-06-14,15
-RCS0310,2024-05-30,IFM partner,Maintenance,Water leak in floor 6 pantry,6,Low,Service vendor,Closed,2024-06-16,17
+RCS0310,2024-05-30,IFM partner,Maintenance,Water leak in floor 6 pantry,6,Low,Workplace experience team,Closed,2024-06-16,17
 RCS0311,2024-05-30,IFM partner,Building project,LED lighting retrofit,0,High,IFM partner,Closed,2024-08-19,81
 RCS0312,2024-05-30,IFM partner,Building project,Restroom renovation on floor 2,2,Low,IFM partner,Closed,2024-07-20,51
-RCS0313,2024-05-30,IFM partner,Maintenance,Generator test notice,0,Low,Service vendor,Closed,2024-06-09,10
+RCS0313,2024-05-30,IFM partner,Maintenance,Generator test notice,0,Low,Workplace experience team,Closed,2024-06-09,10
 RCS0314,2024-06-06,VP Regional Client Services,Space change,Desk count adjustment on floor 1,1,Medium,Workplace experience team,Closed,2024-06-13,7
-RCS0315,2024-06-13,Service vendor,Vendor performance,Janitorial coverage gaps on floor 5,5,Medium,Service vendor,Closed,2024-07-13,30
+RCS0315,2024-06-13,Service vendor,Vendor performance,Janitorial coverage gaps on floor 5,5,Medium,Workplace experience team,Closed,2024-07-13,30
 RCS0316,2024-06-13,IFM partner,Maintenance,Generator test notice,0,Medium,IFM partner,Closed,2024-06-16,3
 RCS0317,2024-06-13,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2024-06-16,3
 RCS0318,2024-06-13,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2024-06-17,4
 RCS0319,2024-06-13,Service vendor,Vendor performance,Janitorial coverage gaps on floor 5,5,Medium,Service vendor,Closed,2024-06-26,13
 RCS0320,2024-06-20,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2024-06-26,6
-RCS0321,2024-06-20,VP Regional Client Services,Space change,Business unit move to floor 3,3,High,Workplace experience team,Closed,2024-07-07,17
-RCS0322,2024-06-27,IFM partner,Maintenance,HVAC balancing on floor 2,2,Low,Service vendor,Closed,2024-07-08,11
-RCS0323,2024-06-27,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,IFM partner,Closed,2024-07-23,26
+RCS0321,2024-06-20,VP Regional Client Services,Space change,Business unit move to floor 3,3,High,IFM partner,Closed,2024-07-07,17
+RCS0322,2024-06-27,IFM partner,Maintenance,HVAC balancing on floor 2,2,Low,Workplace experience team,Closed,2024-07-08,11
+RCS0323,2024-06-27,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,Service vendor,Closed,2024-07-23,26
 RCS0324,2024-06-27,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2024-07-07,10
 RCS0325,2024-07-11,IFM partner,Maintenance,Plumbing repair on floor 5,5,Low,IFM partner,Closed,2024-07-21,10
 RCS0326,2024-07-11,Service vendor,Vendor performance,Janitorial coverage gaps on floor 3,3,High,Service vendor,Closed,2024-07-19,8
 RCS0327,2024-07-11,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,High,Workplace experience team,Closed,2024-07-22,11
-RCS0328,2024-07-18,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Workplace experience team,Closed,2024-07-24,6
-RCS0329,2024-07-18,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2024-07-25,7
+RCS0328,2024-07-18,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,IFM partner,Closed,2024-07-24,6
+RCS0329,2024-07-18,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,IFM partner,Closed,2024-07-25,7
 RCS0330,2024-07-18,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,IFM partner,Closed,2024-07-23,5
-RCS0331,2024-07-18,IFM partner,Building project,Furniture refresh on floor 4,4,Low,IFM partner,Closed,2024-09-05,49
+RCS0331,2024-07-18,IFM partner,Building project,Furniture refresh on floor 4,4,Low,Service vendor,Closed,2024-09-05,49
 RCS0332,2024-07-25,VP Regional Client Services,Space change,New hire onboarding wave,0,Low,Workplace experience team,Closed,2024-08-06,12
-RCS0333,2024-07-25,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Workplace experience team,Closed,2024-08-10,16
+RCS0333,2024-07-25,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,IFM partner,Closed,2024-08-10,16
 RCS0334,2024-07-25,VP Regional Client Services,Space change,Desk count adjustment on floor 4,4,Medium,Workplace experience team,Closed,2024-08-07,13
 RCS0335,2024-08-01,Service vendor,Vendor performance,Janitorial coverage gaps on floor 4,4,Medium,Service vendor,Closed,2024-08-10,9
 RCS0336,2024-08-01,IFM partner,Building project,Furniture refresh on floor 6,6,Medium,IFM partner,Closed,2024-10-27,87
 RCS0337,2024-08-01,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2024-08-12,11
 RCS0338,2024-08-01,Service vendor,Vendor performance,Mail room delivery timing,0,High,Service vendor,Closed,2024-08-16,15
 RCS0339,2024-08-08,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2024-08-16,8
-RCS0340,2024-08-15,IFM partner,Health and safety,AED and first aid kit audit,0,Low,IFM partner,Closed,2024-08-20,5
+RCS0340,2024-08-15,IFM partner,Health and safety,AED and first aid kit audit,0,Low,Service vendor,Closed,2024-08-20,5
 RCS0341,2024-08-15,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2024-09-04,20
-RCS0342,2024-08-22,IFM partner,Building project,LED lighting retrofit,0,Low,IFM partner,Closed,2024-09-17,26
+RCS0342,2024-08-22,IFM partner,Building project,LED lighting retrofit,0,Low,Service vendor,Closed,2024-09-17,26
 RCS0343,2024-08-22,VP Regional Client Services,Event support,Volunteer day logistics,0,High,Workplace experience team,Closed,2024-08-27,5
-RCS0344,2024-08-22,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,IFM partner,Closed,2024-09-04,13
+RCS0344,2024-08-22,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Service vendor,Closed,2024-09-04,13
 RCS0345,2024-08-22,IFM partner,Maintenance,HVAC balancing on floor 7,7,Medium,IFM partner,Closed,2024-09-02,11
-RCS0346,2024-08-29,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,Service vendor,Closed,2024-09-16,18
+RCS0346,2024-08-29,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,Workplace experience team,Closed,2024-09-16,18
 RCS0347,2024-09-05,IFM partner,Maintenance,Badge reader fault at floor 7 entrance,7,High,IFM partner,Closed,2024-09-12,7
 RCS0348,2024-09-05,VP Regional Client Services,Space change,Desk count adjustment on floor 7,7,Medium,Workplace experience team,Closed,2024-09-18,13
-RCS0349,2024-09-05,IFM partner,Health and safety,Severe weather early closure,0,High,IFM partner,Closed,2024-09-08,3
+RCS0349,2024-09-05,IFM partner,Health and safety,Severe weather early closure,0,High,Service vendor,Closed,2024-09-08,3
 RCS0350,2024-09-05,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,Service vendor,Closed,2024-09-14,9
-RCS0351,2024-09-12,IFM partner,Health and safety,Severe weather early closure,0,High,Workplace experience team,Closed,2024-09-17,5
+RCS0351,2024-09-12,IFM partner,Health and safety,Severe weather early closure,0,High,IFM partner,Closed,2024-09-17,5
 RCS0352,2024-09-12,IFM partner,Maintenance,HVAC balancing on floor 1,1,Medium,IFM partner,Closed,2024-09-18,6
 RCS0353,2024-09-12,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Low,Service vendor,Closed,2024-10-25,43
 RCS0354,2024-09-12,IFM partner,Building project,LED lighting retrofit,0,Low,IFM partner,Closed,2024-10-10,28
@@ -358,19 +358,19 @@ RCS0356,2024-09-19,VP Regional Client Services,Space change,New hire onboarding 
 RCS0357,2024-09-26,IFM partner,Maintenance,Badge reader fault at floor 1 entrance,1,Medium,IFM partner,Closed,2024-10-03,7
 RCS0358,2024-10-03,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2024-10-10,7
 RCS0359,2024-10-10,Service vendor,Vendor performance,Pantry restock delays,0,Medium,Service vendor,Closed,2024-10-26,16
-RCS0360,2024-10-17,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Service vendor,Closed,2024-11-15,29
-RCS0361,2024-10-17,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2024-10-27,10
+RCS0360,2024-10-17,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2024-11-15,29
+RCS0361,2024-10-17,IFM partner,Health and safety,Floor warden roster update,0,Medium,Service vendor,Closed,2024-10-27,10
 RCS0362,2024-10-17,VP Regional Client Services,Event support,Heritage month programming,0,Medium,Workplace experience team,Closed,2024-11-05,19
 RCS0363,2024-10-17,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2024-11-04,18
 RCS0364,2024-10-17,IFM partner,Maintenance,HVAC balancing on floor 6,6,High,IFM partner,Closed,2024-10-23,6
 RCS0365,2024-10-17,Service vendor,Vendor performance,Pantry restock delays,0,Low,Service vendor,Closed,2024-11-05,19
 RCS0366,2024-10-24,IFM partner,Building project,LED lighting retrofit,0,High,IFM partner,Closed,2024-11-04,11
 RCS0367,2024-10-24,VP Regional Client Services,Space change,New hire onboarding wave,0,Medium,Workplace experience team,Closed,2024-11-11,18
-RCS0368,2024-10-31,VP Regional Client Services,Space change,Neighborhood reassignment on floor 3,3,Low,Workplace experience team,Closed,2024-11-23,23
+RCS0368,2024-10-31,VP Regional Client Services,Space change,Neighborhood reassignment on floor 3,3,Low,IFM partner,Closed,2024-11-23,23
 RCS0369,2024-10-31,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Service vendor,Closed,2024-11-11,11
 RCS0370,2024-10-31,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,Workplace experience team,Closed,2024-11-09,9
 RCS0371,2024-10-31,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Low,Service vendor,Closed,2024-11-18,18
-RCS0372,2024-10-31,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Low,IFM partner,Closed,2024-11-10,10
+RCS0372,2024-10-31,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Low,Service vendor,Closed,2024-11-10,10
 RCS0373,2024-10-31,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2024-11-09,9
 RCS0374,2024-11-07,VP Regional Client Services,Space change,Desk count adjustment on floor 6,6,Low,Workplace experience team,Closed,2024-12-05,28
 RCS0375,2024-11-07,IFM partner,Building project,Furniture refresh on floor 1,1,Medium,IFM partner,Closed,2024-11-25,18
@@ -381,27 +381,27 @@ RCS0379,2024-11-21,Service vendor,Vendor performance,Janitorial coverage gaps on
 RCS0380,2024-11-21,IFM partner,Maintenance,Plumbing repair on floor 2,2,Low,IFM partner,Closed,2024-12-13,22
 RCS0381,2024-11-21,IFM partner,Maintenance,Water leak in floor 7 pantry,7,Medium,IFM partner,Closed,2024-12-08,17
 RCS0382,2024-11-21,Service vendor,Vendor performance,Catering delivery late arrival,0,High,Service vendor,Closed,2024-12-09,18
-RCS0383,2024-11-21,Service vendor,Vendor performance,Janitorial coverage gaps on floor 7,7,Medium,Workplace experience team,Closed,2024-12-17,26
+RCS0383,2024-11-21,Service vendor,Vendor performance,Janitorial coverage gaps on floor 7,7,Medium,IFM partner,Closed,2024-12-17,26
 RCS0384,2024-11-21,VP Regional Client Services,Space change,Desk count adjustment on floor 5,5,High,Workplace experience team,Closed,2024-12-04,13
 RCS0385,2024-12-05,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Workplace experience team,Closed,2024-12-20,15
-RCS0386,2024-12-05,IFM partner,Maintenance,Generator test notice,0,Medium,Service vendor,Closed,2024-12-20,15
+RCS0386,2024-12-05,IFM partner,Maintenance,Generator test notice,0,Medium,Workplace experience team,Closed,2024-12-20,15
 RCS0387,2024-12-12,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,Workplace experience team,Closed,2024-12-25,13
 RCS0388,2024-12-12,IFM partner,Health and safety,Fire drill coordination,0,Medium,IFM partner,Closed,2024-12-17,5
 RCS0389,2024-12-12,VP Regional Client Services,Event support,Town hall setup and AV,0,High,Workplace experience team,Closed,2024-12-25,13
 RCS0390,2024-12-12,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Service vendor,Closed,2025-01-10,29
-RCS0391,2024-12-19,VP Regional Client Services,Space change,Business unit move to floor 1,1,Medium,IFM partner,Closed,2025-01-03,15
+RCS0391,2024-12-19,VP Regional Client Services,Space change,Business unit move to floor 1,1,Medium,Service vendor,Closed,2025-01-03,15
 RCS0392,2024-12-19,VP Regional Client Services,Space change,Desk count adjustment on floor 6,6,Medium,Workplace experience team,Closed,2024-12-28,9
-RCS0393,2024-12-19,VP Regional Client Services,Space change,New hire onboarding wave,0,High,Service vendor,Closed,2025-01-08,20
+RCS0393,2024-12-19,VP Regional Client Services,Space change,New hire onboarding wave,0,High,Workplace experience team,Closed,2025-01-08,20
 RCS0394,2024-12-26,IFM partner,Maintenance,Water leak in floor 7 pantry,7,High,IFM partner,Closed,2025-01-10,15
-RCS0395,2024-12-26,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,Workplace experience team,Closed,2025-01-04,9
+RCS0395,2024-12-26,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,IFM partner,Closed,2025-01-04,9
 RCS0396,2025-01-02,Workplace experience team,Workplace programs,Clean desk campaign update,0,Medium,Workplace experience team,Closed,2025-01-21,19
 RCS0397,2025-01-09,VP Regional Client Services,Event support,Volunteer day logistics,0,High,Workplace experience team,Closed,2025-01-15,6
-RCS0398,2025-01-09,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Service vendor,Closed,2025-01-18,9
+RCS0398,2025-01-09,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2025-01-18,9
 RCS0399,2025-01-09,IFM partner,Building project,Furniture refresh on floor 7,7,High,IFM partner,Closed,2025-02-10,32
 RCS0400,2025-01-09,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2025-01-17,8
-RCS0401,2025-01-09,Service vendor,Vendor performance,Mail room delivery timing,0,Low,IFM partner,Closed,2025-02-02,24
+RCS0401,2025-01-09,Service vendor,Vendor performance,Mail room delivery timing,0,Low,Service vendor,Closed,2025-02-02,24
 RCS0402,2025-01-09,VP Regional Client Services,Event support,Client visit hospitality,0,Medium,Workplace experience team,Closed,2025-01-22,13
-RCS0403,2025-01-09,VP Regional Client Services,Space change,Business unit move to floor 4,4,Low,IFM partner,Closed,2025-02-02,24
+RCS0403,2025-01-09,VP Regional Client Services,Space change,Business unit move to floor 4,4,Low,Service vendor,Closed,2025-02-02,24
 RCS0404,2025-01-16,Service vendor,Vendor performance,Catering delivery late arrival,0,Low,Service vendor,Closed,2025-02-07,22
 RCS0405,2025-01-16,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Medium,Workplace experience team,Closed,2025-01-28,12
 RCS0406,2025-01-16,Service vendor,Vendor performance,Pantry restock delays,0,Medium,Service vendor,Closed,2025-02-06,21
@@ -420,95 +420,95 @@ RCS0418,2025-01-30,Service vendor,Vendor performance,Catering delivery late arri
 RCS0419,2025-01-30,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2025-02-14,15
 RCS0420,2025-01-30,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Service vendor,Closed,2025-02-02,3
 RCS0421,2025-01-30,IFM partner,Health and safety,AED and first aid kit audit,0,Low,IFM partner,Closed,2025-02-07,8
-RCS0422,2025-01-30,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,IFM partner,Closed,2025-02-17,18
+RCS0422,2025-01-30,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Service vendor,Closed,2025-02-17,18
 RCS0423,2025-01-30,VP Regional Client Services,Space change,Desk count adjustment on floor 5,5,Medium,Workplace experience team,Closed,2025-03-31,60
-RCS0424,2025-02-06,VP Regional Client Services,Event support,Town hall setup and AV,0,High,IFM partner,Closed,2025-02-14,8
-RCS0425,2025-02-06,VP Regional Client Services,Space change,Business unit move to floor 2,2,Medium,IFM partner,Closed,2025-02-14,8
+RCS0424,2025-02-06,VP Regional Client Services,Event support,Town hall setup and AV,0,High,Service vendor,Closed,2025-02-14,8
+RCS0425,2025-02-06,VP Regional Client Services,Space change,Business unit move to floor 2,2,Medium,Service vendor,Closed,2025-02-14,8
 RCS0426,2025-02-06,IFM partner,Building project,LED lighting retrofit,0,Low,IFM partner,Closed,2025-03-02,24
 RCS0427,2025-02-06,Service vendor,Vendor performance,Mail room delivery timing,0,Medium,Service vendor,Closed,2025-02-13,7
 RCS0428,2025-02-06,Workplace experience team,Workplace programs,Newsletter content plan,0,High,Workplace experience team,Closed,2025-02-26,20
 RCS0429,2025-02-13,IFM partner,Building project,Carpet replacement on floor 1,1,High,IFM partner,Closed,2025-02-21,8
-RCS0430,2025-02-13,Service vendor,Vendor performance,Janitorial coverage gaps on floor 1,1,High,Service vendor,Closed,2025-02-24,11
+RCS0430,2025-02-13,Service vendor,Vendor performance,Janitorial coverage gaps on floor 1,1,High,Workplace experience team,Closed,2025-02-24,11
 RCS0431,2025-02-13,VP Regional Client Services,Event support,Holiday celebration planning,0,Low,Workplace experience team,Closed,2025-03-21,36
 RCS0432,2025-02-20,IFM partner,Building project,LED lighting retrofit,0,Low,IFM partner,Closed,2025-04-15,54
 RCS0433,2025-02-20,IFM partner,Building project,Window washing schedule,0,Low,IFM partner,Closed,2025-03-09,17
 RCS0434,2025-02-20,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Workplace experience team,Closed,2025-03-02,10
-RCS0435,2025-02-27,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,IFM partner,Closed,2025-03-09,10
+RCS0435,2025-02-27,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Service vendor,Closed,2025-03-09,10
 RCS0436,2025-02-27,IFM partner,Building project,Carpet replacement on floor 6,6,Low,IFM partner,Closed,2025-04-25,57
 RCS0437,2025-03-06,IFM partner,Health and safety,Floor warden roster update,0,Low,IFM partner,Closed,2025-03-20,14
 RCS0438,2025-03-06,IFM partner,Health and safety,Floor warden roster update,0,Low,IFM partner,Closed,2025-03-12,6
 RCS0439,2025-03-06,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Service vendor,Closed,2025-03-27,21
-RCS0440,2025-03-06,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Low,Service vendor,Closed,2025-03-15,9
+RCS0440,2025-03-06,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Low,Workplace experience team,Closed,2025-03-15,9
 RCS0441,2025-03-13,VP Regional Client Services,Space change,New hire onboarding wave,0,Medium,Workplace experience team,Closed,2025-03-26,13
 RCS0442,2025-03-13,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Workplace experience team,Closed,2025-03-29,16
-RCS0443,2025-03-13,Service vendor,Vendor performance,Janitorial coverage gaps on floor 5,5,Medium,Service vendor,Closed,2025-03-19,6
+RCS0443,2025-03-13,Service vendor,Vendor performance,Janitorial coverage gaps on floor 5,5,Medium,Workplace experience team,Closed,2025-03-19,6
 RCS0444,2025-03-13,IFM partner,Building project,Restroom renovation on floor 5,5,Medium,IFM partner,Closed,2025-04-01,19
 RCS0445,2025-03-20,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2025-03-30,10
 RCS0446,2025-03-20,IFM partner,Building project,Furniture refresh on floor 3,3,High,IFM partner,Closed,2025-04-13,24
 RCS0447,2025-03-20,Service vendor,Vendor performance,Mail room delivery timing,0,High,Service vendor,Closed,2025-04-08,19
 RCS0448,2025-03-20,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2025-03-24,4
-RCS0449,2025-03-27,IFM partner,Health and safety,Floor warden roster update,0,High,Workplace experience team,Closed,2025-04-01,5
+RCS0449,2025-03-27,IFM partner,Health and safety,Floor warden roster update,0,High,IFM partner,Closed,2025-04-01,5
 RCS0450,2025-03-27,VP Regional Client Services,Event support,Client visit hospitality,0,Low,Workplace experience team,Closed,2025-04-13,17
 RCS0451,2025-04-03,Workplace experience team,Workplace programs,Newsletter content plan,0,High,Workplace experience team,Closed,2025-04-12,9
-RCS0452,2025-04-10,IFM partner,Health and safety,Severe weather early closure,0,Medium,IFM partner,Closed,2025-05-18,38
+RCS0452,2025-04-10,IFM partner,Health and safety,Severe weather early closure,0,Medium,Service vendor,Closed,2025-05-18,38
 RCS0453,2025-04-10,IFM partner,Building project,Furniture refresh on floor 4,4,Low,IFM partner,Closed,2025-04-24,14
 RCS0454,2025-04-10,VP Regional Client Services,Event support,Client visit hospitality,0,High,Workplace experience team,Closed,2025-04-15,5
-RCS0455,2025-04-10,IFM partner,Health and safety,Severe weather early closure,0,Medium,Workplace experience team,Closed,2025-04-17,7
+RCS0455,2025-04-10,IFM partner,Health and safety,Severe weather early closure,0,Medium,IFM partner,Closed,2025-04-17,7
 RCS0456,2025-04-17,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2025-04-22,5
 RCS0457,2025-04-17,IFM partner,Maintenance,Badge reader fault at floor 3 entrance,3,Low,IFM partner,Closed,2025-04-28,11
 RCS0458,2025-04-17,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2025-05-01,14
-RCS0459,2025-04-17,VP Regional Client Services,Space change,Desk count adjustment on floor 6,6,High,IFM partner,Closed,2025-04-28,11
+RCS0459,2025-04-17,VP Regional Client Services,Space change,Desk count adjustment on floor 6,6,High,Service vendor,Closed,2025-04-28,11
 RCS0460,2025-04-24,VP Regional Client Services,Event support,Town hall setup and AV,0,Low,Workplace experience team,Closed,2025-05-11,17
 RCS0461,2025-04-24,Service vendor,Vendor performance,Janitorial coverage gaps on floor 5,5,Medium,Service vendor,Closed,2025-05-11,17
-RCS0462,2025-04-24,IFM partner,Maintenance,Plumbing repair on floor 7,7,Low,Service vendor,Closed,2025-05-22,28
+RCS0462,2025-04-24,IFM partner,Maintenance,Plumbing repair on floor 7,7,Low,Workplace experience team,Closed,2025-05-22,28
 RCS0463,2025-04-24,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2025-05-05,11
 RCS0464,2025-04-24,VP Regional Client Services,Event support,Client visit hospitality,0,High,Workplace experience team,Closed,2025-04-27,3
-RCS0465,2025-05-01,VP Regional Client Services,Space change,Business unit move to floor 3,3,Medium,Workplace experience team,Closed,2025-05-19,18
+RCS0465,2025-05-01,VP Regional Client Services,Space change,Business unit move to floor 3,3,Medium,IFM partner,Closed,2025-05-19,18
 RCS0466,2025-05-01,VP Regional Client Services,Event support,Holiday celebration planning,0,Low,Workplace experience team,Closed,2025-05-14,13
-RCS0467,2025-05-01,IFM partner,Building project,Window washing schedule,0,Medium,Service vendor,Closed,2025-06-30,60
-RCS0468,2025-05-01,VP Regional Client Services,Event support,Heritage month programming,0,Low,Service vendor,Closed,2025-05-26,25
-RCS0469,2025-05-08,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,Workplace experience team,Closed,2025-06-08,31
+RCS0467,2025-05-01,IFM partner,Building project,Window washing schedule,0,Medium,Workplace experience team,Closed,2025-06-30,60
+RCS0468,2025-05-01,VP Regional Client Services,Event support,Heritage month programming,0,Low,Workplace experience team,Closed,2025-05-26,25
+RCS0469,2025-05-08,Workplace experience team,Workplace programs,Room booking no-show policy,0,Low,IFM partner,Closed,2025-06-08,31
 RCS0470,2025-05-08,IFM partner,Maintenance,Badge reader fault at floor 3 entrance,3,Medium,IFM partner,Closed,2025-05-15,7
 RCS0471,2025-05-08,Service vendor,Vendor performance,Pantry restock delays,0,Medium,Service vendor,Closed,2025-05-15,7
 RCS0472,2025-05-08,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2025-05-12,4
 RCS0473,2025-05-15,IFM partner,Health and safety,Fire drill coordination,0,Low,IFM partner,Closed,2025-05-18,3
-RCS0474,2025-05-15,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Service vendor,Closed,2025-05-24,9
+RCS0474,2025-05-15,Workplace experience team,Workplace programs,Newsletter content plan,0,Medium,Workplace experience team,Closed,2025-05-24,9
 RCS0475,2025-05-22,VP Regional Client Services,Event support,Holiday celebration planning,0,Low,Workplace experience team,Closed,2025-06-26,35
 RCS0476,2025-05-22,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,High,Service vendor,Closed,2025-06-04,13
 RCS0477,2025-05-22,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,Workplace experience team,Closed,2025-05-30,8
 RCS0478,2025-05-22,IFM partner,Building project,Elevator modernization phasing,0,Low,IFM partner,Closed,2025-06-13,22
 RCS0479,2025-05-22,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,Workplace experience team,Closed,2025-06-12,21
 RCS0480,2025-05-22,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,IFM partner,Closed,2025-05-27,5
-RCS0481,2025-05-29,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,Workplace experience team,Closed,2025-06-08,10
-RCS0482,2025-05-29,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,IFM partner,Closed,2025-06-07,9
+RCS0481,2025-05-29,Workplace experience team,Workplace programs,Room booking no-show policy,0,Medium,IFM partner,Closed,2025-06-08,10
+RCS0482,2025-05-29,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Service vendor,Closed,2025-06-07,9
 RCS0483,2025-05-29,Workplace experience team,Workplace programs,Clean desk campaign update,0,High,Workplace experience team,Closed,2025-06-05,7
-RCS0484,2025-06-05,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2025-06-21,16
+RCS0484,2025-06-05,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,IFM partner,Closed,2025-06-21,16
 RCS0485,2025-06-12,IFM partner,Maintenance,HVAC balancing on floor 1,1,Low,IFM partner,Closed,2025-06-20,8
-RCS0486,2025-06-12,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Service vendor,Closed,2025-06-17,5
+RCS0486,2025-06-12,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Medium,Workplace experience team,Closed,2025-06-17,5
 RCS0487,2025-06-12,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Medium,Workplace experience team,Closed,2025-06-20,8
-RCS0488,2025-06-12,IFM partner,Health and safety,Floor warden roster update,0,Low,Workplace experience team,Closed,2025-06-16,4
+RCS0488,2025-06-12,IFM partner,Health and safety,Floor warden roster update,0,Low,IFM partner,Closed,2025-06-16,4
 RCS0489,2025-06-12,VP Regional Client Services,Space change,New hire onboarding wave,0,Medium,Workplace experience team,Closed,2025-07-02,20
-RCS0490,2025-06-26,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2025-06-30,4
-RCS0491,2025-06-26,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2025-06-30,4
+RCS0490,2025-06-26,IFM partner,Health and safety,Floor warden roster update,0,Medium,Service vendor,Closed,2025-06-30,4
+RCS0491,2025-06-26,IFM partner,Health and safety,Floor warden roster update,0,Medium,Service vendor,Closed,2025-06-30,4
 RCS0492,2025-06-26,IFM partner,Health and safety,Severe weather early closure,0,Medium,IFM partner,Closed,2025-07-01,5
 RCS0493,2025-06-26,VP Regional Client Services,Event support,Heritage month programming,0,Medium,Workplace experience team,Closed,2025-07-09,13
 RCS0494,2025-07-03,Service vendor,Vendor performance,Catering delivery late arrival,0,Medium,Service vendor,Closed,2025-07-30,27
 RCS0495,2025-07-03,IFM partner,Maintenance,Water leak in floor 2 pantry,2,Low,IFM partner,Closed,2025-07-10,7
 RCS0496,2025-07-03,VP Regional Client Services,Event support,Client visit hospitality,0,High,Workplace experience team,Closed,2025-08-07,35
 RCS0497,2025-07-10,IFM partner,Building project,Restroom renovation on floor 6,6,High,IFM partner,Closed,2025-08-10,31
-RCS0498,2025-07-10,Service vendor,Vendor performance,Janitorial coverage gaps on floor 7,7,High,Workplace experience team,Closed,2025-07-19,9
+RCS0498,2025-07-10,Service vendor,Vendor performance,Janitorial coverage gaps on floor 7,7,High,IFM partner,Closed,2025-07-19,9
 RCS0499,2025-07-10,VP Regional Client Services,Event support,Holiday celebration planning,0,Medium,Workplace experience team,Closed,2025-07-24,14
-RCS0500,2025-07-10,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,IFM partner,Closed,2025-07-17,7
+RCS0500,2025-07-10,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Service vendor,Closed,2025-07-17,7
 RCS0501,2025-07-17,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Low,Workplace experience team,Open,,
 RCS0502,2025-07-17,VP Regional Client Services,Space change,Neighborhood reassignment on floor 1,1,Medium,Workplace experience team,Closed,2025-08-29,43
 RCS0503,2025-07-24,VP Regional Client Services,Space change,Desk count adjustment on floor 2,2,Medium,Workplace experience team,Closed,2025-08-06,13
 RCS0504,2025-07-24,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,Workplace experience team,Closed,2025-08-11,18
 RCS0505,2025-07-24,IFM partner,Building project,Furniture refresh on floor 1,1,Medium,IFM partner,Open,,
-RCS0506,2025-07-24,IFM partner,Health and safety,Floor warden roster update,0,Medium,Workplace experience team,Closed,2025-07-31,7
+RCS0506,2025-07-24,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2025-07-31,7
 RCS0507,2025-07-31,IFM partner,Building project,Furniture refresh on floor 4,4,Low,IFM partner,Closed,2025-09-19,50
 RCS0508,2025-07-31,IFM partner,Building project,Restroom renovation on floor 4,4,Low,IFM partner,Closed,2025-08-29,29
 RCS0509,2025-07-31,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,Workplace experience team,Closed,2025-08-06,6
-RCS0510,2025-08-07,IFM partner,Building project,LED lighting retrofit,0,Low,Workplace experience team,Closed,2025-08-24,17
+RCS0510,2025-08-07,IFM partner,Building project,LED lighting retrofit,0,Low,IFM partner,Closed,2025-08-24,17
 RCS0511,2025-08-07,Workplace experience team,Workplace programs,Rotating vegan menu review,0,Low,Workplace experience team,Closed,2025-08-24,17
 RCS0512,2025-08-07,IFM partner,Maintenance,Water leak in floor 2 pantry,2,High,IFM partner,Closed,2025-08-19,12
 RCS0513,2025-08-07,Workplace experience team,Workplace programs,Room booking no-show policy,0,High,Workplace experience team,Closed,2025-08-17,10
@@ -516,29 +516,29 @@ RCS0514,2025-08-07,Workplace experience team,Workplace programs,Newsletter conte
 RCS0515,2025-08-14,IFM partner,Building project,Restroom renovation on floor 5,5,Medium,IFM partner,Closed,2025-09-05,22
 RCS0516,2025-08-14,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Low,Workplace experience team,Closed,2025-08-26,12
 RCS0517,2025-08-14,Service vendor,Vendor performance,Janitorial coverage gaps on floor 1,1,Low,Service vendor,Closed,2025-09-04,21
-RCS0518,2025-08-14,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,Workplace experience team,Closed,2025-08-27,13
+RCS0518,2025-08-14,VP Regional Client Services,Event support,Volunteer day logistics,0,Medium,IFM partner,Closed,2025-08-27,13
 RCS0519,2025-08-21,IFM partner,Health and safety,AED and first aid kit audit,0,Medium,IFM partner,Closed,2025-08-27,6
 RCS0520,2025-08-21,IFM partner,Building project,LED lighting retrofit,0,Medium,IFM partner,Closed,2025-09-05,15
 RCS0521,2025-08-21,Service vendor,Vendor performance,Cafe service speed at lunch peak,0,Low,Service vendor,Closed,2025-09-06,16
-RCS0522,2025-08-21,IFM partner,Maintenance,Generator test notice,0,Medium,Workplace experience team,Closed,2025-09-21,31
+RCS0522,2025-08-21,IFM partner,Maintenance,Generator test notice,0,Medium,IFM partner,Closed,2025-09-21,31
 RCS0523,2025-08-21,IFM partner,Building project,Window washing schedule,0,High,IFM partner,Closed,2025-09-13,23
 RCS0524,2025-08-28,IFM partner,Maintenance,Badge reader fault at floor 7 entrance,7,Medium,IFM partner,Closed,2025-09-24,27
 RCS0525,2025-08-28,IFM partner,Building project,Carpet replacement on floor 5,5,Medium,IFM partner,Open,,
 RCS0526,2025-08-28,IFM partner,Building project,Carpet replacement on floor 6,6,Low,IFM partner,Closed,2025-09-10,13
 RCS0527,2025-08-28,IFM partner,Maintenance,Plumbing repair on floor 3,3,Medium,IFM partner,Closed,2025-09-04,7
-RCS0528,2025-09-04,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Service vendor,Closed,2025-09-28,24
+RCS0528,2025-09-04,VP Regional Client Services,Event support,Town hall setup and AV,0,Medium,Workplace experience team,Closed,2025-09-28,24
 RCS0529,2025-09-04,Service vendor,Vendor performance,Catering delivery late arrival,0,High,Service vendor,Closed,2025-09-13,9
 RCS0530,2025-09-04,VP Regional Client Services,Event support,Volunteer day logistics,0,Low,Workplace experience team,Closed,2025-09-20,16
 RCS0531,2025-09-04,Workplace experience team,Workplace programs,Locker app rollout follow-up,0,Medium,Workplace experience team,Closed,2025-09-20,16
 RCS0532,2025-09-11,IFM partner,Maintenance,Badge reader fault at floor 6 entrance,6,Medium,IFM partner,Closed,2025-09-20,9
-RCS0533,2025-09-11,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,Workplace experience team,Closed,2025-09-25,14
-RCS0534,2025-09-11,IFM partner,Health and safety,Floor warden roster update,0,Medium,Workplace experience team,Closed,2025-09-16,5
-RCS0535,2025-09-11,IFM partner,Maintenance,Plumbing repair on floor 6,6,Medium,IFM partner,Closed,2025-09-19,8
+RCS0533,2025-09-11,Workplace experience team,Workplace programs,Clean desk campaign update,0,Low,IFM partner,Closed,2025-09-25,14
+RCS0534,2025-09-11,IFM partner,Health and safety,Floor warden roster update,0,Medium,IFM partner,Closed,2025-09-16,5
+RCS0535,2025-09-11,IFM partner,Maintenance,Plumbing repair on floor 6,6,Medium,Service vendor,Closed,2025-09-19,8
 RCS0536,2025-09-11,VP Regional Client Services,Event support,Heritage month programming,0,Medium,Workplace experience team,Open,,
 RCS0537,2025-09-11,VP Regional Client Services,Space change,Desk count adjustment on floor 6,6,Low,Workplace experience team,Closed,2025-09-19,8
 RCS0538,2025-09-18,IFM partner,Maintenance,Generator test notice,0,Low,IFM partner,Closed,2025-09-24,6
 RCS0539,2025-09-18,IFM partner,Maintenance,Generator test notice,0,Medium,IFM partner,Closed,2025-09-28,10
-RCS0540,2025-09-25,Service vendor,Vendor performance,Pantry restock delays,0,High,Workplace experience team,Open,,
-RCS0541,2025-09-25,IFM partner,Health and safety,Floor warden roster update,0,High,Service vendor,Open,,
+RCS0540,2025-09-25,Service vendor,Vendor performance,Pantry restock delays,0,High,IFM partner,Open,,
+RCS0541,2025-09-25,IFM partner,Health and safety,Floor warden roster update,0,High,Workplace experience team,Open,,
 RCS0542,2025-09-25,VP Regional Client Services,Event support,Holiday celebration planning,0,High,Workplace experience team,Open,,
 RCS0543,2025-09-25,IFM partner,Maintenance,HVAC balancing on floor 3,3,High,IFM partner,Open,,
