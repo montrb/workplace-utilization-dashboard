@@ -812,6 +812,22 @@
     'clean-desk': [['desks_tagged_noncompliant', 'Desks tagged noncompliant'], ['bags_collected', 'Bags of personal items collected']],
     technology: [['support_tickets', 'Support tickets logged'], ['mailbox_requests', 'Mailbox booking requests']],
     events: [['event_name', 'Event name', 'text'], ['category', 'Event category', EVENT_CATS], ['rsvps', 'RSVPs'], ['attendees', 'Attendees checked in']],
+    complaints: [
+      ['source', 'Source', ['QR table cards', 'Newsletter survey', 'Jive', 'Email', 'In person']],
+      ['category', 'Category', ['Not enough vegan options', 'Cafe pricing', 'Temperature', 'Cleanliness', 'Noise', 'Room booking', 'Pantry stock', 'Lockers', 'Other']],
+      ['description', 'Description', 'text'],
+      ['status', 'Status', ['Open', 'In progress', 'Resolved']],
+      ['resolution', 'Resolution (if resolved)', 'textopt'],
+    ],
+    rcs: [
+      ['raised_by', 'Raised by', ['IFM partner', 'Service vendor', 'VP Regional Client Services', 'Workplace experience team']],
+      ['category', 'Category', ['Building project', 'Maintenance', 'Vendor performance', 'Event support', 'Space change', 'Health and safety', 'Workplace programs']],
+      ['item', 'Item', 'text'],
+      ['scope', 'Applies to', ['Selected floor', 'Site-wide']],
+      ['priority', 'Priority', ['High', 'Medium', 'Low']],
+      ['owner', 'Owner', ['Workplace experience team', 'IFM partner', 'Service vendor']],
+      ['status', 'Status', ['Open', 'Monitoring', 'Closed']],
+    ],
   };
   const sessionLog = [];
   let stamp = null;
@@ -839,7 +855,7 @@
       const sec = $('log-section').value;
       $('log-fields').innerHTML = LOG_FIELDS[sec].map(([k, l, t]) => {
         if (Array.isArray(t)) return '<label>' + esc(l) + '<select data-key="' + k + '">' + t.map((o) => '<option>' + esc(o) + '</option>').join('') + '</select></label>';
-        if (t === 'text') return '<label>' + esc(l) + '<input type="text" data-key="' + k + '" data-type="text"></label>';
+        if (t === 'text' || t === 'textopt') return '<label>' + esc(l) + '<input type="text" data-key="' + k + '" data-type="' + t + '" data-label="' + esc(l) + '"></label>';
         return '<label>' + esc(l) + '<input type="number" min="0" step="1" inputmode="numeric" data-key="' + k + '"></label>';
       }).join('');
     };
@@ -867,8 +883,9 @@
       const inputs = Array.from($('log-fields').querySelectorAll('input, select'));
       for (const inp of inputs) {
         if (inp.tagName === 'SELECT') { values[inp.dataset.key] = inp.value; continue; }
+        if (inp.dataset.type === 'textopt') { values[inp.dataset.key] = inp.value.trim(); continue; }
         if (inp.dataset.type === 'text') {
-          if (!inp.value.trim()) return msg('Enter the event name.', 'error');
+          if (!inp.value.trim()) return msg('Enter the ' + inp.dataset.label.toLowerCase() + '.', 'error');
           values[inp.dataset.key] = inp.value.trim();
           continue;
         }
