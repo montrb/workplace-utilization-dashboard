@@ -155,3 +155,5 @@ td.num, th.num { text-align: right; }
 
 .filters[hidden] { display: none; }
 .filters label[hidden] { display: none; }
+.btn-link { display: inline-block; padding: 7px 14px; border: 1px solid var(--accent); border-radius: 2px; background: var(--accent); color: #fff; text-decoration: none; font-size: 13px; margin-right: 8px; }
+.btn-link:hover { opacity: .9; }

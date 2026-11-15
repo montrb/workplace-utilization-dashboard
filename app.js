@@ -762,6 +762,7 @@
     const peakMonth = staffMonths[staffSeries.indexOf(peak)];
     const active = new Set(rows.map((r) => r.site_id)).size;
     let html = header('Sites', 'Contract event budget and workplace experience staffing across the home site and six satellite sites. Satellite sites opened after the home site; some later moved to reduced scope or ended. Event spend covers contract-funded social events.');
+    html += '<p style="margin:0 0 14px"><a class="btn-link" href="Montrell%20Bennett%20Multi%20Site%20Event%20Budget%20Tracker.xlsx" download>Download the budget tracker (Excel)</a> <span style="color:var(--muted);font-size:12px">Budget against actual by site and contract year, with live formulas.</span></p>';
     html += '<div class="kpis">' +
       kpi('Contract event budget', moneyK(EVENT_BUDGET), 'Life of contract, all sites') +
       kpi('Spent in selected range', moneyK(spend), pct(spend / EVENT_BUDGET, 0) + ' of total budget') +
