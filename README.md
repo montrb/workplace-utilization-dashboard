@@ -26,6 +26,10 @@ I self-initiated a Tableau dashboard that combined these sources:
 
 Monthly results fed an executive data summary presented to business unit and senior site leadership, informing space-planning and hybrid-policy decisions. The approach was later adopted at other community manager sites.
 
+## Companion budget tracker
+
+**[Montrell Bennett Multi Site Event Budget Tracker.xlsx](Montrell%20Bennett%20Multi%20Site%20Event%20Budget%20Tracker.xlsx)** is an Excel workbook that tracks the $750,000 contract event budget across the home site and six satellite sites by contract year (November to October). It includes a one-page dashboard with status-coded progress bars by site, budget against actual by site and contract year, a monthly spend matrix with cumulative spend against the contract budget, a home site event log reconciled to monthly actuals, and a How It Works sheet with editable thresholds and worked examples. All calculations are live Excel formulas.
+
 ## What the dashboard tracks
 
 | Section | Source | Grain |
